@@ -168,3 +168,4 @@ Received Import Request.
   path: Assets/Assets OG/Scenes/TutorialScene/NavMesh.asset
   artifactKey: Guid(b054413cd17e43248a45e38a7c8fd8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Assets OG/Scenes/TutorialScene/NavMesh.asset using Guid(b054413cd17e43248a45e38a7c8fd8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba387c8ce8282965acde87b9e1aa8dc5') in 0.332419 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

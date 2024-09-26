@@ -8,7 +8,7 @@ using UnityEngine;
 public class FollowGuard : MonoBehaviour
 {
     public Transform guard;            // Reference to the guard's position
-    public float floatHeight = 4f;     // Height above the guard's head where the capsule should float
+    public float floatHeight = 2f;     // Height above the guard's head where the capsule should float
     public bool isVisible;             // Public boolean to show if the player is visible
 
     private Vector3 offset;            // Offset to position the capsule above the guard

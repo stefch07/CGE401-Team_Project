@@ -1,4 +1,4 @@
-// Contributors: John Nguyen, Treasure Keys
+// Contributors: John Nguyen, Treasure Keys, Tyler Ptaszkowski
 
 using System.Collections;
 using System.Collections.Generic;
@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     public bool canMove = true;  // Determines if the player is allowed to move or rotate.
 
     CharacterController characterController;  // Reference to the CharacterController component, used for movement handling.
+    
+    // DialogManager reference
+    public DialogManager dialogManager;
 
     private void Start()
     {
@@ -39,6 +42,18 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        // Disables player movement and enables mouse movement/visibility if dialogPanel is active
+        if (dialogManager.dialogPanel.activeSelf) {
+            canMove = false;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else {
+            canMove = true;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        
         #region Handles Movement
         // Forward and right movement are calculated based on the player's current facing direction.
         Vector3 forward = transform.TransformDirection(Vector3.forward);  // Convert local forward direction to world space.

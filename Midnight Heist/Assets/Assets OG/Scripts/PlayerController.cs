@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     // by gravity when jumping or falling. The camera rotation is limited to prevent excessive vertical rotation.
     // A CharacterController component is required for handling the player's movement.
 
+    //Don't forget to add crouching as well! 
+
     public Camera playerCamera;  // Reference to the player's camera, used for rotation control.
     public float walkSpeed = 6.0f;  // Walking speed when not running.
     public float runSpeed = 12.0f;  // Running speed when the player holds the sprint key.

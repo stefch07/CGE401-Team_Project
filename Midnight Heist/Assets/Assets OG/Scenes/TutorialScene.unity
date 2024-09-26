@@ -4802,23 +4802,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef0da04d00d6c4479ca73b01d13f09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
   player: {fileID: 1473898426}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 0
-  health: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 0
-  timeBetweenAttacks: 0
-  projectile: {fileID: 0}
   sightRange: 15
-  attackRange: 0
-  playerInSightRange: 0
-  playerInAttackRange: 0
+  stopChasingDistance: 10
+  movementSpeed: 3.5
 --- !u!1001 &7267867033271654105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4833,6 +4820,18 @@ PrefabInstance:
     - target: {fileID: 4304449473717770217, guid: 4f58ec349f8ffd94da6bc8a9a952fbcc, type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304449473717770217, guid: 4f58ec349f8ffd94da6bc8a9a952fbcc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304449473717770217, guid: 4f58ec349f8ffd94da6bc8a9a952fbcc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304449473717770217, guid: 4f58ec349f8ffd94da6bc8a9a952fbcc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4304449473717770217, guid: 4f58ec349f8ffd94da6bc8a9a952fbcc, type: 3}
       propertyPath: m_LocalPosition.x

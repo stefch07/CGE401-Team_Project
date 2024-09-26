@@ -8,115 +8,72 @@ using UnityEngine.AI;
 
 public class GuardAI : MonoBehaviour
 {
-    public NavMeshAgent agent;
+    public Transform player;           // Reference to the player's position
+    public float sightRange = 15f;     // The range at which the guard can see the player
+    public float stopChasingDistance = 20f;  // Distance at which the guard will stop chasing
+    public float movementSpeed = 3.5f; // Guard movement speed
 
-    public Transform player;
+    private NavMeshAgent agent;        // Reference to the NavMeshAgent component
+    private bool isPlayerInSight;      // Boolean to check if the player is in sight
+    private bool isPlayerInRange;      // Boolean to check if the player is in range to stop chasing
 
-    public LayerMask whatIsGround, whatIsPlayer;
-
-    public float health;
-
-    //Patroling
-    public Vector3 walkPoint;
-    bool walkPointSet;
-    public float walkPointRange;
-
-    //Attacking
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
-    public GameObject projectile;
-
-    //States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
-
-    private void Awake()
+    void Start()
     {
-        player = GameObject.Find("Player").transform;
+        // Get the NavMeshAgent component from the guard
         agent = GetComponent<NavMeshAgent>();
+        // Set the initial movement speed
+        agent.speed = movementSpeed;
     }
 
-    private void Update()
+    void Update()
     {
-        //Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        // Calculate the distance between the guard and the player
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
-    }
-
-    private void Patroling()
-    {
-        if (!walkPointSet) SearchWalkPoint();
-
-        if (walkPointSet)
-            agent.SetDestination(walkPoint);
-
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-        //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = false;
-    }
-    private void SearchWalkPoint()
-    {
-        //Calculate random point in range
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
-
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
-            walkPointSet = true;
-    }
-
-    private void ChasePlayer()
-    {
-        agent.SetDestination(player.position);
-    }
-
-    private void AttackPlayer()
-    {
-        //Make sure enemy doesn't move
-        agent.SetDestination(transform.position);
-
-        transform.LookAt(player);
-
-        if (!alreadyAttacked)
+        // Check if the player is within sight range
+        if (distanceToPlayer <= sightRange)
         {
-            ///Attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
-            ///End of attack code
-
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            isPlayerInSight = true;
         }
-    }
-    private void ResetAttack()
-    {
-        alreadyAttacked = false;
-    }
+        else
+        {
+            isPlayerInSight = false;
+        }
 
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
+        // Check if the player is within the stop chasing range
+        if (distanceToPlayer <= stopChasingDistance)
+        {
+            isPlayerInRange = true;
+        }
+        else
+        {
+            isPlayerInRange = false;
+        }
 
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    }
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
+        // Handle movement
+        if (isPlayerInSight && isPlayerInRange && agent.isOnNavMesh)  // Check if agent is on NavMesh
+        {
+            // Move towards the player
+            agent.SetDestination(player.position);
+        }
+        else
+        {
+            // Stay still
+            if (agent.isOnNavMesh)
+            {
+                agent.ResetPath();
+            }
+        }
     }
 
     private void OnDrawGizmosSelected()
     {
+        // Draw sight range sphere in the Scene view
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-        Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+
+        // Draw stop chasing range sphere
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, stopChasingDistance);
     }
 }

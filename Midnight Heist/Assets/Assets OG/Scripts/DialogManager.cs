@@ -14,6 +14,7 @@ public class DialogManager : MonoBehaviour
     // Set these references in the inspector
     public GameObject continueButton;
     public GameObject skipButton;
+    public GameObject tavernkeeperButton;
     public GameObject dialogPanel;
     
     void OnEnable()
@@ -48,6 +49,7 @@ public class DialogManager : MonoBehaviour
         else
         {
             textbox.text = "";
+            tavernkeeperButton.SetActive(false);
             dialogPanel.SetActive(false);
         }
     }
@@ -55,6 +57,7 @@ public class DialogManager : MonoBehaviour
     public void SkipSentences() {
         continueButton.SetActive(false);
         skipButton.SetActive(false);
+        tavernkeeperButton.SetActive(false);
         dialogPanel.SetActive(false);
     }
 }

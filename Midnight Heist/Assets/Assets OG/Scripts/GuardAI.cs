@@ -12,6 +12,7 @@ public class GuardAI : MonoBehaviour
     public float sightRange = 15f;     // The range at which the guard can see the player
     public float stopChasingDistance = 20f;  // Distance at which the guard will stop chasing
     public float movementSpeed = 3.5f; // Guard movement speed
+    public FollowGuard floatingCapsule; // Reference to the FollowGuard script
 
     private NavMeshAgent agent;        // Reference to the NavMeshAgent component
     private bool isPlayerInSight;      // Boolean to check if the player is in sight
@@ -31,24 +32,10 @@ public class GuardAI : MonoBehaviour
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         // Check if the player is within sight range
-        if (distanceToPlayer <= sightRange)
-        {
-            isPlayerInSight = true;
-        }
-        else
-        {
-            isPlayerInSight = false;
-        }
+        isPlayerInSight = CheckVisibility();
 
         // Check if the player is within the stop chasing range
-        if (distanceToPlayer <= stopChasingDistance)
-        {
-            isPlayerInRange = true;
-        }
-        else
-        {
-            isPlayerInRange = false;
-        }
+        isPlayerInRange = distanceToPlayer <= stopChasingDistance;
 
         // Handle movement
         if (isPlayerInSight && isPlayerInRange && agent.isOnNavMesh)  // Check if agent is on NavMesh
@@ -64,6 +51,31 @@ public class GuardAI : MonoBehaviour
                 agent.ResetPath();
             }
         }
+
+        // Update the capsule's visibility state
+        if (floatingCapsule != null)
+        {
+            floatingCapsule.isVisible = isPlayerInSight;
+        }
+    }
+
+    // Returns true if the guard can see the player (not blocked by obstacles)
+    public bool CheckVisibility()
+    {
+        // Compute direction to the player
+        Vector3 directionToPlayer = player.position - transform.position;
+
+        // Cast a ray towards the player
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, directionToPlayer, out hit, sightRange))
+        {
+            // Check if the ray hit the player (and not an obstacle)
+            if (hit.collider.transform == player)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private void OnDrawGizmosSelected()

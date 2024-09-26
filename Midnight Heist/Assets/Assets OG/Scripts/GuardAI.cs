@@ -12,11 +12,13 @@ public class GuardAI : MonoBehaviour
     public float sightRange = 15f;     // The range at which the guard can see the player
     public float stopChasingDistance = 20f;  // Distance at which the guard will stop chasing
     public float movementSpeed = 3.5f; // Guard movement speed
-    public Renderer capsuleRenderer;   // Reference to the capsule's Renderer for color changes
 
     private NavMeshAgent agent;        // Reference to the NavMeshAgent component
     private bool isPlayerInSight;      // Boolean to check if the player is in sight
     private bool isPlayerInRange;      // Boolean to check if the player is in range to stop chasing
+
+    // Public property to expose visibility check
+    public bool IsPlayerInSight => isPlayerInSight;
 
     void Start()
     {
@@ -49,19 +51,6 @@ public class GuardAI : MonoBehaviour
             if (agent.isOnNavMesh)
             {
                 agent.ResetPath();
-            }
-        }
-
-        // Update the capsule's color based on visibility
-        if (capsuleRenderer != null)
-        {
-            if (isPlayerInSight)
-            {
-                capsuleRenderer.material.color = Color.green;  // Player is visible
-            }
-            else
-            {
-                capsuleRenderer.material.color = Color.red;    // Player is not visible
             }
         }
     }

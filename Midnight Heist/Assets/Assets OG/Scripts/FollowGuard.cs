@@ -9,6 +9,7 @@ public class FollowGuard : MonoBehaviour
 {
     public Transform guard;            // Reference to the guard's position
     public float floatHeight = 2f;     // Height above the guard's head where the capsule should float
+    public GuardAI guardAI;            // Reference to the GuardAI script to check visibility
 
     private Vector3 offset;            // Offset to position the capsule above the guard
 
@@ -22,5 +23,17 @@ public class FollowGuard : MonoBehaviour
     {
         // Set the capsule's position to float above the guard
         transform.position = guard.position + offset;
+
+        // Optionally, add visual feedback for visibility based on guardAI's visibility check
+        if (guardAI.IsPlayerInSight)  // Accessing the property
+        {
+            // Change the capsule color to green when the player is visible
+            GetComponent<Renderer>().material.color = Color.green;
+        }
+        else
+        {
+            // Change the capsule color to red when the player is not visible
+            GetComponent<Renderer>().material.color = Color.red;
+        }
     }
 }

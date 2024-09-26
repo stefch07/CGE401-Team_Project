@@ -17,8 +17,8 @@ public class GuardAI : MonoBehaviour
     private bool isPlayerInSight;      // Boolean to check if the player is in sight
     private bool isPlayerInRange;      // Boolean to check if the player is in range to stop chasing
 
-    // Public property to expose visibility check
-    public bool IsPlayerInSight => isPlayerInSight;
+    // Public property to expose the visibility state
+    public bool IsPlayerInSight => isPlayerInSight; // Expose visibility check
 
     void Start()
     {
@@ -72,16 +72,5 @@ public class GuardAI : MonoBehaviour
             }
         }
         return false;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        // Draw sight range sphere in the Scene view
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
-
-        // Draw stop chasing range sphere
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, stopChasingDistance);
     }
 }

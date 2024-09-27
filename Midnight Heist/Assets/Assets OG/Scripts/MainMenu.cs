@@ -28,6 +28,11 @@ public class MainMenu : MonoBehaviour
 
     public void CreditsButton()
     {
-        SceneManager.LoadScene("Credits"); // scene 4  in casse it doesnt work
+        SceneManager.LoadScene("Credits"); // scene 4 in case it doesn't work
+    }
+
+    public void GoToLevelSelect()
+    {
+        SceneManager.LoadScene("LevelSelector");
     }
 }

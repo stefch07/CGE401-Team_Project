@@ -74,6 +74,9 @@ public class ThrowProjectiles : MonoBehaviour
         // Implement throwCooldown
         Invoke(nameof(ResetThrow), throwCooldown);
 
+        // Attach the ProjectileCollisions script to throwing projectiles
+        projectile.AddComponent<ProjectileCollisions>();
+
     }
 
     private void ResetThrow()

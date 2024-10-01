@@ -23,11 +23,11 @@ public class PlayerController : MonoBehaviour
     public float crouchSpeed = 3.0f;  // Movement speed while crouching.
     public float crouchHeight = 1.0f;  // Character controller height when crouching.
     public float standingHeight = 2.0f;  // Character controller height when standing.
-    public float crouchScaleFactor = 0.65f;  // The scale factor applied when crouching.
+    public float crouchScaleFactor = 0.75f;  // The scale factor applied when crouching.
     public Vector3 crouchCenter = new Vector3(0, 0.5f, 0);  // Center of character collider when crouching.
     public Vector3 standingCenter = new Vector3(0, 1.0f, 0);  // Center of character collider when standing.
     public Vector3 cameraCrouchPosition = new Vector3(0, 0.5f, 0);  // Camera position when crouched.
-    public Vector3 cameraStandingPosition = new Vector3(0, 0.65f, 0);  // Camera position when standing.
+    public Vector3 cameraStandingPosition = new Vector3(0, 0.75f, 0);  // Camera position when standing.
 
     public float lookSpeed = 2.0f;  // The speed at which the player can rotate their camera.
     public float lookXLimit = 45.0f;  // Limits the vertical angle of camera rotation to avoid extreme tilting.

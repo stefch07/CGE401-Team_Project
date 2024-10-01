@@ -5215,12 +5215,36 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7936369718384202188, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: crouchSpeed
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936369718384202188, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: dialogManager
       value: 
       objectReference: {fileID: 133421069}
+    - target: {fileID: 7936369718384202188, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: crouchCenter.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936369718384202188, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: standingCenter.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936369718384202188, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: cameraStandingPosition.y
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936369718384202189, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: m_Center.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7936369718384202190, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936369718384202190, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7936369718384202190, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_LocalPosition.x

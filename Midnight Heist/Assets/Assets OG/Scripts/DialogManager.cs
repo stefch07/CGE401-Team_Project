@@ -33,7 +33,7 @@ public class DialogManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
         continueButton.SetActive(true);
-        skipButton.SetActive(true);
+        //skipButton.SetActive(true);
     }
     
     public void NextSentence()

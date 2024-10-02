@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028292, g: 0.22571306, b: 0.30692118, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2387,7 +2387,7 @@ GameObject:
   - component: {fileID: 1038246013}
   m_Layer: 5
   m_Name: PauseMenu
-  m_TagString: Untagged
+  m_TagString: PauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5327,6 +5327,10 @@ PrefabInstance:
       propertyPath: crouchSpeed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7936369718384202188, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1282455421}
     - target: {fileID: 7936369718384202188, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: dialogManager
       value: 

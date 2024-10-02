@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Guard
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

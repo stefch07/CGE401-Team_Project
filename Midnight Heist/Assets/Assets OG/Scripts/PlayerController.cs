@@ -44,6 +44,10 @@ public class PlayerController : MonoBehaviour
     // DialogManager reference
     public DialogManager dialogManager;
 
+    // GameManager Reference + PauseMenu Reference
+    public GameObject gameManager;
+    private PauseMenu pauseMenu;
+
     private void Start()
     {
         // Initialize the character controller and set the cursor to be locked and invisible.
@@ -53,12 +57,18 @@ public class PlayerController : MonoBehaviour
 
         // Store the original scale of the player.
         originalScale = transform.localScale;
+
+        // Get reference to pauseMenu from the game manager
+        if (gameManager != null)
+        {
+            pauseMenu = gameManager.GetComponent<PauseMenu>();
+        }
     }
 
     private void Update()
     {
         // Disables player movement and enables mouse movement/visibility if dialogPanel is active
-        if (dialogManager.dialogPanel.activeSelf) {
+        if (dialogManager.dialogPanel.activeSelf || PauseMenu.isPaused) {
             canMove = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;

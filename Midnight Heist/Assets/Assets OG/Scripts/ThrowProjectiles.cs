@@ -9,6 +9,8 @@ public class ThrowProjectiles : MonoBehaviour
     public Transform attackPoint;
     public GameObject objectToThrow;
     public DialogManager dialogManager; // Dialog manager reference
+    public GameObject gameManager;
+    private PauseMenu pauseMenu;
 
     // Settings
     public int totalThrows;
@@ -24,14 +26,20 @@ public class ThrowProjectiles : MonoBehaviour
     private void Start()
     {
         readyToThrow = true;
+
+        // Get reference to pauseMenu from gameManager
+        if (gameManager != null)
+        {
+            pauseMenu = gameManager.GetComponent<PauseMenu>();
+        }
     }
 
     private void Update()
     {
         // Disables ability for player to throw things and enables mouse movement/visibility if dialogPanel is active
-        if (dialogManager.dialogPanel.activeSelf)
+        if (dialogManager.dialogPanel.activeSelf || PauseMenu.isPaused)
         {
-            readyToThrow = false; // Player can't throw projectiles if a dialogue boxis open
+            readyToThrow = false; // Player can't throw projectiles if a dialogue box or pause menu is open
         }
         else
         {

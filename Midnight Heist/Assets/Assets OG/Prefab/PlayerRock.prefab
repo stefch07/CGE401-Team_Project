@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2123419868545917872}
   - component: {fileID: 5343908457670990895}
   - component: {fileID: -8620232171764447625}
+  - component: {fileID: -3286662448744348565}
   m_Layer: 0
   m_Name: PlayerRock
   m_TagString: Untagged
@@ -112,3 +113,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.032977447, y: 0.030041479, z: 0.026943458}
   m_Center: {x: 0.0000138795, y: -0.00048358543, z: 0.00035266852}
+--- !u!114 &-3286662448744348565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123419868543663472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7349057a6e20948ec8a7590cb6e52a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distractionRange: 150

@@ -3507,7 +3507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570726085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2290039, y: 1.1570001, z: -0.20083618}
+  m_LocalPosition: {x: -0.019, y: 1.1570001, z: 0.145}
   m_LocalScale: {x: 0.4, y: 0.9, z: 0.4}
   m_Children: []
   m_Father: {fileID: 5911221286121678509}
@@ -5141,6 +5141,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8217972412003122622, guid: 5934fe6c7ceff8447bc44e45af64969a, type: 3}
   m_PrefabInstance: {fileID: 2307243988411046676}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &5911221286121678507
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5911221286121678506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.18441772
+  m_Height: 0.47967815
+  m_Direction: 1
+  m_Center: {x: 0.0011901855, y: 1.6273432, z: 0}
 --- !u!195 &5911221286121678508
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5184,6 +5198,7 @@ MonoBehaviour:
   sightRange: 10
   stopChasingDistance: 5
   movementSpeed: 3.5
+  turnSpeed: 5
 --- !u!114 &5911221286121678511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5431,8 +5446,10 @@ MonoBehaviour:
   attackPoint: {fileID: 2142841338}
   objectToThrow: {fileID: 2123419868543663472, guid: 99f456e1d44764cb2bd53866d17dc2bd, type: 3}
   dialogManager: {fileID: 133421069}
+  gameManager: {fileID: 0}
   totalThrows: 100
   throwCooldown: 0.1
   throwKey: 323
   throwForce: 60
   throwUpwardForce: 0
+  distractionRange: 10

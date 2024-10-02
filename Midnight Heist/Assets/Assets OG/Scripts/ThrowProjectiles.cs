@@ -21,6 +21,9 @@ public class ThrowProjectiles : MonoBehaviour
     public float throwForce;
     public float throwUpwardForce;
 
+    // Distraction related
+    public float distractionRange = 10f; // Range of the distraction sphere trigger
+
     bool readyToThrow;
 
     private void Start()
@@ -79,11 +82,15 @@ public class ThrowProjectiles : MonoBehaviour
 
         totalThrows--;
 
+        // Set distractionRange for the projectile's collisions
+        ProjectileCollisions projectileCollisions = projectile.GetComponent<ProjectileCollisions>();
+        if (projectileCollisions != null)
+        {
+            projectileCollisions.distractionRange = distractionRange;
+        }
+
         // Implement throwCooldown
         Invoke(nameof(ResetThrow), throwCooldown);
-
-        // Attach the ProjectileCollisions script to throwing projectiles
-        projectile.AddComponent<ProjectileCollisions>();
 
     }
 

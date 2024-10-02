@@ -12,10 +12,14 @@ public class GuardAI : MonoBehaviour
     public float sightRange = 15f;     // The range at which the guard can see the player
     public float stopChasingDistance = 20f;  // Distance at which the guard will stop chasing
     public float movementSpeed = 3.5f; // Guard movement speed
+    public float turnSpeed = 5f; // Controls how fast guards turn in reaction to sound
 
     private NavMeshAgent agent;        // Reference to the NavMeshAgent component
     private bool isPlayerInSight;      // Boolean to check if the player is in sight
     private bool isPlayerInRange;      // Boolean to check if the player is in range to stop chasing
+
+    private Vector3 soundSource;       // Stores the sound source position of rocks that impact walls/floors
+    private bool investigatingSound;   // Checks if the guard is investigating a sound
 
     // Public property to expose the visibility state
     public bool IsPlayerInSight => isPlayerInSight; // Expose visibility check
@@ -45,6 +49,21 @@ public class GuardAI : MonoBehaviour
             // Move towards the player
             agent.SetDestination(player.position);
         }
+            // If the guard "heard" a rock hit the wall or floor
+        else if (investigatingSound && agent.isOnNavMesh) {
+
+            // Turn towards the sound source
+            Vector3 direction = (soundSource - transform.position).normalized;
+            Quaternion lookRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
+
+            agent.SetDestination(soundSource);
+
+            if (Vector3.Distance(transform.position, soundSource) < 1f) {
+                investigatingSound = false;
+                agent.ResetPath();
+            }
+        }
         else
         {
             // Stay still
@@ -72,5 +91,12 @@ public class GuardAI : MonoBehaviour
             }
         }
         return false;
+    }
+
+    // Gets called when a guard hears a sound
+    public void InvestigateSound(Vector3 soundPosition)
+    {
+        soundSource = soundPosition;
+        investigatingSound = true;
     }
 }

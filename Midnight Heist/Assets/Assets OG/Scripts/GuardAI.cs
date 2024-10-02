@@ -24,6 +24,10 @@ public class GuardAI : MonoBehaviour
     // Public property to expose the visibility state
     public bool IsPlayerInSight => isPlayerInSight; // Expose visibility check
 
+    // Public property to access the agent (GuardAnimator.cs)
+    public NavMeshAgent Agent => agent;
+    public Vector3 AgentVelocity => agent.velocity;
+
     void Start()
     {
         // Get the NavMeshAgent component from the guard
@@ -72,6 +76,10 @@ public class GuardAI : MonoBehaviour
                 agent.ResetPath();
             }
         }
+
+        //Debug.Log($"Guard's velocity: {agent.velocity.magnitude}");
+
+
     }
 
     // Returns true if the guard can see the player (not blocked by obstacles)

@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     public Vector3 cameraCrouchPosition = new Vector3(0, 0.5f, 0);  // Camera position when crouched.
     public Vector3 cameraStandingPosition = new Vector3(0, 0.75f, 0);  // Camera position when standing.
 
+    public bool isCrouching { get; private set; }
+
     public float lookSpeed = 2.0f;  // The speed at which the player can rotate their camera.
     public float lookXLimit = 45.0f;  // Limits the vertical angle of camera rotation to avoid extreme tilting.
 
@@ -85,8 +87,8 @@ public class PlayerController : MonoBehaviour
         Vector3 right = transform.TransformDirection(Vector3.right);  // Convert local right direction to world space.
 
         // Press left shift to run, C to crouch
-        bool isRunning = Input.GetKey(KeyCode.LeftShift);  // Check if the player is holding the sprint key.
-        bool isCrouching = Input.GetKey(KeyCode.C); // Check if the player is holding the crouch key.
+         bool isRunning = Input.GetKey(KeyCode.LeftShift);  // Check if the player is holding the sprint key.
+         bool isCrouching = Input.GetKey(KeyCode.C); // Check if the player is holding the crouch key.
 
         float curSpeed = walkSpeed; // Normal walking speed
 
@@ -124,6 +126,7 @@ public class PlayerController : MonoBehaviour
 
         #endregion
 
+
         #region Handles Jumping
         // Handle jumping when the player is grounded.
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
@@ -158,5 +161,6 @@ public class PlayerController : MonoBehaviour
 
         #endregion
     }
+       
 
 }

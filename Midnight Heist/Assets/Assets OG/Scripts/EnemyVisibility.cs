@@ -1,3 +1,7 @@
+/*
+Contributors: John, Treasure Keys
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,10 +23,14 @@ public class EnemyVisibility : MonoBehaviour
     public float angle = 45f;
 
     // If true, visualize changes in visibility by changing material color
-    [SerializeField] bool visualize = true;
+    [SerializeField] private bool visualize = true;
 
     // Property that other classes can access to determine if we can currently see our target
     public bool targetIsVisible { get; private set; }
+
+    // Player height variables
+    public float standingHeight = 2f;  // Height of the player when standing
+    public float crouchingHeight = 1f; // Height of the player when crouching
 
     // Variables for movement detection
     private Vector3 lastPosition;
@@ -44,6 +52,9 @@ public class EnemyVisibility : MonoBehaviour
         bool isMoving = Vector3.Distance(transform.position, lastPosition) > movementThreshold;
         lastPosition = transform.position; // Update lastPosition to current position
 
+        // Calculate distance to the target
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+
         if (visualize)
         {
             // Update color based on movement and visibility
@@ -51,13 +62,13 @@ public class EnemyVisibility : MonoBehaviour
             {
                 SetColor(Color.red); // Turn red if moving
             }
+            else if (targetIsVisible && distanceToTarget < maxDistance) // Check visibility and distance
+            {
+                SetColor(Color.yellow); // Target is visible and within range
+            }
             else if (CheckVisibilityToPoint(target.position))
             {
-                SetColor(Color.yellow); // Close but not visible
-            }
-            else if (targetIsVisible)
-            {
-                SetColor(Color.yellow); // Target is visible
+                SetColor(Color.yellow); // Close but not visible (crouched, etc.)
             }
             else
             {
@@ -75,8 +86,14 @@ public class EnemyVisibility : MonoBehaviour
     // Returns true if this object can see the specified position
     public bool CheckVisibilityToPoint(Vector3 worldPoint)
     {
+        // Determine player height based on crouching state
+        float playerHeight = IsPlayerCrouching() ? crouchingHeight : standingHeight;
+
+        // Calculate the position to check based on player height
+        Vector3 playerCheckPosition = new Vector3(worldPoint.x, worldPoint.y + playerHeight, worldPoint.z);
+
         // Calculate the direction from our location to the point
-        var directionToTarget = worldPoint - transform.position;
+        var directionToTarget = playerCheckPosition - transform.position;
 
         // Calculate the number of degrees from the forward direction
         var degreesToTarget = Vector3.Angle(transform.forward, directionToTarget);
@@ -104,22 +121,22 @@ public class EnemyVisibility : MonoBehaviour
     // Returns true if a straight line can be drawn between this object and the target
     public bool CheckVisibility()
     {
-        var directionToTarget = target.position - transform.position;
-        var degreesToTarget = Vector3.Angle(transform.forward, directionToTarget);
-        var withinArc = degreesToTarget < (angle / 2);
+        return CheckVisibilityToPoint(target.position);
+    }
 
-        if (!withinArc) return false;
-
-        var distanceToTarget = directionToTarget.magnitude;
-        var rayDistance = Mathf.Min(maxDistance, distanceToTarget);
-        var ray = new Ray(transform.position, directionToTarget);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, rayDistance))
+    // Checks if the player is crouching
+    private bool IsPlayerCrouching()
+    {
+        // Ensure target is assigned and has a PlayerController component
+        if (target != null)
         {
-            return hit.collider.transform == target; // Check if we hit the target
+            var playerController = target.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                return playerController.isCrouching; // Ensure isCrouching exists in PlayerController
+            }
         }
-        return false; // No visible target
+        return false; // Default to not crouching if target is null or doesn't have PlayerController
     }
 }
 

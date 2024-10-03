@@ -4832,6 +4832,7 @@ MonoBehaviour:
   stopChasingDistance: 5
   movementSpeed: 3.5
   turnSpeed: 25
+  guardChest: {fileID: 2985088206167739584}
 --- !u!114 &5433332281989871097
 MonoBehaviour:
   m_ObjectHideFlags: 0

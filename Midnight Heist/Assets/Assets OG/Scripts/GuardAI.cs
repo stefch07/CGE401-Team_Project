@@ -1,5 +1,5 @@
 /*
- Contributors: Treasure Keys
+ Contributors: Treasure Keys, John
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +12,8 @@ public class GuardAI : MonoBehaviour
     public float sightRange = 15f;     // The range at which the guard can see the player
     public float stopChasingDistance = 20f;  // Distance at which the guard will stop chasing
     public float movementSpeed = 3.5f; // Guard movement speed
-    public float turnSpeed = 5f; // Controls how fast guards turn in reaction to sound
+    public float turnSpeed = 5f;       // Controls how fast guards turn in reaction to sound
+    public Transform guardChest;       // Reference to the guard's chest position
 
     private NavMeshAgent agent;        // Reference to the NavMeshAgent component
     private bool isPlayerInSight;      // Boolean to check if the player is in sight
@@ -53,8 +54,9 @@ public class GuardAI : MonoBehaviour
             // Move towards the player
             agent.SetDestination(player.position);
         }
-            // If the guard "heard" a rock hit the wall or floor
-        else if (investigatingSound && agent.isOnNavMesh) {
+        // If the guard "heard" a rock hit the wall or floor
+        else if (investigatingSound && agent.isOnNavMesh)
+        {
 
             // Turn towards the sound source
             Vector3 direction = (soundSource - transform.position).normalized;
@@ -63,7 +65,8 @@ public class GuardAI : MonoBehaviour
 
             agent.SetDestination(soundSource);
 
-            if (Vector3.Distance(transform.position, soundSource) < 1f) {
+            if (Vector3.Distance(transform.position, soundSource) < 1f)
+            {
                 investigatingSound = false;
                 agent.ResetPath();
             }
@@ -77,20 +80,17 @@ public class GuardAI : MonoBehaviour
             }
         }
 
-        //Debug.Log($"Guard's velocity: {agent.velocity.magnitude}");
-
-
     }
 
     // Returns true if the guard can see the player (not blocked by obstacles)
     public bool CheckVisibility()
     {
-        // Compute direction to the player
-        Vector3 directionToPlayer = player.position - transform.position;
+        // Compute direction to the player from the guard's chest
+        Vector3 directionToPlayer = player.position - guardChest.position;
 
-        // Cast a ray towards the player
+        // Cast a ray from the guard's chest towards the player
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, directionToPlayer, out hit, sightRange))
+        if (Physics.Raycast(guardChest.position, directionToPlayer, out hit, sightRange))
         {
             // Check if the ray hit the player (and not an obstacle)
             if (hit.collider.transform == player)

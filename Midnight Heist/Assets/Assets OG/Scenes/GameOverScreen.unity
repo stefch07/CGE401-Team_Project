@@ -1743,7 +1743,7 @@ GameObject:
   - component: {fileID: 1152986932}
   - component: {fileID: 1152986931}
   m_Layer: 5
-  m_Name: SelectLevel (1)
+  m_Name: SelectLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

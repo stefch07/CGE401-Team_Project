@@ -10,14 +10,14 @@ public class DialogTrigger : MonoBehaviour
     
     void Start()
     {
-        dialogCanvas.enabled = false;
+        dialogCanvas.gameObject.SetActive(false);
     }
     
     void Update()
     {
         if (inZone && Input.GetKeyDown(KeyCode.E))
         {
-            dialogCanvas.enabled = true;
+            dialogCanvas.gameObject.SetActive(true);
             dialogManager.gameObject.SetActive(true);
             dialogManager.StartCoroutine("Type");
         }
@@ -36,7 +36,7 @@ public class DialogTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inZone = false;
-            dialogCanvas.enabled = false;
+            dialogCanvas.gameObject.SetActive(false);
             dialogManager.SkipSentences();
         }
     }

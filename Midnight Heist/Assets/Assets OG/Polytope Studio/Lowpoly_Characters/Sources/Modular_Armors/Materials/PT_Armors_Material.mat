@@ -95,7 +95,7 @@ Material:
     - _COATOFARMSCOLOR: {r: 1, g: 0, b: 0, a: 0}
     - _EYESCOLOR: {r: 0.0734529, g: 0.1320755, b: 0.05046281, a: 1}
     - _FEATHERS1COLOR: {r: 0.7735849, g: 0.492613, b: 0.492613, a: 0}
-    - _FEATHERS2COLOR: {r: 0.6792453, g: 0, b: 0, a: 0}
+    - _FEATHERS2COLOR: {r: 0.039546248, g: 0.039546248, b: 0.039546248, a: 0}
     - _FEATHERS3COLOR: {r: 0, g: 0.1793142, b: 0.7264151, a: 0}
     - _GEMS1COLOR: {r: 0.3773585, g: 0, b: 0.06650025, a: 0}
     - _GEMS2COLOR: {r: 0.2023368, g: 0, b: 0.4339623, a: 0}

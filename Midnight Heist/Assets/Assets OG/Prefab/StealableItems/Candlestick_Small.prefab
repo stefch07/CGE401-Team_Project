@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9219440156382078136}
   - component: {fileID: 9219440156389657016}
   - component: {fileID: 9219440156380183718}
+  - component: {fileID: 3124733682780842630}
   m_Layer: 0
   m_Name: Candlestick_Small
   m_TagString: StealableItem
@@ -117,3 +118,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldValue: 15
+  rockCount: 0
+  sphereCollider: {fileID: 3124733682780842630}
+--- !u!135 &3124733682780842630
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9219440156380150392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: -0.0009268224, y: 0.13631092, z: 0.00074352324}

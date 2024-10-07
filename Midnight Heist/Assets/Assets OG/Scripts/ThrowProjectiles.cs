@@ -35,6 +35,9 @@ public class ThrowProjectiles : MonoBehaviour
         {
             pauseMenu = gameManager.GetComponent<PauseMenu>();
         }
+
+        // Initialize totalThrows if necessary
+        totalThrows = 0; // Start with zero rocks
     }
 
     private void Update()
@@ -97,6 +100,12 @@ public class ThrowProjectiles : MonoBehaviour
     private void ResetThrow()
     {
         readyToThrow = true;
+    }
+
+    public void AddRocks(int amount)
+    {
+        totalThrows += amount;
+        Debug.Log("Current rock count: " + totalThrows);
     }
 
 }

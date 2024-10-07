@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
 
     // Gold value to keep track of collected items
     private int goldCounter;
+    // Value for keeping track of rocks
+    private int rockCounter;
 
     private void Start()
     {
@@ -179,11 +181,23 @@ public class PlayerController : MonoBehaviour
                     StealableObject stealableObject = hitCollider.GetComponent<StealableObject>();
                     if (stealableObject != null)
                     {
-                        // Update the gold counter based on the item's name
-                        goldCounter += stealableObject.GetGoldValue();
-                        Destroy(hitCollider.gameObject);
-                        Debug.Log("Collected item: " + stealableObject.gameObject.name);
-                        Debug.Log("Current gold: " + goldCounter);
+                        // Check if the object is a Rock_Bag
+                        if (stealableObject.gameObject.name == "Rock_Bag")
+                        {
+                            // Collect rocks instead of gold
+                            int rocksCollected = stealableObject.GetRockCount();
+                            FindObjectOfType<ThrowProjectiles>().AddRocks(rocksCollected);
+                            Destroy(hitCollider.gameObject);
+                            Debug.Log("Collected Rock_Bag with " + rocksCollected + " rocks.");
+                        }
+                        else // For regular stealable items that have gold values
+                        {
+                            // Update gold counter based on the item's name
+                            goldCounter += stealableObject.GetGoldValue();
+                            Destroy(hitCollider.gameObject);
+                            Debug.Log("Collected item: " + stealableObject.gameObject.name);
+                            Debug.Log("Current gold: " + goldCounter);
+                        }
                     }
                 }
 

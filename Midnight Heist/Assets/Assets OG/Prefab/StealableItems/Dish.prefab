@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3557205546648597107}
   - component: {fileID: 3557205546660142963}
   - component: {fileID: 3557205546650757653}
+  - component: {fileID: 6688577899503527877}
   m_Layer: 0
   m_Name: Dish
   m_TagString: StealableItem
@@ -117,3 +118,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldValue: 15
+  rockCount: 0
+  sphereCollider: {fileID: 6688577899503527877}
+--- !u!135 &6688577899503527877
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3557205546650791091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.0000000023283064, z: 0}

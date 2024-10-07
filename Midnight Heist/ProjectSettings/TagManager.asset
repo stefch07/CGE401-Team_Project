@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Guard
   - PauseMenu
+  - TutorialTriggerBox
   layers:
   - Default
   - TransparentFX

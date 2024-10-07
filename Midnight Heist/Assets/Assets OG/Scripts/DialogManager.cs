@@ -13,7 +13,7 @@ public class DialogManager : MonoBehaviour
 
     // Set these references in the inspector
     public GameObject continueButton;
-    //public GameObject skipButton;
+    public GameObject skipButton;
     public GameObject tavernkeeperButton;
     public GameObject dialogPanel;
 
@@ -31,7 +31,7 @@ public class DialogManager : MonoBehaviour
     void OnEnable()
     {
         continueButton.SetActive(false);
-        //skipButton.SetActive(false);
+        skipButton.SetActive(false);
         StartCoroutine(Type());
     }
 
@@ -44,13 +44,13 @@ public class DialogManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
         continueButton.SetActive(true);
-        //skipButton.SetActive(true);
+        skipButton.SetActive(true);
     }
 
     public void NextSentence()
     {
         continueButton.SetActive(false);
-        //skipButton.SetActive(false);
+        skipButton.SetActive(false);
 
         // Call the talking animation directly on the active NPC
         if (activeNPC != null)
@@ -95,7 +95,7 @@ public class DialogManager : MonoBehaviour
     public void SkipSentences()
     {
         continueButton.SetActive(false);
-        //skipButton.SetActive(false);
+        skipButton.SetActive(false);
         tavernkeeperButton.SetActive(false);
         dialogPanel.SetActive(false);
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028292, g: 0.22571306, b: 0.30692118, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -484,6 +484,7 @@ MonoBehaviour:
   - Ya want more tips? How 'bout ya give me a tip? Jar's right there...
   typingSpeed: 0.015
   continueButton: {fileID: 472765007}
+  skipButton: {fileID: 2024956246}
   tavernkeeperButton: {fileID: 252577404}
   dialogPanel: {fileID: 1401659784}
   initialNPC: {fileID: 312478321}
@@ -4058,6 +4059,7 @@ MonoBehaviour:
   - Neat!
   typingSpeed: 0.015
   continueButton: {fileID: 915327848}
+  skipButton: {fileID: 0}
   tavernkeeperButton: {fileID: 380393179}
   dialogPanel: {fileID: 911690599}
   initialNPC: {fileID: 0}
@@ -13522,7 +13524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2024956247
 RectTransform:
   m_ObjectHideFlags: 0

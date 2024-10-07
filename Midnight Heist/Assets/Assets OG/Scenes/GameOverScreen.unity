@@ -372,8 +372,10 @@ MonoBehaviour:
   - Stay determined!
   typingSpeed: 0.015
   continueButton: {fileID: 325479653}
+  skipButton: {fileID: 325479653}
   tavernkeeperButton: {fileID: 1205987954}
   dialogPanel: {fileID: 1517602010}
+  initialNPC: {fileID: 0}
 --- !u!1 &325479653
 GameObject:
   m_ObjectHideFlags: 0

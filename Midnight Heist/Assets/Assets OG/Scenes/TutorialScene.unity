@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028292, g: 0.22571306, b: 0.30692118, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -486,6 +486,7 @@ MonoBehaviour:
   continueButton: {fileID: 472765007}
   tavernkeeperButton: {fileID: 252577404}
   dialogPanel: {fileID: 1401659784}
+  initialNPC: {fileID: 312478321}
 --- !u!4 &133421070
 Transform:
   m_ObjectHideFlags: 0
@@ -1610,6 +1611,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304001404}
   m_CullTransparentMesh: 1
+--- !u!114 &312478321 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2223009085953409251, guid: 2541240542309b748ab0d9f27e0d8ad9, type: 3}
+  m_PrefabInstance: {fileID: 2223009085656119803}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f1f2e0ccbf34564aca611f0f4a448f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &380393179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,6 +4042,7 @@ MonoBehaviour:
   continueButton: {fileID: 915327848}
   tavernkeeperButton: {fileID: 380393179}
   dialogPanel: {fileID: 911690599}
+  initialNPC: {fileID: 0}
 --- !u!4 &1013974534
 Transform:
   m_ObjectHideFlags: 0
@@ -4916,6 +4929,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogManager: {fileID: 1013974533}
   dialogCanvas: {fileID: 410049882}
+--- !u!114 &1224384281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224384279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f1f2e0ccbf34564aca611f0f4a448f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopDelay: 1.5
 --- !u!54 &1224384282
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14355,6 +14381,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2499072814240890607, guid: 6d9e9ebfef447c741a05f4a8ac74a02d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     - target: {fileID: 8380725770352600213, guid: 6d9e9ebfef447c741a05f4a8ac74a02d, type: 3}
       propertyPath: m_RootOrder
       value: 12

@@ -6,27 +6,32 @@ public class NPCAnimator : MonoBehaviour
 {
     // Reference to the Animator component
     private Animator animator;
-    // Reference to the DialogManager
-    public DialogManager dialogManager;
 
-    // Start is called before the first frame update
+    // Time to wait before stopping the talking animation
+    public float stopDelay = 1.5f;
+
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayTalkingAnimation()
     {
-        // Check if the dialogue box is open
-        if (dialogManager.dialogPanel.activeSelf)
-        {
-            // Start the talking animation if it is not currently playing
-            animator.SetTrigger("talk");
-        }
-        else
-        {
-            animator.SetTrigger("stopTalk");
-        }
+        Debug.Log($"PlayTalkingAnimation called on NPC: {gameObject.name}");
+
+        // Start the talking animation when the continue button is pressed
+        animator.SetTrigger("talk");
+
+        // Start the coroutine to stop talking after the delay
+        StartCoroutine(StopTalkingWithDelay());
+    }
+
+    private IEnumerator StopTalkingWithDelay()
+    {
+        // Wait for the specified delay time
+        yield return new WaitForSeconds(stopDelay);
+
+        // Stop the talking animation
+        animator.SetTrigger("stopTalk");
     }
 }

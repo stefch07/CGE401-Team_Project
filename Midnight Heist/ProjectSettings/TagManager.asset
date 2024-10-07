@@ -9,6 +9,7 @@ TagManager:
   - TutorialTriggerBox
   - StealableItem
   - EquipmentItem
+  - DialogZone
   layers:
   - Default
   - TransparentFX

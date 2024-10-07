@@ -54,6 +54,10 @@ public class PlayerController : MonoBehaviour
     private int goldCounter;
     // Value for keeping track of rocks
     private int rockCounter;
+    
+    private bool isInDialogZone = false;  // Tracks if the player is in the dialog zone
+    private GameObject currentDialogZone;  // Stores reference to the DialogZone's GameObject (with attached Canvas)
+
 
     private void Start()
     {
@@ -71,6 +75,26 @@ public class PlayerController : MonoBehaviour
             pauseMenu = gameManager.GetComponent<PauseMenu>();
         }
     }
+    
+    private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("DialogZone"))
+            {
+                isInDialogZone = true;
+                currentDialogZone = other.gameObject;  // Store the DialogZone GameObject reference
+                Debug.Log("Entered DialogZone.");
+            }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("DialogZone"))
+            {
+                isInDialogZone = false;
+                currentDialogZone = null;  // Clear the reference when exiting the DialogZone
+                Debug.Log("Exited DialogZone.");
+            }
+        }
 
     private void Update()
     {
@@ -204,6 +228,25 @@ public class PlayerController : MonoBehaviour
                 // Will want to add a new if with nested ifs to check for NPCs
             }
         }
+        
+        if (isInDialogZone && Input.GetKeyDown(KeyCode.E))
+                {
+                    // Find the Canvas component attached to the DialogZone's GameObject
+                    Canvas dialogCanvas = currentDialogZone.GetComponentInChildren<Canvas>();
+
+                    if (dialogCanvas != null)
+                    {
+                        // Toggle the canvas's active state
+                        dialogCanvas.gameObject.SetActive(!dialogCanvas.gameObject.activeSelf);
+                        Debug.Log("Toggled dialog canvas.");
+                        // Disable player movement
+                        canMove = false;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("No Canvas found in the DialogZone.");
+                    }
+                }
 
         #endregion
     }

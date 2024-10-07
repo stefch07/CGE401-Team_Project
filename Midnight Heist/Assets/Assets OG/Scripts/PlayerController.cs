@@ -50,6 +50,9 @@ public class PlayerController : MonoBehaviour
     public GameObject gameManager;
     private PauseMenu pauseMenu;
 
+    // Gold value to keep track of collected items
+    private int goldCounter;
+
     private void Start()
     {
         // Initialize the character controller and set the cursor to be locked and invisible.
@@ -160,7 +163,36 @@ public class PlayerController : MonoBehaviour
         }
 
         #endregion
+
+        #region Handles Interacting with Objects (NPCs, Stealable Items, Equipment)
+
+        if (canMove && Input.GetKeyDown(KeyCode.E))
+        {
+            // Check for overlapping colliders, specifically items or NPCs
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1.0f);
+
+            foreach (var hitCollider in hitColliders)
+            {
+                // Check if the collided object is a StealableObject
+                if (hitCollider.CompareTag("StealableItem"))
+                {
+                    StealableObject stealableObject = hitCollider.GetComponent<StealableObject>();
+                    if (stealableObject != null)
+                    {
+                        // Update the gold counter based on the item's name
+                        goldCounter += stealableObject.GetGoldValue();
+                        Destroy(hitCollider.gameObject);
+                        Debug.Log("Collected item: " + stealableObject.gameObject.name);
+                        Debug.Log("Current gold: " + goldCounter);
+                    }
+                }
+
+                // Will want to add a new if with nested ifs to check for NPCs
+            }
+        }
+
+        #endregion
     }
-       
+
 
 }

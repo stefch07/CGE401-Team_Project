@@ -10,6 +10,7 @@ TagManager:
   - StealableItem
   - EquipmentItem
   - DialogZone
+  - Collider
   layers:
   - Default
   - TransparentFX

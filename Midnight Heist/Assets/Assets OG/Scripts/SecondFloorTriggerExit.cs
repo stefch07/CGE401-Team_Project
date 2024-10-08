@@ -15,7 +15,11 @@ public class SecondFloorTriggerExit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            boxCollider.enabled = false;
+            GameObject colliderObject = GameObject.FindGameObjectWithTag("Collider");
+            if (colliderObject != null)
+            {
+                Destroy(colliderObject);
+            }
         }
     }
 }

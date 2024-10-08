@@ -15,6 +15,7 @@ public class SecondFloorTrigger : MonoBehaviour
             Debug.Log($"{gameObject.name} triggered by {other.gameObject.name}.");
             tutorial.EnableExitCollider(); // Notify tutorial manager
         }
+        Destroy(gameObject);
     }
 }
 

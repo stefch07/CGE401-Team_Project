@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ThrowProjectiles : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class ThrowProjectiles : MonoBehaviour
     public float distractionRange = 10f; // Range of the distraction sphere trigger
 
     bool readyToThrow;
+    
+    public TMP_Text textbox;
 
     private void Start()
     {
@@ -56,6 +59,8 @@ public class ThrowProjectiles : MonoBehaviour
         {
             Throw();
         }
+        
+        textbox.text = "Rocks: " + totalThrows;
     }
 
     private void Throw()

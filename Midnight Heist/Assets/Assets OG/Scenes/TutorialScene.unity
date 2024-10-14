@@ -11846,6 +11846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+  textbox: {fileID: 129860911}
 --- !u!4 &1398695773
 Transform:
   m_ObjectHideFlags: 0

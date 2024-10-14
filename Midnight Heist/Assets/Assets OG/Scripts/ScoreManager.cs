@@ -36,8 +36,7 @@ public class ScoreManager : MonoBehaviour
         return currentScore;
     }
     
-    private void Update() {
-        textbox.text = GetScore() + "G";
+    public void Update() {
+        textbox.text = currentScore.ToString() + "G";
     }
-
 }

@@ -11432,8 +11432,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 526, y: 317.49948}
-  m_SizeDelta: {x: -1080, y: -665}
+  m_AnchoredPosition: {x: 517.5, y: 317.49948}
+  m_SizeDelta: {x: -1065, y: -665}
   m_Pivot: {x: 0.49999997, y: 0.5000008}
 --- !u!114 &1321897247
 MonoBehaviour:
@@ -11846,7 +11846,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
-  textbox: {fileID: 129860911}
 --- !u!4 &1398695773
 Transform:
   m_ObjectHideFlags: 0
@@ -23530,6 +23529,10 @@ PrefabInstance:
       propertyPath: gravity
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: textbox
+      value: 
+      objectReference: {fileID: 129860911}
     - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: runSpeed
       value: 7

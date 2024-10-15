@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
         
-        textbox.text = goldCounter + "G";
+        textbox.text = goldCounter + "G/218G";
 
         #region Handles Running and Crouching
         // Forward and right movement are calculated based on the player's current facing direction.

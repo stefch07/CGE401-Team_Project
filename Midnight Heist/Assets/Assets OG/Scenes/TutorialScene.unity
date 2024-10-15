@@ -1189,7 +1189,7 @@ MonoBehaviour:
   - What? Not sure where to go? Why don't ya start upstairs?
   - Oh! And ya can move with the arrow keys. And yer mouse can help ya look 'round
     my bar. Is that too much for ya?
-  - Ya want more tips? How 'bout ya give me a tip? Jar's right there...
+  - Ya want more tips? How 'bout ya give me a tip? Cup's right there...
   typingSpeed: 0.015
   continueButton: {fileID: 472765007}
   skipButton: {fileID: 2024956246}

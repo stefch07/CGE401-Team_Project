@@ -9,8 +9,6 @@ public class ScoreManager : MonoBehaviour
     public Text scoreText;
     private int currentScore = 0;
     
-    public TMP_Text textbox;
-    
     public void AddScore(int scoreToAdd)
     {
         currentScore += scoreToAdd;
@@ -34,9 +32,5 @@ public class ScoreManager : MonoBehaviour
     public int GetScore()
     {
         return currentScore;
-    }
-    
-    public void Update() {
-        textbox.text = currentScore.ToString() + "G";
     }
 }

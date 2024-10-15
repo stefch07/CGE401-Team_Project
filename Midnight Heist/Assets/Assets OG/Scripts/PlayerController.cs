@@ -3,6 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -57,8 +58,9 @@ public class PlayerController : MonoBehaviour
     
     private bool isInDialogZone = false;  // Tracks if the player is in the dialog zone
     private GameObject currentDialogZone;  // Stores reference to the DialogZone's GameObject (with attached Canvas)
-
-
+    
+    public TMP_Text textbox;
+    
     private void Start()
     {
         // Initialize the character controller and set the cursor to be locked and invisible.
@@ -109,6 +111,8 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
+        
+        textbox.text = goldCounter + "G";
 
         #region Handles Running and Crouching
         // Forward and right movement are calculated based on the player's current facing direction.

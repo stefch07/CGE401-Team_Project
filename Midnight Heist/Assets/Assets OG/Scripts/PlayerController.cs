@@ -64,6 +64,8 @@ public class PlayerController : MonoBehaviour
     
     public GameObject panel;
     
+    public static bool hasDiedOrWon = false;
+    
     private void Start()
     {
         // Initialize the character controller and set the cursor to be locked and invisible.

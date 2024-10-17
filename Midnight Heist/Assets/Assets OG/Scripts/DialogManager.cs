@@ -44,7 +44,12 @@ public class DialogManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
         continueButton.SetActive(true);
-        skipButton.SetActive(true);
+        if (PlayerController.hasDiedOrWon) {
+            skipButton.SetActive(true);
+        }
+        else {
+            skipButton.SetActive(false);
+        }
     }
 
     public void NextSentence()

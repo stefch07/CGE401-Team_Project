@@ -18,6 +18,8 @@ public class WinScreen : MonoBehaviour
         panelB.SetActive(false);
         panelA.SetActive(false);
         panelS.SetActive(false);
+        
+        PlayerController.hasDiedOrWon = true;
     }
     
     private void Update() {

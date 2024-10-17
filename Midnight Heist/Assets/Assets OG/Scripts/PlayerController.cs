@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
     private PauseMenu pauseMenu;
 
     // Gold value to keep track of collected items
-    private int goldCounter;
+    public static int goldCounter;
     // Value for keeping track of rocks
     private int rockCounter;
     

@@ -3,6 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 [RequireComponent(typeof(CharacterController))]
@@ -61,6 +62,8 @@ public class PlayerController : MonoBehaviour
     
     public TMP_Text textbox;
     
+    public GameObject panel;
+    
     private void Start()
     {
         // Initialize the character controller and set the cursor to be locked and invisible.
@@ -76,6 +79,8 @@ public class PlayerController : MonoBehaviour
         {
             pauseMenu = gameManager.GetComponent<PauseMenu>();
         }
+        
+        panel.SetActive(false);
     }
     
     private void OnTriggerEnter(Collider other)
@@ -105,11 +110,13 @@ public class PlayerController : MonoBehaviour
             canMove = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            panel.SetActive(false);
         }
         else {
             canMove = true;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+            panel.SetActive(true);
         }
         
         textbox.text = goldCounter + "G/218G";

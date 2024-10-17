@@ -81,6 +81,8 @@ public class PlayerController : MonoBehaviour
         }
         
         panel.SetActive(false);
+        
+        goldCounter = 0;
     }
     
     private void OnTriggerEnter(Collider other)

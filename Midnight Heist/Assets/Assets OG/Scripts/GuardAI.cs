@@ -63,18 +63,7 @@ public class GuardAI : MonoBehaviour
         // If the guard "heard" a rock hit the wall or floor
         else if (investigatingSound && agent.isOnNavMesh)
         {
-            // Turn towards the sound source
-            Vector3 direction = (soundSource - transform.position).normalized;
-            Quaternion lookRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
-
-            agent.SetDestination(soundSource);
-
-            if (Vector3.Distance(transform.position, soundSource) < 1f)
-            {
-                investigatingSound = false;
-                agent.ResetPath();
-            }
+            InvestigateSoundLocation();
         }
         else
         {
@@ -83,6 +72,24 @@ public class GuardAI : MonoBehaviour
             {
                 agent.ResetPath();
             }
+        }
+    }
+
+    private void InvestigateSoundLocation()
+    {
+        NavMeshPath path = new NavMeshPath();
+        agent.CalculatePath(soundSource, path);
+
+        // If valid path to where rock landed, allow guard to go therre
+        if (path.status == NavMeshPathStatus.PathComplete)
+        {
+            agent.SetDestination(soundSource);
+        }
+        // Otherwise, if path is not valid, meaning no way to get there, do not investigate sound
+        else
+        {
+            investigatingSound = false;
+            agent.ResetPath();
         }
     }
 

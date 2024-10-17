@@ -35,7 +35,7 @@ public class WinScreen : MonoBehaviour
         else if (PlayerController.goldCounter < 150) {
             panelB.SetActive(true);
         }
-        else if (PlayerController.goldCounter < 218) {
+        else if (PlayerController.goldCounter < 230) {
             panelA.SetActive(true);
         }
         else {

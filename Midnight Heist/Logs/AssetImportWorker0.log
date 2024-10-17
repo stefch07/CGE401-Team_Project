@@ -850,3 +850,103 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3805.978200 seconds.
+  path: Assets/Assets OG/Scripts/LevelSelector.cs
+  artifactKey: Guid(f3cea07bf8f554520937db93b11545c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/Scripts/LevelSelector.cs using Guid(f3cea07bf8f554520937db93b11545c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e3d5f01971a7cd3100af7d1bb1d362') in 0.131258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.991658 seconds.
+  path: Assets/Assets OG/Scripts/ScoreManager.cs
+  artifactKey: Guid(e53917af96081904db28c1291b62198c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/Scripts/ScoreManager.cs using Guid(e53917af96081904db28c1291b62198c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d81a0bfd516700dde252a78f8967b76') in 0.002479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.106160 seconds.
+  path: Assets/Assets OG/Scripts/ThrowProjectiles.cs
+  artifactKey: Guid(7a2b894cd60354d45b86e7c5131b0eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/Scripts/ThrowProjectiles.cs using Guid(7a2b894cd60354d45b86e7c5131b0eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd6f9fc80282a36f91e9d4d0167b161') in 0.002530 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002115 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2024-10-16 20:44:45.053 Unity[60726:1576733] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fd98f48c3e0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.361 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2367ms)
+		BeginReloadAssembly (513ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (55ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (216ms)
+		EndReloadAssembly (1769ms)
+			LoadAssemblies (442ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (248ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (966ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (200ms)
+				ProcessInitializeOnLoadAttributes (704ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1375 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.4 MB.
+System memory in use after: 139.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1948.
+Total: 8.416458 ms (FindLiveObjects: 0.459166 ms CreateObjectMapping: 0.089375 ms MarkObjects: 7.685125 ms  DeleteObjects: 0.181458 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 94.568566 seconds.
+  path: Assets/Assets OG/MainMenuWallpaper
+  artifactKey: Guid(f862785c0712444959e037b7959b379f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/MainMenuWallpaper using Guid(f862785c0712444959e037b7959b379f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cc57cc25be5801c3c5063162efc893') in 0.040784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.255707 seconds.
+  path: Assets/Assets OG/MainMenuWallpaper/GreenStar.png
+  artifactKey: Guid(48f3261e718eb4d0684642208c1d6080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/MainMenuWallpaper/GreenStar.png using Guid(48f3261e718eb4d0684642208c1d6080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc5357cb97386dc9a6f7a7066d95e89') in 0.117507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.093075 seconds.
+  path: Assets/Assets OG/MainMenuWallpaper/white-star-icon-13227.png
+  artifactKey: Guid(46269af16d62a4c0fb52092c8a3bbc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/MainMenuWallpaper/white-star-icon-13227.png using Guid(46269af16d62a4c0fb52092c8a3bbc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb2e42a1c61c1caffe00a5a4d20464a4') in 0.014510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.135180 seconds.
+  path: Assets/Assets OG/MainMenuWallpaper/white-star-icon-13227.png
+  artifactKey: Guid(46269af16d62a4c0fb52092c8a3bbc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/MainMenuWallpaper/white-star-icon-13227.png using Guid(46269af16d62a4c0fb52092c8a3bbc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923a83bd2afd61c0ac1156df4f49aa1c') in 0.105482 seconds 

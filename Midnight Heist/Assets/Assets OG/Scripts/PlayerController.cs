@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
             panel.SetActive(true);
         }
         
-        textbox.text = goldCounter + "G/218G";
+        textbox.text = goldCounter + "G/230G";
 
         #region Handles Running and Crouching
         // Forward and right movement are calculated based on the player's current facing direction.

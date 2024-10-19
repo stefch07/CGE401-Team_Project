@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Assets OG/Scenes/WinScene.unity
     guid: 7e68221148ce94e1cad167e076832eff
   - enabled: 1
-    path: Assets/Assets OG/Scenes/Dungeon.unity
-    guid: 0cb4aab164a7e4a2da6de73e708d25a5
+    path: Assets/Assets OG/Scenes/castleDemo 1.unity
+    guid: 6355c6ba1927541aa814123d8ce7099f
   m_configObjects: {}

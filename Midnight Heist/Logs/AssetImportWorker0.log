@@ -234,3 +234,15 @@ Received Import Request.
   path: Assets/Assets OG/FinalLevel.prefab
   artifactKey: Guid(6c217cada0dbe43ffb7191af0e2fc2f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Assets OG/FinalLevel.prefab using Guid(6c217cada0dbe43ffb7191af0e2fc2f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98c56539d1bdf559f88794f9563b9c4') in 0.076868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 620.908149 seconds.
+  path: Assets/Assets OG/Scenes/Dungeon.unity
+  artifactKey: Guid(0f30b31df1c21274da0aa193ec9e46e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/Scenes/Dungeon.unity using Guid(0f30b31df1c21274da0aa193ec9e46e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13181e9eab419e824e27fff787ed7564') in 0.001447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.230081 seconds.
+  path: Assets/Assets OG/Prefab/Player.prefab
+  artifactKey: Guid(97bceef0799074d63b4e19ccd1e5d4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets OG/Prefab/Player.prefab using Guid(97bceef0799074d63b4e19ccd1e5d4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b12eced708b8353b52fb20943c433a') in 0.038820 seconds 

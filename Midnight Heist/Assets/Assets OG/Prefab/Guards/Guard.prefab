@@ -1570,6 +1570,8 @@ MonoBehaviour:
   maxDistance: 15
   angle: 135
   visualize: 1
+  standingHeight: 2
+  crouchingHeight: 1
 --- !u!114 &1832950328555397094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4827,11 +4829,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef0da04d00d6c4479ca73b01d13f09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 7936369718384202190, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+  player: {fileID: 4948410136564952836, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+  standingHeight: 2
+  crouchingHeight: 1
   sightRange: 10
-  stopChasingDistance: 5
+  stopChasingDistance: 10
   movementSpeed: 3.5
-  turnSpeed: 25
+  turnSpeed: 30
   guardChest: {fileID: 2985088206167739584}
 --- !u!114 &5433332281989871097
 MonoBehaviour:

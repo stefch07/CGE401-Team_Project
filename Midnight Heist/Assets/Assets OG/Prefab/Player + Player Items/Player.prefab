@@ -72,8 +72,8 @@ MonoBehaviour:
   jumpPower: 7
   gravity: 25
   crouchSpeed: 2.5
-  crouchHeight: 1
-  standingHeight: 2
+  crouchHeight: 0.5
+  standingHeight: 1.5
   crouchScaleFactor: 0.75
   crouchCenter: {x: 0, y: -0.5, z: 0}
   standingCenter: {x: 0, y: 0, z: 0}
@@ -84,6 +84,8 @@ MonoBehaviour:
   canMove: 1
   dialogManager: {fileID: 0}
   gameManager: {fileID: 0}
+  textbox: {fileID: 0}
+  panel: {fileID: 0}
 --- !u!114 &3066932624050126537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +109,7 @@ MonoBehaviour:
   throwForce: 60
   throwUpwardForce: 0
   distractionRange: 10
+  textbox: {fileID: 0}
 --- !u!1 &4948410135887585607
 GameObject:
   m_ObjectHideFlags: 0

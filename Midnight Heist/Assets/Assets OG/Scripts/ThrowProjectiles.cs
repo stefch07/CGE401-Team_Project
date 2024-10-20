@@ -60,7 +60,7 @@ public class ThrowProjectiles : MonoBehaviour
             Throw();
         }
         
-        textbox.text = "Rocks: " + totalThrows;
+        textbox.text = "× " + totalThrows;
     }
 
     private void Throw()

@@ -48,6 +48,9 @@ public class PlayerController : MonoBehaviour
     // DialogManager reference
     public DialogManager dialogManager;
 
+    // GateDialogManager reference
+    public GateDialogManager gateDialogManager;
+
     // GameManager Reference + PauseMenu Reference
     public GameObject gameManager;
     private PauseMenu pauseMenu;
@@ -85,8 +88,18 @@ public class PlayerController : MonoBehaviour
         panel.SetActive(false);
         
         goldCounter = 0;
+
+        RestartPlayerState();
+       
     }
-    
+
+    private void RestartPlayerState()
+    {
+        moveDirection = Vector3.zero; // Reset movement direction
+        canMove = true; // Allow movement
+        isCrouching = false; // Reset crouching state
+
+    }
     private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("DialogZone"))

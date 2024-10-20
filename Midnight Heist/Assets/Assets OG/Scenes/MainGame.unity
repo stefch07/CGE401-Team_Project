@@ -3098,6 +3098,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062997316}
   m_CullTransparentMesh: 1
+--- !u!1 &1143082390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143082392}
+  - component: {fileID: 1143082391}
+  m_Layer: 0
+  m_Name: GameManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1143082391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143082390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602359e2d11944bc5b8ecdcd3d98f6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 192851433}
+--- !u!4 &1143082392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143082390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 554.1854, y: 9.01954, z: 392.883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1219307272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3105,6 +3149,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 79700895}
+    - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: textbox
+      value: 
+      objectReference: {fileID: 745504084}
+    - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1143082390}
+    - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: gateDialogManager
+      value: 
+      objectReference: {fileID: 104574623}
+    - target: {fileID: 3066932624050126537, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: textbox
+      value: 
+      objectReference: {fileID: 1062997318}
+    - target: {fileID: 3066932624050126537, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1143082390}
     - target: {fileID: 4948410136336396881, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4531,7 +4603,7 @@ GameObject:
   - component: {fileID: 1645816521}
   - component: {fileID: 1645816520}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Gold Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5070,7 +5142,7 @@ GameObject:
   - component: {fileID: 1782142682}
   - component: {fileID: 1782142681}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Rock Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

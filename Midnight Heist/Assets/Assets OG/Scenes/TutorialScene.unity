@@ -13869,7 +13869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5927243195033420915, guid: 21211448c25fd43259db23aacf11a294, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.84
+      value: -0.884
       objectReference: {fileID: 0}
     - target: {fileID: 5927243195033420915, guid: 21211448c25fd43259db23aacf11a294, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14749,7 +14749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a6eff48bf3748b8bff2ce084cce775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 4
+  sceneBuildIndex: 2
 --- !u!65 &1661202564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18782,8 +18782,16 @@ PrefabInstance:
       value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: lookSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: walkSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: lookXLimit
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 3066932624050126534, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: gameManager

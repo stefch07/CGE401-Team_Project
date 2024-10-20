@@ -4832,7 +4832,7 @@ MonoBehaviour:
   player: {fileID: 4948410136564952836, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
   standingHeight: 2
   crouchingHeight: 1
-  sightRange: 10
+  sightRange: 0
   stopChasingDistance: 10
   movementSpeed: 3.5
   turnSpeed: 30

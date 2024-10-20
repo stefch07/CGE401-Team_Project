@@ -27,9 +27,19 @@ public class GateScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isShowingMessage)
+        // Check if the object colliding has the "Gate" tag
+        if (other.CompareTag("Gate") && !isShowingMessage)
         {
             StartCoroutine(TypeMessage(message));
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        // Hide dialogue if the player exits the trigger while the message is displayed
+        if (other.CompareTag("Gate") && isShowingMessage)
+        {
+            HideDialogue();
         }
     }
 
@@ -56,9 +66,14 @@ public class GateScript : MonoBehaviour
 
     void OnNoClicked()
     {
+        HideDialogue();
+    }
+
+    private void HideDialogue()
+    {
         dialoguePanel.SetActive(false);
         yesButton.gameObject.SetActive(false);
         noButton.gameObject.SetActive(false);
-        isShowingMessage = false;
+        isShowingMessage = false; // Resetting the message state
     }
 }

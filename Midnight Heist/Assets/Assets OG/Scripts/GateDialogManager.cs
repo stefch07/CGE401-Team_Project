@@ -58,7 +58,7 @@ public class GateDialogManager : MonoBehaviour
 
     void OnYesClicked()
     {
-        SceneManager.LoadScene(5);  
+        SceneManager.LoadScene(4);  
     }
 
     void OnNoClicked()

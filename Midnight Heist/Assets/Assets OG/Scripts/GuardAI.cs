@@ -15,15 +15,22 @@ public class GuardAI : MonoBehaviour
     public float sightRange = 15f;     // The range at which the guard can see the player
     public float stopChasingDistance = 20f;  // Distance at which the guard will stop chasing
     public float movementSpeed = 3.5f; // Guard movement speed
+    public float returnSpeed = 2f; // Speed guards use to return to their original position
     public float turnSpeed = 5f;       // Controls how fast guards turn in reaction to sound
+    public float minDistanceBetweenGuards = 2f; // Minimum distance between guards when investigating sound
 
     public Transform guardChest;       // Reference to the guard's chest position
 
+    private static List<GuardAI> activeGuards = new List<GuardAI>();
     private NavMeshAgent agent;        // Reference to the NavMeshAgent component
     private bool isPlayerInSight;      // Boolean to check if the player is in sight
     private bool isPlayerInRange;      // Boolean to check if the player is in range to stop chasing
     private Vector3 soundSource;       // Stores the sound source position of rocks that impact walls/floors
     private bool investigatingSound;   // Checks if the guard is investigating a sound
+    public float investigationTime = 5f; // Time in seconds a guard will investigate sound before stopping
+    private Vector3 originalPosition;
+    private bool returningToOriginalPosition = false; // Flag to track if returning to original position
+    private static bool investigationComplete = false;
 
     private bool isCrouching;          // Tracks if the player is crouching
 
@@ -38,6 +45,13 @@ public class GuardAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         // Set the initial movement speed
         agent.speed = movementSpeed;
+        originalPosition = transform.position; // Set original position for guard
+        activeGuards.Add(this); // Add this guard to the list of active guards in the scene
+    }
+
+    private void OnDestroy()
+    {
+        activeGuards.Remove(this); // Remove guard from the list when destroyed
     }
 
     void Update()
@@ -54,43 +68,145 @@ public class GuardAI : MonoBehaviour
         // Check if the player is within the stop chasing range
         isPlayerInRange = distanceToPlayer <= stopChasingDistance;
 
-        // Handle movement
-        if (isPlayerInSight && isPlayerInRange && agent.isOnNavMesh)  // Check if agent is on NavMesh
+        // Handle chasing the player if in sight and in range
+        if (isPlayerInSight && isPlayerInRange && agent.isOnNavMesh)
         {
-            // Move towards the player
             agent.SetDestination(player.position);
         }
-        // If the guard "heard" a rock hit the wall or floor
+        // Handle sound investigation
         else if (investigatingSound && agent.isOnNavMesh)
         {
-            InvestigateSoundLocation();
-        }
-        else
-        {
-            // Stay still
-            if (agent.isOnNavMesh)
+            // Check if another guard is closer to the sound source
+            GuardAI closestGuard = GetClosestGuardToSound();
+            if (closestGuard != null && closestGuard != this && Vector3.Distance(closestGuard.transform.position, soundSource) < minDistanceBetweenGuards)
             {
+                // If another guard is closer, return to the original position
+                ReturnToOriginalPosition();
+            }
+            else
+            {
+                // If this guard is the closest or no one is close enough, investigate the sound
+                InvestigateSoundLocation();
+            }
+        }
+        // Handle returning to the original position if no sound or player in sight
+        else if (returningToOriginalPosition && agent.isOnNavMesh)
+        {
+            // If the guard is near their original position, stop and reset speed
+            if (Vector3.Distance(transform.position, originalPosition) < 0.5f)
+            {
+                agent.speed = movementSpeed;
+                returningToOriginalPosition = false;
                 agent.ResetPath();
             }
         }
+        // Reset path when idle
+        else if (agent.isOnNavMesh)
+        {
+            agent.ResetPath();
+        }
+    }
+
+    private GuardAI GetClosestGuardToSound()
+    {
+        GuardAI closestGuard = null;
+        float closestDistance = float.MaxValue;
+
+        foreach (GuardAI guard in activeGuards)
+        {
+            float distance = Vector3.Distance(guard.transform.position, soundSource);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestGuard = guard;
+            }
+        }
+
+        return closestGuard;
     }
 
     private void InvestigateSoundLocation()
     {
-        NavMeshPath path = new NavMeshPath();
-        agent.CalculatePath(soundSource, path);
+        if (investigationComplete)
+        {
+            // Another guard has already completed the investigation
+            ReturnToOriginalPosition();
+            return;
+        }
 
-        // If valid path to where rock landed, allow guard to go therre
-        if (path.status == NavMeshPathStatus.PathComplete)
+        // Set the destination to the sound source, rather than just calculating a path
+        if (agent.isOnNavMesh)
         {
-            agent.SetDestination(soundSource);
+            agent.SetDestination(soundSource);  // Ensure guard moves to the sound source
         }
-        // Otherwise, if path is not valid, meaning no way to get there, do not investigate sound
-        else
+
+        // Check if the guard is close enough to the sound source (within 0.5f range)
+        if (Vector3.Distance(transform.position, soundSource) <= 0.5f && agent.remainingDistance <= 0.5f)
         {
-            investigatingSound = false;
+            StartCoroutine(LookAroundAndReturn());
+        }
+    }
+
+    private IEnumerator LookAroundAndReturn()
+    {
+        // Pause guard movement
+        agent.ResetPath();
+        investigatingSound = false;  // Stop investigating after arriving
+
+        float rotateSpeed = 45f;
+        float investigationDuration = 2f;
+
+        // Rotate in place for the given duration
+        for (float time = 0; time < investigationDuration; time += Time.deltaTime)
+        {
+            transform.Rotate(0, rotateSpeed * Time.deltaTime, 0);
+            yield return null;
+        }
+
+        // Mark the investigation as complete once this guard finishes.
+        investigationComplete = true;
+
+        // After looking around, return to the original position
+        ReturnToOriginalPosition();
+    }
+
+    private void ReturnToOriginalPosition()
+    {
+        if (agent.isOnNavMesh)
+        {
+            agent.speed = returnSpeed;
+            agent.SetDestination(originalPosition);
+            returningToOriginalPosition = true;
+        }
+
+        // Once guard reaches their original position
+        if (Vector3.Distance(transform.position, originalPosition) < 0.5f)
+        {
+            agent.speed = movementSpeed;
+            returningToOriginalPosition = false;
             agent.ResetPath();
+
+            // If all guards are back at their spots, reset the investigation complete flag
+            if (AreAllGuardsAtOriginalPosition())
+            {
+                investigationComplete = false; // Allow future investigations
+            }
         }
+    }
+
+    private bool AreAllGuardsAtOriginalPosition()
+    {
+        GuardAI[] allGuards = FindObjectsOfType<GuardAI>();
+
+        foreach (GuardAI guard in allGuards)
+        {
+            if (Vector3.Distance(guard.transform.position, guard.originalPosition) > 0.5f)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     // Returns true if the guard can see any part of the player

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028292, g: 0.22571306, b: 0.30692118, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1669,7 +1669,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &616728287
 PrefabInstance:
@@ -4323,16 +4323,48 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8190100172607750164, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 152348261}
+    - target: {fileID: 8190100172607750164, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: canMove
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8190100172607750164, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: textbox
+      value: 
+      objectReference: {fileID: 27029430}
+    - target: {fileID: 8190100172607750164, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1557671154}
+    - target: {fileID: 8190100172607750164, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 1918424702}
+    - target: {fileID: 8190100172607750165, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: textbox
+      value: 
+      objectReference: {fileID: 27029430}
+    - target: {fileID: 8190100172607750165, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1557671154}
+    - target: {fileID: 8190100172607750165, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 1918424702}
     - target: {fileID: 8190100172607750166, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8190100172607750251, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8190100173229395473, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8190100173229395473, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4340,11 +4372,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8190100173229395473, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.08
+      value: 7.201
       objectReference: {fileID: 0}
     - target: {fileID: 8190100173229395473, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 370.81
+      value: 368.845
       objectReference: {fileID: 0}
     - target: {fileID: 8190100173229395473, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: m_LocalRotation.w

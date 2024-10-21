@@ -120,22 +120,36 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+    private bool previousPausedState = false;
+    private bool previousDialogState = false;
+
     private void Update()
     {
-        // Disables player movement and enables mouse movement/visibility if dialogPanel is active
-        if (dialogManager.dialogPanel.activeSelf || PauseMenu.isPaused) {
-            canMove = false;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            panel.SetActive(false);
+        bool isDialogActive = dialogManager.dialogPanel.activeSelf;
+        bool isPaused = PauseMenu.isPaused;
+
+        // Update canMove and cursor states only when dialog or pause state changes
+        if (isDialogActive != previousDialogState || isPaused != previousPausedState)
+        {
+            if (isDialogActive || isPaused)
+            {
+                canMove = false;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                panel.SetActive(false);  // Disable panel
+            }
+            else
+            {
+                canMove = true;
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                panel.SetActive(true);  // Enable panel
+            }
+
+            previousDialogState = isDialogActive;
+            previousPausedState = isPaused;
         }
-        else {
-            canMove = true;
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            panel.SetActive(true);
-        }
-        
+
         textbox.text = goldCounter + "G/230G";
 
         #region Handles Running and Crouching
@@ -253,7 +267,6 @@ public class PlayerController : MonoBehaviour
                     }
                 }
 
-                // Will want to add a new if with nested ifs to check for NPCs
             }
         }
         

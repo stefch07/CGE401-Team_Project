@@ -69,6 +69,9 @@ public class PlayerController : MonoBehaviour
     
     public static bool hasDiedOrWon = false;
     
+    public GameObject notifPanel;
+    private bool isPanelActive = false;
+    
     private void Start()
     {
         // Initialize the character controller and set the cursor to be locked and invisible.
@@ -238,6 +241,7 @@ public class PlayerController : MonoBehaviour
         {
             // Check for overlapping colliders, specifically items or NPCs
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1.0f);
+            bool itemCollected = false;
 
             foreach (var hitCollider in hitColliders)
             {
@@ -247,6 +251,8 @@ public class PlayerController : MonoBehaviour
                     StealableObject stealableObject = hitCollider.GetComponent<StealableObject>();
                     if (stealableObject != null)
                     {
+                        itemCollected = true;
+                        
                         // Check if the object is a Rock_Bag
                         if (stealableObject.gameObject.name == "Rock_Bag")
                         {
@@ -266,7 +272,20 @@ public class PlayerController : MonoBehaviour
                         }
                     }
                 }
-
+            }
+            if (!itemCollected) {
+                StartCoroutine(ShowNotificationPanel());
+            }
+        }
+        
+        IEnumerator ShowNotificationPanel() {
+            if (!isPanelActive)
+            {
+                isPanelActive = true;
+                notifPanel.SetActive(true);
+                yield return new WaitForSeconds(2);
+                notifPanel.SetActive(false);
+                isPanelActive = false;
             }
         }
         

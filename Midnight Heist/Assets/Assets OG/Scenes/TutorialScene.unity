@@ -5882,7 +5882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7254902, g: 0.6862745, b: 0.09803922, a: 1}
+  m_Color: {r: 0.8627451, g: 0.8627451, b: 0.39215687, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11499,6 +11499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1339109043}
   - component: {fileID: 1339109044}
+  - component: {fileID: 1339109045}
   m_Layer: 5
   m_Name: GoldBar
   m_TagString: Untagged
@@ -11579,6 +11580,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1339109045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339109042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22903839367b543e4993664b732bd398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldBar: {fileID: 1339109044}
+  maxGold: 230
 --- !u!4 &1347527403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7815759852732050090, guid: 64dae4a2f6ce5044f9a3a8dcae666bbc, type: 3}

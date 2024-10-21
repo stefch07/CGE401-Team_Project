@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1470
     height: 723
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 708, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 21217
+  controlID: 26053
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,8 +46,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 44
-    y: 508.5
+    x: 115
+    y: 482.5
     width: 616.5
     height: 314.5
   m_ViewDataDictionary: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 21197
+  controlID: 25942
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,8 +191,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 44
-    y: 121
+    x: 115
+    y: 95
     width: 616.5
     height: 366.5
   m_ViewDataDictionary: {fileID: 0}
@@ -447,7 +447,7 @@ MonoBehaviour:
   - {fileID: 12}
   - {fileID: 13}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -80316
+  m_LastSelectedObjectID: 82198
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -496,10 +496,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 458.4
-    width: 643.8
-    height: 317
+    x: 256
+    y: 488.5
+    width: 616.5
+    height: 314.5
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &14
 MonoBehaviour:
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 21218
+  controlID: 26054
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -572,8 +572,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 661.5
-    y: 121
+    x: 732.5
+    y: 95
     width: 387.5
     height: 341.5
   m_ViewDataDictionary: {fileID: 0}
@@ -653,8 +653,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 661.5
-    y: 483.5
+    x: 732.5
+    y: 457.5
     width: 387.5
     height: 339.5
   m_ViewDataDictionary: {fileID: 0}
@@ -671,22 +671,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets OG/MainMenuWallpaper
+    - Assets/Assets OG/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Assets OG/MainMenuWallpaper
+  - Assets/Assets OG/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Midnight
     Heist
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 37.000427}
-    m_SelectedIDs: 8a700000
-    m_LastClickedID: 28810
+    scrollPos: {x: 0, y: 101.99982}
+    m_SelectedIDs: 9c700000
+    m_LastClickedID: 28828
     m_ExpandedIDs: 0000000056700000587000005a7000005c7000005e70000060700000627000006470000066700000687000006a7000006c7000006e70000070700000727000007470000076700000787000007a7000007c7000007e700000aa700000ae7000009c97000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -715,7 +715,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000056700000587000005a7000005c7000005e70000060700000627000006470000066700000687000006a7000006c7000006e70000070700000727000007470000076700000787000007a7000007c7000007e700000aa7000009c97000000ca9a3b
+    m_ExpandedIDs: 0000000056700000587000005a7000005c7000005e70000060700000627000006470000066700000687000006a7000006c7000006e70000070700000727000007470000076700000787000007a7000007c7000007e700000aa700000ae7000009c97000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -740,24 +740,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 16410100
-    m_LastClickedInstanceID: 82198
+    m_SelectedInstanceIDs: 4693feff
+    m_LastClickedInstanceID: -93370
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000050430000f0630000527100005c54000028570000e65600002056000088560000c47a0000004e0000ce5e00004452000040520000825d0000a05d0000a25700004e430000e24200002c480000d44d0000605900004482000004810000568200009497000022990000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: pngkit_chikorita-png_3474131
-      m_OriginalName: pngkit_chikorita-png_3474131
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 82502
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 17}
     m_CreateAssetUtility:
@@ -913,8 +913,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1051
-    y: 121
+    x: 1122
+    y: 95
     width: 462
     height: 702
   m_ViewDataDictionary: {fileID: 0}
@@ -924,7 +924,7 @@ MonoBehaviour:
     m_CachedPref: 203
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 82198
+  m_LastInspectedObjectInstanceID: -93370
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:

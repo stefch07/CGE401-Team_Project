@@ -4832,11 +4832,14 @@ MonoBehaviour:
   player: {fileID: 4948410136564952836, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
   standingHeight: 2
   crouchingHeight: 1
-  sightRange: 0
+  sightRange: 5
   stopChasingDistance: 10
-  movementSpeed: 3.5
+  movementSpeed: 4
+  returnSpeed: 2
   turnSpeed: 30
+  minDistanceBetweenGuards: 2
   guardChest: {fileID: 2985088206167739584}
+  investigationTime: 5
 --- !u!114 &5433332281989871097
 MonoBehaviour:
   m_ObjectHideFlags: 0

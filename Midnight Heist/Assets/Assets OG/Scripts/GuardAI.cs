@@ -16,7 +16,7 @@ public class GuardAI : MonoBehaviour
     public float stopChasingDistance = 20f;  // Distance at which the guard will stop chasing
     public float movementSpeed = 3.5f; // Guard movement speed
     public float returnSpeed = 2f; // Speed guards use to return to their original position
-    public float turnSpeed = 5f;       // Controls how fast guards turn in reaction to sound
+    public float turnSpeed = 30f;       // Controls how fast guards turn in reaction to sound
     public float minDistanceBetweenGuards = 2f; // Minimum distance between guards when investigating sound
 
     public Transform guardChest;       // Reference to the guard's chest position
@@ -30,7 +30,7 @@ public class GuardAI : MonoBehaviour
     public float investigationTime = 5f; // Time in seconds a guard will investigate sound before stopping
     private Vector3 originalPosition;
     private bool returningToOriginalPosition = false; // Flag to track if returning to original position
-    private static bool investigationComplete = false;
+    private bool investigationComplete = false;
 
     private bool isCrouching;          // Tracks if the player is crouching
 
@@ -76,17 +76,21 @@ public class GuardAI : MonoBehaviour
         // Handle sound investigation
         else if (investigatingSound && agent.isOnNavMesh)
         {
-            // Check if another guard is closer to the sound source
-            GuardAI closestGuard = GetClosestGuardToSound();
-            if (closestGuard != null && closestGuard != this && Vector3.Distance(closestGuard.transform.position, soundSource) < minDistanceBetweenGuards)
+            // This guard should still investigate the sound if it is not currently returning
+            if (!returningToOriginalPosition)
             {
-                // If another guard is closer, return to the original position
-                ReturnToOriginalPosition();
-            }
-            else
-            {
-                // If this guard is the closest or no one is close enough, investigate the sound
-                InvestigateSoundLocation();
+                // Check if another guard is closer to the sound source
+                GuardAI closestGuard = GetClosestGuardToSound();
+                if (closestGuard != null && closestGuard != this && Vector3.Distance(closestGuard.transform.position, soundSource) < minDistanceBetweenGuards)
+                {
+                    // If another guard is closer, return to the original position
+                    ReturnToOriginalPosition();
+                }
+                else
+                {
+                    // If this guard is the closest or no one is close enough, investigate the sound
+                    InvestigateSoundLocation();
+                }
             }
         }
         // Handle returning to the original position if no sound or player in sight
@@ -186,6 +190,9 @@ public class GuardAI : MonoBehaviour
             returningToOriginalPosition = false;
             agent.ResetPath();
 
+            // This guard is done investigating
+            investigatingSound = false;
+
             // If all guards are back at their spots, reset the investigation complete flag
             if (AreAllGuardsAtOriginalPosition())
             {
@@ -218,6 +225,16 @@ public class GuardAI : MonoBehaviour
         // Calculate approximate positions for the player's "head" and "feet" based on the height
         Vector3 playerHead = player.position + Vector3.up * (capsuleHeight / 2);
         Vector3 playerFeet = player.position - Vector3.up * (capsuleHeight / 2);
+
+        // Check if the player is behind the guard
+        Vector3 guardToPlayer = player.position - transform.position;
+        float dotProduct = Vector3.Dot(guardToPlayer.normalized, transform.forward);
+
+        // If the dot product is negative, the player is behind the guard (angle > 90 degrees)
+        if (dotProduct < 0)
+        {
+            return false; // Player is behind the guard, cannot be seen
+        }
 
         // Cast rays from the guard's chest towards the player's center, head, and feet
         bool canSeeCenter = CastRayToPlayerPart(player.position);  // Center of the capsule

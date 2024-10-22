@@ -9,6 +9,8 @@ public class StealableObject : MonoBehaviour
     private int goldValue;  // Existing gold value for regular items
     [SerializeField]
     private int rockCount;  // Number of rocks to be collected if the object is a Rock_Bag
+    [SerializeField]
+    private int keyCount; // Number of how many keys were found
 
     // Serialized field to adjust the collider radius in the Inspector
     [SerializeField]
@@ -35,5 +37,10 @@ public class StealableObject : MonoBehaviour
     public int GetRockCount()
     {
         return rockCount; // Return the number of rocks if this is a Rock_Bag
+    }
+
+    public int GetKeyCount()
+    {
+        return keyCount;
     }
 }

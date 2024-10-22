@@ -12,6 +12,7 @@ TagManager:
   - DialogZone
   - Collider
   - Gate
+  - Keys
   layers:
   - Default
   - TransparentFX

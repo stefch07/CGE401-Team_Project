@@ -4834,7 +4834,7 @@ MonoBehaviour:
   crouchingHeight: 1
   sightRange: 5
   stopChasingDistance: 10
-  movementSpeed: 4
+  movementSpeed: 4.5
   returnSpeed: 2
   turnSpeed: 30
   minDistanceBetweenGuards: 2

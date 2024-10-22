@@ -17,6 +17,11 @@ public class DialogTrigger : MonoBehaviour
         {
             ShowDialog();
         }
+        
+        if (dialogCanvas.gameObject.activeSelf) {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     void ShowDialog()
@@ -41,6 +46,8 @@ public class DialogTrigger : MonoBehaviour
         {
             playerController.canMove = true;
         }
+        
+        Cursor.visible = false;
     }
 
     void OnTriggerEnter(Collider other)

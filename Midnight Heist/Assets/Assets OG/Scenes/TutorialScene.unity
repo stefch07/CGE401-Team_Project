@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571363, b: 0.30692217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10399,7 +10399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f46d966ba1740879824f7c540a782d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogManager: {fileID: 1013974533}
   dialogCanvas: {fileID: 410049882}
 --- !u!114 &1224384281
 MonoBehaviour:
@@ -16707,7 +16706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f46d966ba1740879824f7c540a782d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogManager: {fileID: 1013974533}
   dialogCanvas: {fileID: 410049882}
 --- !u!1001 &1852143673
 PrefabInstance:
@@ -16791,7 +16789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1856986004
 Transform:
   m_ObjectHideFlags: 0

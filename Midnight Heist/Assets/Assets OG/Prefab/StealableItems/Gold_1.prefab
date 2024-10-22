@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8046913658073711056}
   - component: {fileID: 5208578031184639258}
   - component: {fileID: 1162624173829129314}
+  - component: {fileID: 7010097421333327748}
+  - component: {fileID: -6006320169930925359}
   m_Layer: 0
   m_Name: Gold_1
   m_TagString: Untagged
@@ -29,7 +31,6 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -53,7 +54,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -98,3 +98,31 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5201927432152065699, guid: bf738cb312ba077409cfced1d2e2da76, type: 3}
+--- !u!114 &7010097421333327748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6001163531448636623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5aafade6501416fbf6a7b86553f8ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldValue: 2
+  rockCount: 0
+  sphereCollider: {fileID: 0}
+--- !u!135 &-6006320169930925359
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6001163531448636623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07220831
+  m_Center: {x: 0, y: 0.021662494, z: 0}

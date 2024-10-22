@@ -42,12 +42,10 @@ public class DialogTrigger : MonoBehaviour
         dialogCanvas.gameObject.SetActive(false);
 
         // Set player movement back to true
-        if (playerController != null)
-        {
-            playerController.canMove = true;
-        }
+        playerController.canMove = true;
         
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void OnTriggerEnter(Collider other)

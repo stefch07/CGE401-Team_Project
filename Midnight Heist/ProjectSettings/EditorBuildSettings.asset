@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Assets OG/Scenes/GameOverScreen.unity
     guid: d799d992872bb41148564840febe54c0
   - enabled: 1
+    path: Assets/Assets OG/Scenes/Dungeon.unity
+    guid: 0f30b31df1c21274da0aa193ec9e46e6
+  - enabled: 1
     path: Assets/Assets OG/Scenes/FinalScene.unity
     guid: 6355c6ba1927541aa814123d8ce7099f
   - enabled: 1

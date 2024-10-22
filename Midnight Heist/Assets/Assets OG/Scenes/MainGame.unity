@@ -888,6 +888,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931837674}
     m_Modifications:
+    - target: {fileID: 4214072616663514961, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     - target: {fileID: 6448897307420877653, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1390,6 +1394,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1522650073}
     m_Modifications:
+    - target: {fileID: 2270436114150636478, guid: b65bada9da54f694fab3b1546c421911, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     - target: {fileID: 4767563669337226110, guid: b65bada9da54f694fab3b1546c421911, type: 3}
       propertyPath: m_Name
       value: Villager NPC 3
@@ -1726,6 +1734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Male NPC 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6928365390515788362, guid: 96b589200c46a1b4da2d19ffda5ddb3c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96b589200c46a1b4da2d19ffda5ddb3c, type: 3}
 --- !u!4 &616728288 stripped
@@ -1824,6 +1836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Villager NPC 2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5833048494525034806, guid: d9d37d3558e45cc4381944cea740a026, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d37d3558e45cc4381944cea740a026, type: 3}
 --- !u!4 &673880251 stripped
@@ -4645,6 +4661,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1522650073}
     m_Modifications:
+    - target: {fileID: 2393483635095785885, guid: 1026eef462ab9ef41b0c003370e80a29, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     - target: {fileID: 8635494487594208231, guid: 1026eef462ab9ef41b0c003370e80a29, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6047,6 +6067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Villager NPC 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5833048494525034806, guid: d9d37d3558e45cc4381944cea740a026, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d37d3558e45cc4381944cea740a026, type: 3}
 --- !u!4 &2129097939 stripped
@@ -6194,6 +6218,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931837674}
     m_Modifications:
+    - target: {fileID: 2499072814240890607, guid: 6d9e9ebfef447c741a05f4a8ac74a02d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     - target: {fileID: 3328596124731312567, guid: 6d9e9ebfef447c741a05f4a8ac74a02d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6264,6 +6292,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931837674}
     m_Modifications:
+    - target: {fileID: 4430656787495659790, guid: 7693e8640d5391242aaed05b526fcf47, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     - target: {fileID: 6978088649482545614, guid: 7693e8640d5391242aaed05b526fcf47, type: 3}
       propertyPath: m_Name
       value: Male NPC 4
@@ -6374,6 +6406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Villager NPC 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5833048494525034806, guid: d9d37d3558e45cc4381944cea740a026, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d37d3558e45cc4381944cea740a026, type: 3}
 --- !u!4 &1449484043634620049 stripped
@@ -6398,6 +6434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1522650073}
     m_Modifications:
+    - target: {fileID: 2393483635095785885, guid: 1026eef462ab9ef41b0c003370e80a29, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     - target: {fileID: 8635494487594208231, guid: 1026eef462ab9ef41b0c003370e80a29, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6455,6 +6495,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931837674}
     m_Modifications:
+    - target: {fileID: 2236616473887779061, guid: 264262c6f43a24b4f9c445925e0411ef, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 420b864c18d954d799fd6bbdaeb9b949, type: 2}
     - target: {fileID: 4801385503252523061, guid: 264262c6f43a24b4f9c445925e0411ef, type: 3}
       propertyPath: m_Name
       value: Male NPC 3

@@ -10400,6 +10400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogCanvas: {fileID: 410049882}
+  panel: {fileID: 1687486233}
 --- !u!114 &1224384281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16707,6 +16708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogCanvas: {fileID: 410049882}
+  panel: {fileID: 1687486233}
 --- !u!1001 &1852143673
 PrefabInstance:
   m_ObjectHideFlags: 0

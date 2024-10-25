@@ -5,6 +5,7 @@ public class DialogTrigger : MonoBehaviour
     public Canvas dialogCanvas; // Assign the Canvas in the Inspector
     private PlayerController playerController;
     private bool isInDialogZone = false;
+    public GameObject panel;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class DialogTrigger : MonoBehaviour
         if (dialogCanvas.gameObject.activeSelf) {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            panel.gameObject.SetActive(false);
         }
     }
 
@@ -46,6 +48,7 @@ public class DialogTrigger : MonoBehaviour
         
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        panel.gameObject.SetActive(true);
     }
 
     void OnTriggerEnter(Collider other)

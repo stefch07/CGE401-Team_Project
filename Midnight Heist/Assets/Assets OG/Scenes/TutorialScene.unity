@@ -10483,7 +10483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067544239}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.5, y: 1, z: 13.35}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 2.4999995, y: 1, z: 2.4999995}
   m_Children: []
   m_Father: {fileID: 1181409511}
@@ -11637,9 +11637,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textbox: {fileID: 1988202850}
   sentences:
-  - Did you know you can press E to pick up items? Neat, huh?
-  - There's a couple of items in this room you can try it out on!
-  - Go on, don't be shy!
+  - You haven't run into any guards recently, have you?
+  - As long as you stay in the green, you should be okay...
+  - But watch out... If a guard knows where you are, he'll go red and come after
+    you!
+  - Matter of fact... I'M A GUARD!
+  - ...just kidding.
   typingSpeed: 0.015
   continueButton: {fileID: 1911941806}
   skipButton: {fileID: 1712560860}

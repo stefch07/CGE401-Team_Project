@@ -21,6 +21,7 @@ public class DialogManager : MonoBehaviour
     private NPCAnimator activeNPC; // The NPC currently in dialog w/ player
     
     public GameObject deleteThis;
+    private DialogTrigger dialogTrigger;
 
     private void Start()
     {
@@ -28,6 +29,8 @@ public class DialogManager : MonoBehaviour
         {
             SetActiveNPC(initialNPC);
         }
+
+        dialogTrigger = FindObjectOfType<DialogTrigger>();
     }
 
     void OnEnable()
@@ -78,16 +81,31 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
-            textbox.text = "";
-            tavernkeeperButton.SetActive(false);
-            dialogPanel.SetActive(false);
-            ClearActiveNPC();
+            EndDialog();
+        }
+    }
 
-            // Destroy the object when the dialog ends
-            if (deleteThis != null)
-            {
-                Destroy(deleteThis);
-            }
+    private void EndDialog()
+    {
+        textbox.text = "";
+        tavernkeeperButton.SetActive(false);
+        dialogPanel.SetActive(false);
+        ClearActiveNPC();
+
+        // Inform the DialogTrigger to hide the dialog and give control back
+        if (dialogTrigger != null)
+        {
+            dialogTrigger.HideDialog(); // Call HideDialog from DialogTrigger
+        }
+
+        // Set cursor state back to default
+        Cursor.visible = false; // hide the cursor
+        Cursor.lockState = CursorLockMode.Locked; // Lock the cursor within the game again
+
+        // Destroy the object when the dialog ends
+        if (deleteThis != null)
+        {
+            Destroy(deleteThis);
         }
     }
 
@@ -111,5 +129,11 @@ public class DialogManager : MonoBehaviour
         skipButton.SetActive(false);
         tavernkeeperButton.SetActive(false);
         dialogPanel.SetActive(false);
+
+        // Ensure the dialog is hidden and control is given back
+        if (dialogTrigger != null)
+        {
+            dialogTrigger.HideDialog(); // Call HideDialog from DialogTrigger
+        }
     }
 }

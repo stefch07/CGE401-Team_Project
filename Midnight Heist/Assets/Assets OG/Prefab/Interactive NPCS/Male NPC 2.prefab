@@ -3264,9 +3264,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7825928368474301739}
   - component: {fileID: 4214072616663514961}
+  - component: {fileID: 212808155252226020}
   m_Layer: 0
   m_Name: Male NPC 2
-  m_TagString: Untagged
+  m_TagString: LadderNPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3314,6 +3315,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &212808155252226020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7480646998608084881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558d6ceb2ae5e0b46be0acac2a42124b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionDistance: 2
 --- !u!1 &7543538179988074646
 GameObject:
   m_ObjectHideFlags: 0

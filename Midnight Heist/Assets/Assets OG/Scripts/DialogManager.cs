@@ -19,6 +19,8 @@ public class DialogManager : MonoBehaviour
 
     public NPCAnimator initialNPC; // Assign this in the Inspector for the initial NPC
     private NPCAnimator activeNPC; // The NPC currently in dialog w/ player
+    
+    public GameObject deleteThis;
 
     private void Start()
     {
@@ -80,6 +82,12 @@ public class DialogManager : MonoBehaviour
             tavernkeeperButton.SetActive(false);
             dialogPanel.SetActive(false);
             ClearActiveNPC();
+
+            // Destroy the object when the dialog ends
+            if (deleteThis != null)
+            {
+                Destroy(deleteThis);
+            }
         }
     }
 

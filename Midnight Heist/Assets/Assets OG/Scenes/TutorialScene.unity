@@ -25738,6 +25738,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 129860911}
     - target: {fileID: 8190100172607750164, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+      propertyPath: lookXLimit
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8190100172607750164, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
       propertyPath: notifPanel
       value: 
       objectReference: {fileID: 1682637734}

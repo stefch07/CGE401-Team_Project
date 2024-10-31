@@ -2,24 +2,20 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 8
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bangers SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -43,7 +39,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
     - _Ambient: 0.5
     - _Bevel: 0.5
@@ -134,7 +129,6 @@ MonoBehaviour:
     m_StyleName: Regular
     m_PointSize: 144
     m_Scale: 1
-    m_UnitsPerEM: 0
     m_LineHeight: 153.14062
     m_AscentLine: 127.125
     m_CapLine: 107
@@ -165,7 +159,6 @@ MonoBehaviour:
       m_Height: 0
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 52
     m_Metrics:
       m_Width: 75.796875
@@ -180,7 +173,6 @@ MonoBehaviour:
       m_Height: 112
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 53
     m_Metrics:
       m_Width: 77.484375
@@ -195,7 +187,6 @@ MonoBehaviour:
       m_Height: 108
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 58
     m_Metrics:
       m_Width: 103.359375
@@ -210,7 +201,6 @@ MonoBehaviour:
       m_Height: 109
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 64
     m_Metrics:
       m_Width: 72.421875
@@ -225,7 +215,6 @@ MonoBehaviour:
       m_Height: 107
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 76
     m_Metrics:
       m_Width: 63.703125
@@ -240,7 +229,6 @@ MonoBehaviour:
       m_Height: 17
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 78
     m_Metrics:
       m_Width: 69.890625
@@ -255,7 +243,6 @@ MonoBehaviour:
       m_Height: 107
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 81
     m_Metrics:
       m_Width: 72.703125
@@ -270,7 +257,6 @@ MonoBehaviour:
       m_Height: 107
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 82
     m_Metrics:
       m_Width: 64.40625
@@ -285,7 +271,6 @@ MonoBehaviour:
       m_Height: 108
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 84
     m_Metrics:
       m_Width: 75.796875
@@ -300,7 +285,6 @@ MonoBehaviour:
       m_Height: 112
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 85
     m_Metrics:
       m_Width: 77.484375
@@ -315,7 +299,6 @@ MonoBehaviour:
       m_Height: 108
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 86
     m_Metrics:
       m_Width: 43.171875
@@ -330,7 +313,6 @@ MonoBehaviour:
       m_Height: 105
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 90
     m_Metrics:
       m_Width: 103.359375
@@ -345,7 +327,6 @@ MonoBehaviour:
       m_Height: 109
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 91
     m_Metrics:
       m_Width: 79.453125
@@ -360,7 +341,6 @@ MonoBehaviour:
       m_Height: 109
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 95
     m_Metrics:
       m_Width: 73.265625
@@ -375,7 +355,6 @@ MonoBehaviour:
       m_Height: 107
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 96
     m_Metrics:
       m_Width: 72.421875
@@ -390,7 +369,6 @@ MonoBehaviour:
       m_Height: 107
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 97
     m_Metrics:
       m_Width: 55.6875
@@ -405,7 +383,6 @@ MonoBehaviour:
       m_Height: 106
     m_Scale: 1
     m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 32
@@ -731,8 +708,7 @@ Texture2D:
   m_MipCount: 1
   m_IsReadable: 1
   m_IsPreProcessed: 0
-  m_IgnoreMipmapLimit: 0
-  m_MipmapLimitGroupName: 
+  m_IgnoreMasterTextureLimit: 0
   m_StreamingMipmaps: 0
   m_StreamingMipmapsPriority: 0
   m_VTOnly: 0

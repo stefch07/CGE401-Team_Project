@@ -3,9 +3,10 @@ using UnityEngine;
 public class DialogTrigger : MonoBehaviour
 {
     public Canvas dialogCanvas; // Assign the Canvas in the Inspector
-    private PlayerController playerController;
+    public PlayerController playerController;
     private bool isInDialogZone = false;
     public GameObject panel;
+    public GameObject deleteThis;
 
     private Collider npcCollider; // Reference to the NPC's collider
 
@@ -52,19 +53,19 @@ public class DialogTrigger : MonoBehaviour
         // Hide the dialog Canvas
         dialogCanvas.gameObject.SetActive(false);
 
-        // Re-enable player movement
-        if (playerController != null)
-        {
-            playerController.canMove = true;
-        }
-
-        // Set cursor state
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        panel.SetActive(true);
-
         // Reset the dialog zone state
         isInDialogZone = false; // Ensure this is set to false when hiding the dialog
+        
+        if (deleteThis != null)
+        {
+            Destroy(deleteThis);
+        }
+        
+        // Set cursor state
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        playerController.canMove = true;
+        panel.SetActive(true);
     }
 
     void OnTriggerEnter(Collider other)

@@ -28,6 +28,13 @@ public class DialogTrigger : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             panel.SetActive(false);
         }
+        
+        /*if (deleteThis == null) {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.None;
+            playerController.canMove = true;
+            panel.SetActive(true);
+        }*/
     }
 
     void ShowDialog()
@@ -62,8 +69,8 @@ public class DialogTrigger : MonoBehaviour
         }
         
         // Set cursor state
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         playerController.canMove = true;
         panel.SetActive(true);
     }

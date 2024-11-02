@@ -33,7 +33,7 @@ public class DialogTrigger : MonoBehaviour
     void ShowDialog()
     {
         // Set player movement to false
-        if (playerController != null)
+        if (playerController != null && deleteThis != null)
         {
             playerController.canMove = false;
         }

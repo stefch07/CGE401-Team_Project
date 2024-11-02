@@ -1851,7 +1851,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogCanvas: {fileID: 1643140533}
+  playerController: {fileID: 273112781}
   panel: {fileID: 1687486233}
+  deleteThis: {fileID: 1000032286}
 --- !u!4 &146654374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7825928368474301739, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
@@ -2983,6 +2985,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5927243195033420915, guid: 21211448c25fd43259db23aacf11a294, type: 3}
   m_PrefabInstance: {fileID: 1542208494}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &273112781 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8190100172607750164, guid: 97bceef0799074d63b4e19ccd1e5d4ba, type: 3}
+  m_PrefabInstance: {fileID: 8190100172419492267}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab52cc6799f98b44196f6f3fd74fc7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &274016462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4937,7 +4950,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogCanvas: {fileID: 2034988252}
+  playerController: {fileID: 273112781}
   panel: {fileID: 1687486233}
+  deleteThis: {fileID: 1258033279}
 --- !u!4 &451491929 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1717354332657971363, guid: 5d27a955513a0464f88a5e2ba8b4c4b2, type: 3}
@@ -13284,7 +13299,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogCanvas: {fileID: 459774299}
+  playerController: {fileID: 273112781}
   panel: {fileID: 1687486233}
+  deleteThis: {fileID: 1067544239}
 --- !u!1 &1187414976
 GameObject:
   m_ObjectHideFlags: 0
@@ -13736,7 +13753,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogCanvas: {fileID: 410049882}
+  playerController: {fileID: 273112781}
   panel: {fileID: 1687486233}
+  deleteThis: {fileID: 1849518008}
 --- !u!114 &1224384281
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,11 +23,11 @@ public class DialogTrigger : MonoBehaviour
             ShowDialog();
         }
         
-        if (dialogCanvas.gameObject.activeSelf) {
+        /*if (dialogCanvas.gameObject.activeSelf) {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             panel.SetActive(false);
-        }
+        }*/
         
         /*if (deleteThis == null) {
             Cursor.visible = false;
@@ -44,6 +44,10 @@ public class DialogTrigger : MonoBehaviour
         {
             playerController.canMove = false;
         }
+        
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        panel.SetActive(false);
 
         // Disable the NPC collider to prevent re-entry
         if (npcCollider != null)

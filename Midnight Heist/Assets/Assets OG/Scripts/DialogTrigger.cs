@@ -22,6 +22,7 @@ public class DialogTrigger : MonoBehaviour
         if (isInDialogZone && Input.GetKeyDown(KeyCode.T) && alreadyRead == false)
         {
             ShowDialog();
+            alreadyRead = true;
         }
         
         /*if (dialogCanvas.gameObject.activeSelf) {

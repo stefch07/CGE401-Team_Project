@@ -1774,21 +1774,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Male NPC 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7480646998608084881, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7825928368474301739, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
       propertyPath: m_RootOrder
       value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 7825928368474301739, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 556
+      value: 553.25
       objectReference: {fileID: 0}
     - target: {fileID: 7825928368474301739, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.2
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7825928368474301739, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 383.551
+      value: 386.42
       objectReference: {fileID: 0}
     - target: {fileID: 7825928368474301739, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1853,7 +1857,6 @@ MonoBehaviour:
   dialogCanvas: {fileID: 1643140533}
   playerController: {fileID: 273112781}
   panel: {fileID: 1687486233}
-  deleteThis: {fileID: 1000032286}
 --- !u!4 &146654374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7825928368474301739, guid: 246b7e21eb46572458e7caa8531a8d96, type: 3}
@@ -4952,7 +4955,6 @@ MonoBehaviour:
   dialogCanvas: {fileID: 2034988252}
   playerController: {fileID: 273112781}
   panel: {fileID: 1687486233}
-  deleteThis: {fileID: 1258033279}
 --- !u!4 &451491929 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1717354332657971363, guid: 5d27a955513a0464f88a5e2ba8b4c4b2, type: 3}
@@ -11001,6 +11003,8 @@ MonoBehaviour:
   - Did you know you can press E to pick up items? Neat, huh?
   - There's a couple of items in this room you can try it out on!
   - Go on, don't be shy!
+  - Did you also know you can press the space bar to jump?
+  - It's as easy as holding shift to run, or pressing C to crouch!
   typingSpeed: 0.015
   continueButton: {fileID: 915327848}
   skipButton: {fileID: 1628640648}
@@ -12900,6 +12904,7 @@ MonoBehaviour:
     you!
   - Matter of fact... I'M A GUARD!
   - ...just kidding.
+  - Seriously, though, if you ever need to PAUSE and think... Just press P.
   typingSpeed: 0.015
   continueButton: {fileID: 1911941806}
   skipButton: {fileID: 1712560860}
@@ -13301,7 +13306,6 @@ MonoBehaviour:
   dialogCanvas: {fileID: 459774299}
   playerController: {fileID: 273112781}
   panel: {fileID: 1687486233}
-  deleteThis: {fileID: 1067544239}
 --- !u!1 &1187414976
 GameObject:
   m_ObjectHideFlags: 0
@@ -13755,7 +13759,6 @@ MonoBehaviour:
   dialogCanvas: {fileID: 410049882}
   playerController: {fileID: 273112781}
   panel: {fileID: 1687486233}
-  deleteThis: {fileID: 1849518008}
 --- !u!114 &1224384281
 MonoBehaviour:
   m_ObjectHideFlags: 0

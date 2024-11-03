@@ -34,9 +34,23 @@ public class TipZone : MonoBehaviour
     }
 
     IEnumerator ShowTipPanel()
-    {
-        tipPanel.SetActive(true); // Activate the panel
-        yield return new WaitForSeconds(2); // Wait for 2 seconds
-        tipPanel.SetActive(false); // Deactivate the panel
-    }
+        {
+            tipPanel.SetActive(true); // Activate the panel
+            float elapsedTime = 0;
+
+            // Wait for 2 seconds or until this GameObject is deactivated
+            while (elapsedTime < 2)
+            {
+                // If the GameObject is no longer active, exit the coroutine
+                if (!gameObject.activeInHierarchy)
+                {
+                    yield break;
+                }
+
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+
+            tipPanel.SetActive(false); // Deactivate the panel
+        }
 }

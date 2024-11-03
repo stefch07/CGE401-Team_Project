@@ -18,7 +18,7 @@ public class DialogTrigger : MonoBehaviour
 
     void Update()
     {
-        if (isInDialogZone && Input.GetKeyDown(KeyCode.T))
+        if (isInDialogZone && Input.GetKeyDown(KeyCode.T) && deleteThis != null)
         {
             ShowDialog();
         }

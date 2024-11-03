@@ -6,7 +6,8 @@ public class DialogTrigger : MonoBehaviour
     public PlayerController playerController;
     private bool isInDialogZone = false;
     public GameObject panel;
-    public GameObject deleteThis;
+    private bool alreadyRead = false;
+    //public GameObject deleteThis;
 
     private Collider npcCollider; // Reference to the NPC's collider
 
@@ -18,7 +19,7 @@ public class DialogTrigger : MonoBehaviour
 
     void Update()
     {
-        if (isInDialogZone && Input.GetKeyDown(KeyCode.T) && deleteThis != null)
+        if (isInDialogZone && Input.GetKeyDown(KeyCode.T) && alreadyRead == false)
         {
             ShowDialog();
         }
@@ -40,7 +41,7 @@ public class DialogTrigger : MonoBehaviour
     void ShowDialog()
     {
         // Set player movement to false
-        if (playerController != null && deleteThis != null)
+        if (playerController != null)
         {
             playerController.canMove = false;
         }
@@ -67,16 +68,13 @@ public class DialogTrigger : MonoBehaviour
         // Reset the dialog zone state
         isInDialogZone = false; // Ensure this is set to false when hiding the dialog
         
-        if (deleteThis != null)
-        {
-            Destroy(deleteThis);
-        }
-        
         // Set cursor state
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         playerController.canMove = true;
         panel.SetActive(true);
+        
+        alreadyRead = true;
     }
 
     void OnTriggerEnter(Collider other)

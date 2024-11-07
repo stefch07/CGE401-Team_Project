@@ -419,10 +419,10 @@ PrefabInstance:
     - target: {fileID: 7675943834324205598, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: b1a276cf4578c4f9f970adb2e886733c, type: 3}
+      objectReference: {fileID: 428173141}
     - target: {fileID: 7675943834324205598, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: PlayGame
       objectReference: {fileID: 0}
     - target: {fileID: 7675943834343249600, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_SizeDelta.x

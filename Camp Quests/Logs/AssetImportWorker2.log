@@ -1,0 +1,316 @@
+Unity Editor version:    2020.3.48f1 (b805b124c6b7)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.0.1 (Build 24A348)
+Darwin version:          24.0.0
+Architecture:            x86_64
+Running under Rosetta:   YES
+Available memory:        18432 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+/Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+54726
+Successfully changed project path to: /Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests
+/Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests
+Using Asset Import Pipeline V2.
+Player connection [8749928960] Host "[IP] 10.252.24.83 [Port] 0 [Flags] 2 [Guid] 2776683388 [EditorId] 2776683388 [Version] 1048832 [Id] OSXEditor(0,Stefanos-MacBook-Pro-3.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8749928960] Host "[IP] 10.252.24.83 [Port] 0 [Flags] 2 [Guid] 2776683388 [EditorId] 2776683388 [Version] 1048832 [Id] OSXEditor(0,Stefanos-MacBook-Pro-3.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 77.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.48f1 (b805b124c6b7)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests/Assets
+GfxDevice: creating device client; threaded=0
+2024-11-12 15:11:31.686 Unity[15800:755804] (null) preferred device: Apple M3 Pro (high power)
+2024-11-12 15:11:31.686 Unity[15800:755804] Metal devices available: 1
+2024-11-12 15:11:31.686 Unity[15800:755804] 0: Apple M3 Pro (high power)
+2024-11-12 15:11:31.687 Unity[15800:755804] Using device Apple M3 Pro (high power)
+Initializing Metal device caps: Apple M3 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.48f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001847 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 25.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.864 seconds
+Domain Reload Profiling:
+	ReloadAssembly (864ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (717ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (92ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (387ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (26ms)
+				BeforeProcessingInitializeOnLoad (23ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (83ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000127 seconds.
+Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Toolbar/Unity.CollabProxy.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Toolbar/Unity.CollabProxy.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+Begin MonoManager ReloadAssembly
+Symbol file data-0x7f9fb1063c00 doesn't match image /Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests/Library/ScriptAssemblies/Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file /Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests/Library/ScriptAssemblies/Unity.TextMeshPro.pdb doesn't match image /Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file /Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests/Library/ScriptAssemblies/UnityEngine.UI.pdb doesn't match image /Users/stefanos04/CGE401/TeamProjects/CGE401-Team_Project/Camp Quests/Library/ScriptAssemblies/UnityEngine.UI.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Toolbar/Unity.CollabProxy.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+Mono: successfully reloaded assembly
+- Completed reload, in  1.056 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1058ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (25ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (845ms)
+			LoadAssemblies (44ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (117ms)
+			SetupLoadedEditorAssemblies (432ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (338ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.006029 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.012829 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Initializing Unity extensions:
+Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Toolbar/Unity.CollabProxy.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1369 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.0 MB.
+System memory in use after: 80.6 MB.
+
+Unloading 1360 unused Assets to reduce memory usage. Loaded Objects now: 538.
+Total: 1.953625 ms (FindLiveObjects: 0.051750 ms CreateObjectMapping: 0.017166 ms MarkObjects: 1.211250 ms  DeleteObjects: 0.673083 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: 
+  artifactKey: Guid(1ffe1e32b294a4a689240c90f6e6ca81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(1ffe1e32b294a4a689240c90f6e6ca81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000026 seconds  code(3) message(Unknown asset with GUID '1ffe1e32b294a4a689240c90f6e6ca81')
+  ERROR: Unknown asset with GUID '1ffe1e32b294a4a689240c90f6e6ca81'
+========================================================================
+Received Import Request.
+  Time since last request: 3.489163 seconds.
+  path: Assets/2D Sprites/Main 2D Fishing Sprites
+  artifactKey: Guid(526b719fa9301dd418246fef6f19d004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Fishing Sprites using Guid(526b719fa9301dd418246fef6f19d004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004691 seconds  code(4) message(Build asset version error: assets/2d sprites/main 2d fishing sprites.meta in SourceAssetDB has modification time of '2024-11-12T21:00:10Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/2d sprites/main 2d fishing sprites.meta in SourceAssetDB has modification time of '2024-11-12T21:00:10Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.797898 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites
+  artifactKey: Guid(af4c9abf680791f46a467b6fb7c100bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites using Guid(af4c9abf680791f46a467b6fb7c100bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000583 seconds  code(4) message(Build asset version error: assets/2d sprites/main 2d sprites.meta in SourceAssetDB has modification time of '2024-11-12T21:00:10Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/2d sprites/main 2d sprites.meta in SourceAssetDB has modification time of '2024-11-12T21:00:10Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 6.400291 seconds.
+  path: Assets/Campsite Assets/Low Poly Nature Pack Lite
+  artifactKey: Guid(95ea6fdad02abd44a8f8efd645cb9e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite using Guid(95ea6fdad02abd44a8f8efd645cb9e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000300 seconds  code(4) message(Build asset version error: assets/campsite assets/low poly nature pack lite.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/low poly nature pack lite.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 1.469206 seconds.
+  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Scenes
+  artifactKey: Guid(7a487ce4bd025164db1ace5a077e0940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Scenes using Guid(7a487ce4bd025164db1ace5a077e0940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000209 seconds  code(4) message(Build asset version error: assets/campsite assets/low poly nature pack lite/scenes.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/low poly nature pack lite/scenes.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.738525 seconds.
+  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Scenes/Pack Overview.unity
+  artifactKey: Guid(7681af916b37f43458f73b2e971daf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Scenes/Pack Overview.unity using Guid(7681af916b37f43458f73b2e971daf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000247 seconds  code(4) message(Build asset version error: assets/campsite assets/low poly nature pack lite/scenes/pack overview.unity in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/low poly nature pack lite/scenes/pack overview.unity in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.647173 seconds.
+  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Scenes/Demo.unity
+  artifactKey: Guid(38813be58c46e984bbcb37f4a06779bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Scenes/Demo.unity using Guid(38813be58c46e984bbcb37f4a06779bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000297 seconds  code(4) message(Build asset version error: assets/campsite assets/low poly nature pack lite/scenes/demo.unity in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/low poly nature pack lite/scenes/demo.unity in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 113.000660 seconds.
+  path: Assets/Campsite Assets/SimpleLowPolyNature
+  artifactKey: Guid(a62bc6d906d2c05479555f4b6407147e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/SimpleLowPolyNature using Guid(a62bc6d906d2c05479555f4b6407147e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000629 seconds  code(4) message(Build asset version error: assets/campsite assets/simplelowpolynature.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/simplelowpolynature.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 2.406754 seconds.
+  path: Assets/Campsite Assets/SimpleLowPolyNature/Scenes
+  artifactKey: Guid(42f24a6993a5efe45921fa92af43b7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/SimpleLowPolyNature/Scenes using Guid(42f24a6993a5efe45921fa92af43b7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000271 seconds  code(4) message(Build asset version error: assets/campsite assets/simplelowpolynature/scenes.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/simplelowpolynature/scenes.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 1.484183 seconds.
+  path: Assets/Campsite Assets/SimpleLowPolyNature/Scenes/DemoDay.unity
+  artifactKey: Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/SimpleLowPolyNature/Scenes/DemoDay.unity using Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000249 seconds  code(4) message(Build asset version error: assets/campsite assets/simplelowpolynature/scenes/demoday.unity in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/simplelowpolynature/scenes/demoday.unity in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 2.025077 seconds.
+  path: Assets/Campsite Assets/SimpleLowPolyNature/Scenes/PrefabsScene
+  artifactKey: Guid(84d18d6db0ae8da4ca13c41d247de714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/SimpleLowPolyNature/Scenes/PrefabsScene using Guid(84d18d6db0ae8da4ca13c41d247de714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000211 seconds  code(4) message(Build asset version error: assets/campsite assets/simplelowpolynature/scenes/prefabsscene.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/simplelowpolynature/scenes/prefabsscene.meta in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'
+========================================================================
+Received Import Request.
+  Time since last request: 9.220854 seconds.
+  path: Assets/Campsite Assets/SimpleLowPolyNature/Scenes/DemoNight.unity
+  artifactKey: Guid(a098ae9106bc995448a4aba7dfe6a4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Campsite Assets/SimpleLowPolyNature/Scenes/DemoNight.unity using Guid(a098ae9106bc995448a4aba7dfe6a4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000211 seconds  code(4) message(Build asset version error: assets/campsite assets/simplelowpolynature/scenes/demonight.unity in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z')
+  ERROR: Build asset version error: assets/campsite assets/simplelowpolynature/scenes/demonight.unity in SourceAssetDB has modification time of '2024-11-12T21:00:11Z' while content on disk has modification time of '2024-11-11T03:44:05Z'

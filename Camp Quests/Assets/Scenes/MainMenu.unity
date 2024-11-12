@@ -387,7 +387,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675943834192583107, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_text
-      value: Camp Quest
+      value: Camp Quests
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675943834192583107, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
+      propertyPath: m_fontSize
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 7675943834192583107, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_fontAsset
@@ -406,6 +410,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7675943834192583107, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675943834192583107, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -416,6 +424,10 @@ PrefabInstance:
     - target: {fileID: 7675943834192583107, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675943834192583108, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 7675943834192583108, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_AnchoredPosition.x

@@ -15,7 +15,7 @@ public class KayakController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         
         // transform vertically with input
-        transform.Translate(Vector3.right * verticalInput * Time.deltaTime * speed);
+        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
         
         // keep player in bounds
         if (transform.position.y < -yRange) {

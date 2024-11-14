@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private DialogueUI dialogueUI;
+    
+    public DialogueUI DialogueUI => dialogueUI;
+    
+    public IInteractable Interactable { get; set; }
+    
     public float moveSpeed = 5f;
     private Rigidbody rb;
     private Vector3 movement;
@@ -17,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialogueUI.IsOpen) return;
+        
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.z = Input.GetAxisRaw("Vertical");
 
@@ -26,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
         if(moveSpeed == 0)
         {
             moveSpeed = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Interactable?.Interact(this);
         }
     }
 

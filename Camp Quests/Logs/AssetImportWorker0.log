@@ -949,3 +949,45 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 859.779180 seconds.
+  path: Assets/2D Sprites/Log.png
+  artifactKey: Guid(b2e56c4c68d444a28a94483f11654daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Log.png using Guid(b2e56c4c68d444a28a94483f11654daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ae44a4fbf10ec148f08e20c24b5577') in 0.206758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 169.633126 seconds.
+  path: Assets/2D Sprites/Coin.png
+  artifactKey: Guid(c0ddd4680324d4eb9a2e9f8b8f741e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Coin.png using Guid(c0ddd4680324d4eb9a2e9f8b8f741e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdafd40e2a6bc27ea61a50ec7e1962e9') in 0.067386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 136.574173 seconds.
+  path: Assets/2D Sprites/Stopwatch.png
+  artifactKey: Guid(b9ab840a855b84da8976e61a813796dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Stopwatch.png using Guid(b9ab840a855b84da8976e61a813796dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59df139d1b9cd88d98d8a075ee7ad852') in 0.144472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.784067 seconds.
+  path: Assets/2D Sprites/Heart.png
+  artifactKey: Guid(4fc20d987a5904e5fbf45776580d84fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Heart.png using Guid(4fc20d987a5904e5fbf45776580d84fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59b2d1b4a320d9baf1542a34fb4ec6e4') in 0.011676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.393294 seconds.
+  path: Assets/2D Sprites/GreyRock.png
+  artifactKey: Guid(5908f81527b864f7295c27c0cc6f9358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/GreyRock.png using Guid(5908f81527b864f7295c27c0cc6f9358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a14e63511dc46f3a20e6a00d6dd9f71') in 0.013388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.631867 seconds.
+  path: Assets/2D Sprites/BlackRock.png
+  artifactKey: Guid(f737eabf2bc2e42049614a83954f70de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/BlackRock.png using Guid(f737eabf2bc2e42049614a83954f70de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d7b8728bc8ff19d097595b060eaeae2') in 0.015806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.239684 seconds.
+  path: Assets/2D Sprites/Main 2D Swimming Sprites
+  artifactKey: Guid(074c0ac7fa0bfd0449d12ad5030d5d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Swimming Sprites using Guid(074c0ac7fa0bfd0449d12ad5030d5d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf60fd9c0ed65cf1e292f39f97b4fbba') in 0.001898 seconds 

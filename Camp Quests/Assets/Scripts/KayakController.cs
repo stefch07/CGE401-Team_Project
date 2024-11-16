@@ -18,12 +18,12 @@ public class KayakController : MonoBehaviour
         transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
         
         // keep player in bounds
-        if (transform.position.y < -yRange) {
-            transform.position = new Vector3(transform.position.x, -yRange, transform.position.z);
+        if (transform.position.y < (-yRange - 1.0f)) {
+            transform.position = new Vector3(transform.position.x, (-yRange - 1.0f), transform.position.z);
         }
         
-        if (transform.position.y > yRange) {
-            transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
+        if (transform.position.y > (yRange - 0.5f)) {
+            transform.position = new Vector3(transform.position.x, (yRange - 0.5f), transform.position.z);
         }
     }
 }

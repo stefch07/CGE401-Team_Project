@@ -6,7 +6,7 @@ public class KayakController : MonoBehaviour
 {
     public float verticalInput;
     public float speed = 10.0f;
-    public float yRange = 10;
+    private float yRange = 2.5f;
     
     // Update is called once per frame
     void Update()

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Meditation.unity
+- path: Assets/Scenes/Hiking.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

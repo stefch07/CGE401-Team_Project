@@ -4028,7 +4028,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 447756640}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1129537230}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &447756640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8621,8 +8633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textbox: {fileID: 1697073861}
   sentences:
-  - Test
-  - TEST
+  - Time to focus your attention on your breath.
+  - If your mind wonders, or you notice you are thinking about something else...
+  - Press the space bar.
   typingSpeed: 0.1
   continueButton: {fileID: 447756637}
   skipButton: {fileID: 1461255232}
@@ -11616,7 +11629,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1461255235}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1129537230}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: SkipSentences
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1461255235
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,13 +16,13 @@ public class PlayMusic : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Background music AudioSource component missing!");
+          
         }
 
         // Check if the sound effect source is assigned
         if (soundEffectSource == null)
         {
-            Debug.LogError("Sound effect AudioSource not assigned in Inspector!");
+            
         }
     }
 
@@ -37,7 +37,7 @@ public class PlayMusic : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Sound effect AudioSource is missing!");
+                
             }
         }
     }

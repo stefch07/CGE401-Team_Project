@@ -21,7 +21,7 @@ public class ConcentrationMeter : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No second AudioSource found!");
+           // Debug.LogError("No second AudioSource found!");
         }
 
         UpdateScoreText();

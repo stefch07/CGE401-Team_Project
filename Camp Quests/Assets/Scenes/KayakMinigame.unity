@@ -153,12 +153,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsToSpawn:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7672250881639276579, guid: 56dd0f695c1624947a3a933569a02f72, type: 3}
+  - {fileID: 1952246782805535360, guid: b07fee8b4505d49e299ce79099a1cb43, type: 3}
+  - {fileID: 4223602794969089426, guid: 857bd84d47157417ab2394799fd4e0de, type: 3}
+  - {fileID: 6424526510556243179, guid: ac88cd6dd1bb84f399b4127330790f8f, type: 3}
+  - {fileID: 3763100307245075273, guid: ec679f72c09f44656be8a491ad0b243c, type: 3}
+  - {fileID: 518556597792290834, guid: f2dc632963eea4b11866eb80a06df1d0, type: 3}
   healthSystem: {fileID: 687342668}
 --- !u!4 &71401266
 Transform:
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -815,6 +815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verticalInput: 0
   speed: 10
+  backgroundMusic: {fileID: 0}
 --- !u!1 &1501741289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1001,7 @@ RectTransform:
   m_GameObject: {fileID: 1977589550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 634265969}
   - {fileID: 1501741290}
@@ -1010,8 +1011,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 750, y: 470}
-  m_SizeDelta: {x: -1500, y: -940}
+  m_AnchoredPosition: {x: 335, y: 200}
+  m_SizeDelta: {x: -1500, y: -950}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1977589552
 MonoBehaviour:

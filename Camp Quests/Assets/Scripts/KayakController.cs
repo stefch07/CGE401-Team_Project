@@ -8,6 +8,8 @@ public class KayakController : MonoBehaviour
     public float speed = 10.0f;
     private float yRange = 2.5f;
     
+    public AudioSource backgroundMusic;
+    
     // Update is called once per frame
     void Update()
     {

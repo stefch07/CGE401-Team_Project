@@ -28,12 +28,11 @@ public class SpawnManager : MonoBehaviour
         // add a 3 second delay before first spawning objects
         yield return new WaitForSeconds(3f);
         
-        
-            SpawnRandomPrefab();
+        SpawnRandomPrefab();
             
-            float randomDelay = Random.Range(1f, 3f);
+        float randomDelay = Random.Range(1f, 3f);
             
-            yield return new WaitForSeconds(randomDelay);
+        yield return new WaitForSeconds(randomDelay);
     }
     
     void SpawnRandomPrefab() {

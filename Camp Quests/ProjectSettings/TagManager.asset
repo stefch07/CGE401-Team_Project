@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - platform
+  - Log
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
   - Background
@@ -41,4 +42,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1665328703
     locked: 0

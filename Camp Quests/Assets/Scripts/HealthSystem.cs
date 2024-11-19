@@ -13,7 +13,7 @@ public class HealthSystem : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
-    public bool gameOver = false;
+    //public bool gameOver = false;
 
     public GameObject gameOverText;
 
@@ -51,8 +51,8 @@ public class HealthSystem : MonoBehaviour
 
         if (health <= 0)
         {
-            gameOver = true;
-            gameOverText.SetActive(true);
+            //gameOver = true;
+            //gameOverText.SetActive(true);
 
             //Press R to restart if game is over
             if (Input.GetKeyDown(KeyCode.R))

@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class ObjectMovement : MonoBehaviour
 {
-    public float speed = 20;
+    public float speed;
+    
+    void Start() {
+        speed = Random.Range(1.0f, 4.0f);
+    }
     
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
+        transform.Translate(Vector3.right * Time.deltaTime * speed);
     }
 }

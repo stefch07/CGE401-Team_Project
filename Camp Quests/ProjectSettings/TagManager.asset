@@ -6,6 +6,7 @@ TagManager:
   tags:
   - platform
   - Log
+  - HealthSystem
   layers:
   - Default
   - TransparentFX

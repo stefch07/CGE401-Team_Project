@@ -8,9 +8,10 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] prefabsToSpawn;
     
     // variables for spawn position
-    private float leftBound = -14;
-    private float rightBound = 14;
-    private float spawnPosZ = 20;
+    public float downBound = -10;
+    public float upBound = 10;
+    public float spawnPosX = 0;
+    public float spawnPosZ = 0;
     
     public HealthSystem healthSystem;
     
@@ -40,7 +41,7 @@ public class SpawnManager : MonoBehaviour
         int prefabIndex = Random.Range(0, prefabsToSpawn.Length);
         
         // generate a random spawn position
-        Vector3 spawnPos = new Vector3(Random.Range(leftBound, rightBound), 0, spawnPosZ);
+        Vector3 spawnPos = new Vector3(spawnPosX, Random.Range(downBound, upBound), spawnPosZ);
         
         // spawn our animal
         //Instantiate(prefabsToSpawn[prefabIndex], spawnPos, prefabsToSpawn[prefabIndex].transform.rotation);

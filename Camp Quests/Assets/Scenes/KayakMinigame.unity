@@ -159,6 +159,10 @@ MonoBehaviour:
   - {fileID: 6424526510556243179, guid: ac88cd6dd1bb84f399b4127330790f8f, type: 3}
   - {fileID: 3763100307245075273, guid: ec679f72c09f44656be8a491ad0b243c, type: 3}
   - {fileID: 518556597792290834, guid: f2dc632963eea4b11866eb80a06df1d0, type: 3}
+  downBound: -3.75
+  upBound: 10
+  spawnPosX: 10
+  spawnPosZ: 89.5
   healthSystem: {fileID: 687342668}
 --- !u!4 &71401266
 Transform:
@@ -611,7 +615,7 @@ GameObject:
   - component: {fileID: 687342668}
   m_Layer: 0
   m_Name: HealthSystem
-  m_TagString: Untagged
+  m_TagString: HealthSystem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -636,7 +640,6 @@ MonoBehaviour:
   - {fileID: 128956584}
   fullHeart: {fileID: 21300000, guid: 4fc20d987a5904e5fbf45776580d84fe, type: 3}
   emptyHeart: {fileID: 21300000, guid: f57c39a02ea1e47e99ed034dbcf03028, type: 3}
-  gameOver: 0
   gameOverText: {fileID: 0}
 --- !u!4 &687342669
 Transform:

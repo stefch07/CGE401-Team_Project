@@ -571,6 +571,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -110
       objectReference: {fileID: 0}
+    - target: {fileID: 7675943835666030935, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
+      propertyPath: m_text
+      value: Credits
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7675943835263493693, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
     - {fileID: 7675943835853773371, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}

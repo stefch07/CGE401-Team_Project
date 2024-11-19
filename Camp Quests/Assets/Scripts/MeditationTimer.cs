@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro; // Required for TextMeshPro
 
 public class MeditationTimer : MonoBehaviour
@@ -9,11 +10,17 @@ public class MeditationTimer : MonoBehaviour
     // Reference to the TMP Text component to display the timer
     public TextMeshProUGUI timerText;
 
-    private bool timerRunning = true;
+    private bool timerRunning = false;
+    
+    public GameObject canvas;
 
     // Update is called once per frame
     void Update()
     {
+        if (!canvas.activeSelf) {
+            timerRunning = true;
+        }
+        
         if (timerRunning)
         {
             // Decrease the timer by the time since the last frame

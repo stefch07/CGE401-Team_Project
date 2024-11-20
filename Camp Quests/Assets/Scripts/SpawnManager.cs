@@ -28,7 +28,7 @@ public class SpawnManager : MonoBehaviour
         // add a 3 second delay before first spawning objects
         yield return new WaitForSeconds(3f);
         
-        while (spawnPosX == 10) {
+        while (true) {
             SpawnRandomPrefab();
             
             float randomDelay = Random.Range(2f, 3f);
@@ -38,13 +38,37 @@ public class SpawnManager : MonoBehaviour
     }
     
     void SpawnRandomPrefab() {
-        // pick a random animal index
-        int prefabIndex = Random.Range(0, prefabsToSpawn.Length);
+        // pick a random index
+        int randomInt = Random.Range(1, 10);
+        int prefabIndex = 1;
         
-        // generate a random spawn position
+        if (randomInt <= 3) {
+            prefabIndex = 1;
+        }
+        else if (randomInt <= 6) {
+            prefabIndex = 2;
+        }
+        else if (randomInt <= 8) {
+            prefabIndex = 3;
+        }
+        else if (randomInt <= 9) {
+            prefabIndex = 4;
+        }
+        else {
+            int anotherRandomInt = Random.Range(1, 10);
+            
+            if (anotherRandomInt <= 7) {
+                prefabIndex = 5;
+            }
+            else {
+                prefabIndex = 6;
+            }
+        }
+        
+        // generate a random position
         Vector3 spawnPos = new Vector3(spawnPosX, Random.Range(downBound, upBound), spawnPosZ);
         
-        // spawn our animal
+        // spawn our object
         //Instantiate(prefabsToSpawn[prefabIndex], spawnPos, prefabsToSpawn[prefabIndex].transform.rotation);
         Instantiate(prefabsToSpawn[prefabIndex], spawnPos, Quaternion.Euler(0, 180, 0));
     }

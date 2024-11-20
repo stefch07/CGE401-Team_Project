@@ -57,7 +57,7 @@ public class SpawnManager : MonoBehaviour
         else {
             int anotherRandomInt = Random.Range(1, 10);
             
-            if (anotherRandomInt <= 7) {
+            if (anotherRandomInt <= 5) {
                 prefabIndex = 5;
             }
             else {

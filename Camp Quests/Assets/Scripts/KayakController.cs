@@ -6,7 +6,7 @@ public class KayakController : MonoBehaviour
 {
     public float verticalInput;
     public float speed = 10.0f;
-    private float yRange = 2.5f;
+    public float yRange = 2.5f;
     
     public AudioSource backgroundMusic;
     

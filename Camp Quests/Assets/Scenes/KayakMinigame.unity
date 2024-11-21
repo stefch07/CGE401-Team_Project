@@ -162,7 +162,7 @@ MonoBehaviour:
   downBound: -3.75
   upBound: 1.25
   spawnPosX: 10
-  spawnPosZ: -1
+  spawnPosZ: 85
   healthSystem: {fileID: 687342668}
 --- !u!4 &71401266
 Transform:
@@ -799,8 +799,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443781905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -300, y: -40, z: -1}
-  m_LocalScale: {x: 45, y: 45, z: 45}
+  m_LocalPosition: {x: -300, y: -100, z: -1}
+  m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children: []
   m_Father: {fileID: 602632348}
   m_RootOrder: 1
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verticalInput: 0
   speed: 10
-  yRange: 2.25
+  yRange: 2.6
   backgroundMusic: {fileID: 0}
 --- !u!1 &1474016284
 GameObject:

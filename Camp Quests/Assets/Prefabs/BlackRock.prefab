@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8121260308059714365}
   - component: {fileID: 2211228951352036630}
   - component: {fileID: 1245360058167511898}
+  - component: {fileID: -8279944079638915999}
   m_Layer: 0
   m_Name: BlackRock
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &-8279944079638915999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4223602794969089426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfcf2786791354be68dede9f4a12b33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftBound: 30

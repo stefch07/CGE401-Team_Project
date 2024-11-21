@@ -13,6 +13,8 @@ public class MeditationTimer : MonoBehaviour
     private bool timerRunning = false;
     
     public GameObject canvas;
+    
+    public GameObject endCanvas;
 
     // Update is called once per frame
     void Update()
@@ -34,6 +36,11 @@ public class MeditationTimer : MonoBehaviour
 
                 // Trigger an event when the timer ends
                 EndMeditationSession();
+                
+                endCanvas.SetActive(true);
+            }
+            else {
+                endCanvas.SetActive(false);
             }
 
             // Update the timer text

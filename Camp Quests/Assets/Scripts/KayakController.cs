@@ -24,7 +24,7 @@ public class KayakController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, (-yRange - 1.0f), transform.position.z);
         }
         
-        if (transform.position.y > (yRange - 0.5f)) {
+        if (transform.position.y > (yRange - 1.0f)) {
             transform.position = new Vector3(transform.position.x, (yRange - 0.5f), transform.position.z);
         }
     }

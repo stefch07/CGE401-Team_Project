@@ -5,6 +5,11 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
 
+    public void UpdateDialogueObject(DialogueObject dialogueObject)
+    {
+        this.dialogueObject = dialogueObject;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") & other.TryGetComponent(out PlayerMovement player))
@@ -26,6 +31,15 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
     public void Interact(PlayerMovement player)
     {
+        foreach (DialogueResponseEvents responseEvents in GetComponents<DialogueResponseEvents>())
+        {
+            if (responseEvents.DialogueObject == dialogueObject)
+            {
+                player.DialogueUI.AddResponseEvents(responseEvents.Events);
+                break;
+            }
+        }
+        
         player.DialogueUI.ShowDialogue(dialogueObject);
     }
 }

@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsToSpawn:
-  - {fileID: 7672250881639276579, guid: 56dd0f695c1624947a3a933569a02f72, type: 3}
   - {fileID: 1952246782805535360, guid: b07fee8b4505d49e299ce79099a1cb43, type: 3}
+  - {fileID: 7672250881639276579, guid: 56dd0f695c1624947a3a933569a02f72, type: 3}
   - {fileID: 4223602794969089426, guid: 857bd84d47157417ab2394799fd4e0de, type: 3}
   - {fileID: 6424526510556243179, guid: ac88cd6dd1bb84f399b4127330790f8f, type: 3}
   - {fileID: 3763100307245075273, guid: ec679f72c09f44656be8a491ad0b243c, type: 3}

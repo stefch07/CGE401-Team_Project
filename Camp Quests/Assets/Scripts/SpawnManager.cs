@@ -40,12 +40,15 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomPrefab() {
         // pick a random index
         int randomInt = Random.Range(1, 10);
-        int prefabIndex = 1;
+        int prefabIndex = 0;
         
         if (randomInt <= 3) {
+            prefabIndex = 0;
+        }
+        else if (randomInt <= 5) {
             prefabIndex = 1;
         }
-        else if (randomInt <= 6) {
+        else if (randomInt <= 7) {
             prefabIndex = 2;
         }
         else if (randomInt <= 8) {
@@ -55,14 +58,7 @@ public class SpawnManager : MonoBehaviour
             prefabIndex = 4;
         }
         else {
-            int anotherRandomInt = Random.Range(1, 10);
-            
-            if (anotherRandomInt <= 5) {
-                prefabIndex = 5;
-            }
-            else {
-                prefabIndex = 6;
-            }
+            prefabIndex = 5;
         }
         
         // generate a random position

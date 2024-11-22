@@ -109,4 +109,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfcf2786791354be68dede9f4a12b33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBound: 30
+  leftBound: -10

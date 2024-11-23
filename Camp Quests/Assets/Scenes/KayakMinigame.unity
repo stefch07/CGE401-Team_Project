@@ -164,6 +164,7 @@ MonoBehaviour:
   spawnPosX: 10
   spawnPosZ: 85
   healthSystem: {fileID: 687342668}
+  objectMovement: {fileID: 0}
 --- !u!4 &71401266
 Transform:
   m_ObjectHideFlags: 0

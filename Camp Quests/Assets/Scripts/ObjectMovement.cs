@@ -24,8 +24,8 @@ public class ObjectMovement : MonoBehaviour
         if (elapsedTime >= 20f)
         {
             elapsedTime = 0f;
-            lowerBound += 0.2f;
-            upperBound += 0.2f;
+            lowerBound += 0.25f;
+            upperBound += 0.25f;
             speed = Random.Range(lowerBound, upperBound);
         }
     }

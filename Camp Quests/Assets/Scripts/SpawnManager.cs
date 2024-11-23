@@ -15,13 +15,22 @@ public class SpawnManager : MonoBehaviour
     
     public HealthSystem healthSystem;
     
+    public ObjectMovement objectMovement;
+    
     void Start() {
         // get a reference to the health system script
         healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
         
+        //GameObject objectMovementGameObject = new GameObject("ObjectMovementObject");
+        //objectMovement = objectMovementGameObject.AddComponent<ObjectMovement>();
+        
+        //objectMovement.lowerBound = 1.0f;
+        //objectMovement.upperBound = 4.0f;
+        
         // InvokeRepeating("SpawnRandomPrefab", 2, 1.5f);
         
         StartCoroutine(SpawnRandomPrefabWithCoroutine());
+        StartCoroutine(UpdateBoundsRoutine());
     }
     
     IEnumerator SpawnRandomPrefabWithCoroutine() {
@@ -37,9 +46,20 @@ public class SpawnManager : MonoBehaviour
         }
     }
     
+    IEnumerator UpdateBoundsRoutine() {
+        while (true) {
+            // Wait for 20 seconds
+            yield return new WaitForSeconds(20f);
+            
+            // Increase bounds
+            //objectMovement.lowerBound += 0.25f;
+            //objectMovement.upperBound += 0.25f;
+        }
+    }
+    
     void SpawnRandomPrefab() {
         // pick a random index
-        int randomInt = Random.Range(1, 10);
+        int randomInt = Random.Range(1, 11);
         int prefabIndex = 0;
         
         if (randomInt <= 3) {

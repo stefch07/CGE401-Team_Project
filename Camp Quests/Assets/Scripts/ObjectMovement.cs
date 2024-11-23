@@ -7,8 +7,8 @@ public class ObjectMovement : MonoBehaviour
     public float speed;
     private float elapsedTime = 0f;
     
-    private float lowerBound = 1.0f;
-    private float upperBound = 4.0f;
+    public float lowerBound = 1.0f;
+    public float upperBound = 4.0f;
     
     void Start() {
         speed = Random.Range(lowerBound, upperBound);

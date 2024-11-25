@@ -9,7 +9,7 @@ public class ConcentrationMeter : MonoBehaviour
     private AudioSource soundEffectSource;
     private float totalTime = 90f;
     private int spaceScore = 0;
-    private bool timerRunning = true;
+    private bool timerRunning = false; // Initially false
 
     void Start()
     {
@@ -18,10 +18,6 @@ public class ConcentrationMeter : MonoBehaviour
         if (audioSources.Length > 1)
         {
             soundEffectSource = audioSources[1]; // Use the second AudioSource
-        }
-        else
-        {
-           // Debug.LogError("No second AudioSource found!");
         }
 
         UpdateScoreText();
@@ -33,7 +29,7 @@ public class ConcentrationMeter : MonoBehaviour
         // Handle the timer countdown
         if (timerRunning)
         {
-            totalTime -= Time.deltaTime;
+            totalTime -= Time.unscaledDeltaTime; // Use unscaledDeltaTime to ignore timeScale
 
             if (totalTime <= 0)
             {
@@ -58,6 +54,22 @@ public class ConcentrationMeter : MonoBehaviour
 
             UpdateScoreText();
         }
+    }
+
+    public void StartTimer()
+    {
+        Time.timeScale = 1; // Ensure timeScale is 1 to avoid freezes
+        timerRunning = true;
+    }
+
+    public void ResetSession()
+    {
+        totalTime = 90f;
+        spaceScore = 0;
+        timerRunning = false;
+
+        UpdateScoreText();
+        UpdateTimerDisplay();
     }
 
     private void UpdateScoreText()

@@ -5158,6 +5158,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &605559266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605559268}
+  - component: {fileID: 605559267}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &605559267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605559266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9c9407079ca4d558291c171e50520f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManager: {fileID: 1129537230}
+  clockIsRunning: 0
+--- !u!4 &605559268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605559266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 545.24756, y: 300.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &617558200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9041,6 +9086,7 @@ MonoBehaviour:
   continueButton: {fileID: 447756637}
   skipButton: {fileID: 1461255232}
   dialogPanel: {fileID: 659788866}
+  isTextFullyDisplayed: 0
 --- !u!4 &1135818262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2477219742316589401, guid: f01337c4b1a6e774cb6a6f4c3dd02910, type: 3}
@@ -13495,7 +13541,7 @@ GameObject:
   - component: {fileID: 1635033444}
   - component: {fileID: 1635033445}
   m_Layer: 0
-  m_Name: DialogManager
+  m_Name: DialogManagerButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13533,6 +13579,7 @@ MonoBehaviour:
   continueButton: {fileID: 88683336}
   skipButton: {fileID: 2097127556}
   dialogPanel: {fileID: 1483008938}
+  isTextFullyDisplayed: 0
 --- !u!1001 &1640871655
 PrefabInstance:
   m_ObjectHideFlags: 0

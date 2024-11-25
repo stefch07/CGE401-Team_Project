@@ -1,28 +1,39 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-// Must add this to use TMP_Text
 using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
     public TMP_Text textbox;
     public string[] sentences;
-    private int index;
+    private int index = 0;
     public float typingSpeed;
-    
-    // Set these references in the inspector
+
     public GameObject continueButton;
     public GameObject skipButton;
     public GameObject dialogPanel;
-    
+
+    // Public flag to signal when text is fully displayed
+    public bool isTextFullyDisplayed = false;
+
     void OnEnable()
     {
+        index = 0;
         continueButton.SetActive(false);
         skipButton.SetActive(false);
-        StartCoroutine(Type());
+        isTextFullyDisplayed = false;
+
+        if (sentences.Length > 0)
+        {
+            StartCoroutine(Type());
+        }
+        else
+        {
+            Debug.LogWarning("No sentences found in the array.");
+            dialogPanel.SetActive(false);
+        }
     }
-    
+
     IEnumerator Type()
     {
         textbox.text = "";
@@ -31,14 +42,18 @@ public class DialogManager : MonoBehaviour
             textbox.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+
         continueButton.SetActive(true);
         skipButton.SetActive(true);
+        isTextFullyDisplayed = true;  // Text is now fully displayed
     }
-    
+
     public void NextSentence()
     {
         continueButton.SetActive(false);
         skipButton.SetActive(false);
+        isTextFullyDisplayed = false;  // Reset flag as new text is loading
+
         if (index < sentences.Length - 1)
         {
             index++;
@@ -51,10 +66,12 @@ public class DialogManager : MonoBehaviour
             dialogPanel.SetActive(false);
         }
     }
-    
-    public void SkipSentences() {
+
+    public void SkipSentences()
+    {
         continueButton.SetActive(false);
         skipButton.SetActive(false);
         dialogPanel.SetActive(false);
+        isTextFullyDisplayed = true; // Mark as fully displayed
     }
 }

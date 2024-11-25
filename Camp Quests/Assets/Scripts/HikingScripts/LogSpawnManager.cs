@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LogSpawnManager : MonoBehaviour
 {
-    [Header("Log Spawning Settings")]
     public GameObject logPrefab;      
     public float spawnInterval = 2f;  
     public float spawnRangeX = 10f;    

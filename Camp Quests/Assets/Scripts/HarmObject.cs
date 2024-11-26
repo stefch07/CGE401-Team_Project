@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class HarmObject : MonoBehaviour
 {
+    public HealthSystem healthSystem;
+    
+    private void Start() {
+        healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
+    }
+    
     private void OnTriggerEnter(Collider other)
     {
         // Check if the triggering object has the tag "Player"
@@ -11,6 +17,7 @@ public class HarmObject : MonoBehaviour
         {
             // Destroy this object
             Destroy(gameObject);
+            healthSystem.TakeDamage();
         }
     }
 }

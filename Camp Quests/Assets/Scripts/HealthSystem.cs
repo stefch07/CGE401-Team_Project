@@ -67,6 +67,12 @@ public class HealthSystem : MonoBehaviour
     {
         health--;
     }
+    
+    public void Heal() {
+        if (health < maxHealth) {
+            ++health;
+        }
+    }
 
     public void AddMaxHealth()
     {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HarmObject : MonoBehaviour
+public class HealingObject : MonoBehaviour
 {
     public HealthSystem healthSystem;
     
@@ -15,7 +15,7 @@ public class HarmObject : MonoBehaviour
         // Check if the triggering object has the tag "Player"
         if (other.CompareTag("Player"))
         {
-            healthSystem.TakeDamage();
+            healthSystem.Heal();
             // Destroy this object
             Destroy(gameObject);
         }

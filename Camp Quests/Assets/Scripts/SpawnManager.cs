@@ -37,7 +37,7 @@ public class SpawnManager : MonoBehaviour
         // add a 3 second delay before first spawning objects
         yield return new WaitForSeconds(3f);
         
-        while (true) {
+        while (!healthSystem.gameOver) {
             SpawnRandomPrefab();
             
             float randomDelay = Random.Range(2f, 3f);
@@ -47,7 +47,7 @@ public class SpawnManager : MonoBehaviour
     }
     
     IEnumerator UpdateBoundsRoutine() {
-        while (true) {
+        while (!healthSystem.gameOver) {
             // Wait for 20 seconds
             yield return new WaitForSeconds(20f);
             

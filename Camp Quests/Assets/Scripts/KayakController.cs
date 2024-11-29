@@ -14,14 +14,22 @@ public class KayakController : MonoBehaviour
     
     public AudioSource backgroundMusic;
     
+    public HealthSystem healthSystem;
+    
+    void Start() {
+        healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
+    }
+    
     // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
-        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
+        if (!healthSystem.gameOver) {
+            transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+            transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
+        }
         
         // keep player in bounds
         if (transform.position.x < -xRange)

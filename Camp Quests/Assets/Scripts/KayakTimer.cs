@@ -1,14 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Required for TextMeshPro
 
 public class KayakTimer : MonoBehaviour
 {
     // Total time in seconds (3 minutes)
-    public float totalTime = 180f;
+    public static float totalTime = 180f;
 
-    // Reference to the TMP Text component to display the timer
-    public TextMeshProUGUI timerText;
+    // Reference to the Text component to display the timer
+    public Text timerText;
 
     private bool timerRunning = false;
     
@@ -17,9 +16,9 @@ public class KayakTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!timerPanel.activeSelf) {
+        //if (!timerPanel.activeSelf) {
             timerRunning = true;
-        }
+        //}
         
         if (timerRunning)
         {

@@ -5,9 +5,12 @@ using UnityEngine;
 public class HealingObject : MonoBehaviour
 {
     public HealthSystem healthSystem;
+    public AudioClip healingSound;
+    public AudioSource audioSource;
     
     private void Start() {
         healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
+        audioSource = GetComponent<AudioSource>();
     }
     
     private void OnTriggerEnter(Collider other)
@@ -16,6 +19,7 @@ public class HealingObject : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             healthSystem.Heal();
+            audioSource.PlayOneShot(healingSound);
             // Destroy this object
             Destroy(gameObject);
         }

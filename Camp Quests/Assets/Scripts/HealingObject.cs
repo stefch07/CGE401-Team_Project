@@ -21,7 +21,7 @@ public class HealingObject : MonoBehaviour
             healthSystem.Heal();
             audioSource.PlayOneShot(healingSound);
             // Destroy this object
-            Destroy(gameObject, healingSound.length - 0.7f);
+            Destroy(gameObject);
         }
     }
 }

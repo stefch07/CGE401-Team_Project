@@ -13,6 +13,11 @@ public class KayakController : MonoBehaviour
     public float val2 = 1.0f;
     
     public AudioSource backgroundMusic;
+    public AudioSource audioSource;
+    
+    public AudioClip healSound;
+    public AudioClip coinSound;
+    public AudioClip timerSound;
     
     public HealthSystem healthSystem;
     
@@ -48,6 +53,19 @@ public class KayakController : MonoBehaviour
         
         if (transform.position.y > (yRange - val2)) {
             transform.position = new Vector3(transform.position.x, (yRange - val2), transform.position.z);
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Heart")) {
+            audioSource.PlayOneShot(healSound);
+        }
+        else if (other.CompareTag("Coin")) {
+            audioSource.PlayOneShot(coinSound);
+        }
+        else if (other.CompareTag("Hourglass")) {
+            audioSource.PlayOneShot(timerSound);
         }
     }
 }

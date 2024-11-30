@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 5401933818313686987}
   - component: {fileID: 1231362823102535569}
   - component: {fileID: 8587225145552744940}
+  - component: {fileID: -5248776033178320220}
+  - component: {fileID: -4100871414914128544}
+  - component: {fileID: 6820935251421834734}
   m_Layer: 0
   m_Name: Hourglass
-  m_TagString: Untagged
+  m_TagString: Hourglass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  lowerBound: 1
+  upperBound: 4
 --- !u!114 &8587225145552744940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,3 +115,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftBound: -10
+--- !u!114 &-5248776033178320220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518556597792290834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1eea6f13d1a245fb8505372b883fdfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &-4100871414914128544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518556597792290834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.8, y: 12.8, z: 1000}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6820935251421834734
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518556597792290834}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

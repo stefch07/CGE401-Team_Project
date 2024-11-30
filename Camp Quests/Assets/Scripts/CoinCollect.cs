@@ -21,7 +21,7 @@ public class CoinCollect : MonoBehaviour
             coinScore.Inc();
             audioSource.PlayOneShot(coinSound);
             // Destroy this object
-            Destroy(gameObject, coinSound.length - 0.7f);
+            Destroy(gameObject);
         }
     }
 }

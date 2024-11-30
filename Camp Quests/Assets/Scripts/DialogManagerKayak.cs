@@ -15,9 +15,17 @@ public class DialogManagerKayak : MonoBehaviour
 
     // Public flag to signal when text is fully displayed
     public bool isTextFullyDisplayed = false;
+    
+    public static bool hasSeen = false;
 
     void OnEnable()
     {
+        if (hasSeen) {
+            dialogPanel.SetActive(false);
+            continueButton.SetActive(false);
+            return;
+        }
+        
         index = 0;
         continueButton.SetActive(false);
         skipButton.SetActive(false);
@@ -64,6 +72,7 @@ public class DialogManagerKayak : MonoBehaviour
         {
             textbox.text = "";
             dialogPanel.SetActive(false);
+            hasSeen = true;
         }
     }
 

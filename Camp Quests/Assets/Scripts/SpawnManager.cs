@@ -37,17 +37,19 @@ public class SpawnManager : MonoBehaviour
         // add a 3 second delay before first spawning objects
         yield return new WaitForSeconds(3f);
         
-        while (!healthSystem.gameOver) {
-            SpawnRandomPrefab();
-            
-            float randomDelay = Random.Range(2f, 3f);
-            
-            yield return new WaitForSeconds(randomDelay);
+        while (true) {
+            if (!healthSystem.gameOver && DialogManagerKayak.hasSeen) {
+                SpawnRandomPrefab();
+                
+                float randomDelay = Random.Range(2f, 3f);
+                
+                yield return new WaitForSeconds(randomDelay);
+            }
         }
     }
     
     IEnumerator UpdateBoundsRoutine() {
-        while (!healthSystem.gameOver) {
+        while (!healthSystem.gameOver && DialogManagerKayak.hasSeen) {
             // Wait for 20 seconds
             yield return new WaitForSeconds(20f);
             

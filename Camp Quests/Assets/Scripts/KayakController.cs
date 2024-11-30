@@ -31,7 +31,7 @@ public class KayakController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         
-        if (!healthSystem.gameOver) {
+        if (!healthSystem.gameOver && DialogManagerKayak.hasSeen) {
             transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
             transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
         }

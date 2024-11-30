@@ -871,7 +871,7 @@ MonoBehaviour:
   sentences:
   - Time to go kayaking!
   - Use the WASD or arrow keys to move left and right and up and down.
-  - Go for the gold, but don't lose all of your lives!
+  - Go for the gold, but don't lose all of your health!
   - You have three minutes to collect as much as you can. Your trial begins...now!
   typingSpeed: 0.04
   continueButton: {fileID: 69749078}

@@ -12,6 +12,7 @@ public class KayakTimer : MonoBehaviour
     private bool timerRunning = false;
     
     public GameObject timerPanel;
+    
     public HealthSystem healthSystem;
     
     void Start() {
@@ -21,9 +22,12 @@ public class KayakTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerRunning = true;
-        
-        if (timerRunning && !healthSystem.gameOver)
+        if (!healthSystem.gameOver && DialogManagerKayak.hasSeen)
+        {
+            timerRunning = true;
+        }
+            
+        if (timerRunning)
         {
             // Decrease the timer by the time since the last frame
             totalTime -= Time.deltaTime;

@@ -38,7 +38,7 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         
         while (true) {
-            if (!healthSystem.gameOver && DialogManagerKayak.hasSeen) {
+            if (!healthSystem.gameOver) {
                 SpawnRandomPrefab();
                 
                 float randomDelay = Random.Range(2f, 3f);
@@ -49,7 +49,7 @@ public class SpawnManager : MonoBehaviour
     }
     
     IEnumerator UpdateBoundsRoutine() {
-        while (!healthSystem.gameOver && DialogManagerKayak.hasSeen) {
+        while (!healthSystem.gameOver) {
             // Wait for 20 seconds
             yield return new WaitForSeconds(20f);
             

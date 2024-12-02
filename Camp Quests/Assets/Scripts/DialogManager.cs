@@ -13,7 +13,9 @@ public class DialogManager : MonoBehaviour
     public GameObject skipButton;
     public GameObject dialogPanel;
 
-    // Public flag to signal when text is fully displayed
+    public ConcentrationMeter concentrationMeter; // Reference to start the timer
+    public MeditationTimer meditationTimer; // Alternative reference for MeditationTimer
+
     public bool isTextFullyDisplayed = false;
 
     void OnEnable()
@@ -31,6 +33,7 @@ public class DialogManager : MonoBehaviour
         {
             Debug.LogWarning("No sentences found in the array.");
             dialogPanel.SetActive(false);
+            StartTimer(); // Start the timer if no sentences exist
         }
     }
 
@@ -40,19 +43,19 @@ public class DialogManager : MonoBehaviour
         foreach (char letter in sentences[index])
         {
             textbox.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSecondsRealtime(typingSpeed);
         }
 
         continueButton.SetActive(true);
         skipButton.SetActive(true);
-        isTextFullyDisplayed = true;  // Text is now fully displayed
+        isTextFullyDisplayed = true;
     }
 
     public void NextSentence()
     {
         continueButton.SetActive(false);
         skipButton.SetActive(false);
-        isTextFullyDisplayed = false;  // Reset flag as new text is loading
+        isTextFullyDisplayed = false;
 
         if (index < sentences.Length - 1)
         {
@@ -62,8 +65,7 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
-            textbox.text = "";
-            dialogPanel.SetActive(false);
+            EndDialog();
         }
     }
 
@@ -71,7 +73,26 @@ public class DialogManager : MonoBehaviour
     {
         continueButton.SetActive(false);
         skipButton.SetActive(false);
+        EndDialog();
+    }
+
+    private void EndDialog()
+    {
         dialogPanel.SetActive(false);
-        isTextFullyDisplayed = true; // Mark as fully displayed
+        isTextFullyDisplayed = true;
+        StartTimer();
+    }
+
+    private void StartTimer()
+    {
+        if (concentrationMeter != null)
+        {
+            concentrationMeter.StartTimer();
+        }
+
+        if (meditationTimer != null)
+        {
+            meditationTimer.StartTimer();
+        }
     }
 }

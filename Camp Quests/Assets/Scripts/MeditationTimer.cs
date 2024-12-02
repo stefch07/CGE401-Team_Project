@@ -1,54 +1,49 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro; // Required for TextMeshPro
+using TMPro;
 
 public class MeditationTimer : MonoBehaviour
 {
-    // Total time in seconds (1 minute 30 seconds)
     public float totalTime = 90f;
-
-    // Reference to the TMP Text component to display the timer
     public TextMeshProUGUI timerText;
-
     private bool timerRunning = false;
-    
-    public GameObject canvas;
-    
-    public GameObject endCanvas;
+    private int mindWanderCount = 0;
 
-    // Update is called once per frame
+    public TextMeshProUGUI scoreText;
+
+    void Start()
+    {
+        UpdateTimerDisplay();
+        UpdateScoreText();
+    }
+
     void Update()
     {
-        if (!canvas.activeSelf) {
-            timerRunning = true;
-        }
-        
         if (timerRunning)
         {
-            // Decrease the timer by the time since the last frame
-            totalTime -= Time.deltaTime;
-
-            // Stop the timer if it reaches zero
+            totalTime -= Time.unscaledDeltaTime; // Ignore time scale
             if (totalTime <= 0)
             {
                 totalTime = 0;
                 timerRunning = false;
-
-                // Trigger an event when the timer ends
                 EndMeditationSession();
-                
-                endCanvas.SetActive(true);
             }
-            else {
-                endCanvas.SetActive(false);
-            }
-
-            // Update the timer text
             UpdateTimerDisplay();
+        }
+
+        // Handle the Space key press
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            mindWanderCount++;
+            UpdateScoreText();
         }
     }
 
-    // Update the timer text to show minutes and seconds
+    public void StartTimer()
+    {
+        timerRunning = true;
+        Time.timeScale = 1; // Ensure time flows normally
+    }
+
     private void UpdateTimerDisplay()
     {
         int minutes = Mathf.FloorToInt(totalTime / 60);
@@ -56,11 +51,15 @@ public class MeditationTimer : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    // Method called when the timer ends
+    private void UpdateScoreText()
+    {
+        scoreText.text = "Your mind wandered " + mindWanderCount + " times";
+    }
+
     private void EndMeditationSession()
     {
         Debug.Log("Meditation session complete!");
         timerText.text = "Session Complete!";
-        // Add additional actions here, like stopping the game or displaying a message
+        UpdateScoreText();
     }
 }

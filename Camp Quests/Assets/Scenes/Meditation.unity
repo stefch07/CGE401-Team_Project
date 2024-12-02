@@ -6375,7 +6375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &810793434
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9086,6 +9086,8 @@ MonoBehaviour:
   continueButton: {fileID: 447756637}
   skipButton: {fileID: 1461255232}
   dialogPanel: {fileID: 659788866}
+  concentrationMeter: {fileID: 0}
+  meditationTimer: {fileID: 0}
   isTextFullyDisplayed: 0
 --- !u!4 &1135818262 stripped
 Transform:
@@ -11730,8 +11732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalTime: 90
   timerText: {fileID: 180133534}
-  canvas: {fileID: 711993255}
-  endCanvas: {fileID: 1183903903}
+  scoreText: {fileID: 810793435}
 --- !u!4 &1418088067
 Transform:
   m_ObjectHideFlags: 0
@@ -13579,6 +13580,8 @@ MonoBehaviour:
   continueButton: {fileID: 88683336}
   skipButton: {fileID: 2097127556}
   dialogPanel: {fileID: 1483008938}
+  concentrationMeter: {fileID: 0}
+  meditationTimer: {fileID: 0}
   isTextFullyDisplayed: 0
 --- !u!1001 &1640871655
 PrefabInstance:

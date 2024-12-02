@@ -88,5 +88,8 @@ public class ConcentrationMeter : MonoBehaviour
     {
         Debug.Log("Meditation session complete!");
         timerText.text = "Session Complete!";
+        
+        // Display the final message with the concentration score
+        scoreText.text = "Your mind wandered " + spaceScore + " times";
     }
 }

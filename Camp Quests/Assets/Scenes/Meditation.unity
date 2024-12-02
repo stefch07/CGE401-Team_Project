@@ -6478,7 +6478,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 465.9166, w: 0}
+  m_margin: {x: 0, y: 0, z: 279.8039, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9086,8 +9086,8 @@ MonoBehaviour:
   continueButton: {fileID: 447756637}
   skipButton: {fileID: 1461255232}
   dialogPanel: {fileID: 659788866}
-  concentrationMeter: {fileID: 0}
-  meditationTimer: {fileID: 0}
+  concentrationMeter: {fileID: 1027804974}
+  meditationTimer: {fileID: 1418088066}
   isTextFullyDisplayed: 0
 --- !u!4 &1135818262 stripped
 Transform:

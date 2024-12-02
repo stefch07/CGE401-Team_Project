@@ -22,7 +22,7 @@ public class ClockManager : MonoBehaviour
     void StartClock()
     {
         clockIsRunning = true;
-        // Resume time
+        // Resume time, but make sure timer uses unscaled time for independent countdown
         Time.timeScale = 1;
         Debug.Log("Clock has started.");
     }

@@ -20,7 +20,9 @@ public class MeditationTimer : MonoBehaviour
     {
         if (timerRunning)
         {
-            totalTime -= Time.unscaledDeltaTime; // Ignore time scale
+            // Use Time.unscaledDeltaTime to keep the timer running even when the game is paused
+            totalTime -= Time.unscaledDeltaTime;
+
             if (totalTime <= 0)
             {
                 totalTime = 0;
@@ -30,7 +32,7 @@ public class MeditationTimer : MonoBehaviour
             UpdateTimerDisplay();
         }
 
-        // Handle the Space key press
+        // Handle the Space key press (simulating mind wandering)
         if (Input.GetKeyDown(KeyCode.Space))
         {
             mindWanderCount++;
@@ -41,7 +43,7 @@ public class MeditationTimer : MonoBehaviour
     public void StartTimer()
     {
         timerRunning = true;
-        Time.timeScale = 1; // Ensure time flows normally
+        Time.timeScale = 1; // Ensure time flows normally if it was previously paused
     }
 
     private void UpdateTimerDisplay()

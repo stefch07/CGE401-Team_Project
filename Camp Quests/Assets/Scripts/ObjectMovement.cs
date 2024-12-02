@@ -12,6 +12,9 @@ public class ObjectMovement : MonoBehaviour
     
     void Start() {
         speed = Random.Range(lowerBound, upperBound);
+        if (!DialogManagerKayak.hasSeen) {
+            Destroy(gameObject);
+        }
     }
     
     // Update is called once per frame

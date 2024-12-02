@@ -10,11 +10,7 @@ public class DialogManagerKayak : MonoBehaviour
     public float typingSpeed;
 
     public GameObject continueButton;
-    public GameObject skipButton;
     public GameObject dialogPanel;
-
-    // Public flag to signal when text is fully displayed
-    public bool isTextFullyDisplayed = false;
     
     public static bool hasSeen = false;
 
@@ -28,8 +24,6 @@ public class DialogManagerKayak : MonoBehaviour
         
         index = 0;
         continueButton.SetActive(false);
-        skipButton.SetActive(false);
-        isTextFullyDisplayed = false;
 
         if (sentences.Length > 0)
         {
@@ -52,15 +46,11 @@ public class DialogManagerKayak : MonoBehaviour
         }
 
         continueButton.SetActive(true);
-        skipButton.SetActive(true);
-        isTextFullyDisplayed = true;  // Text is now fully displayed
     }
 
     public void NextSentence()
     {
         continueButton.SetActive(false);
-        skipButton.SetActive(false);
-        isTextFullyDisplayed = false;  // Reset flag as new text is loading
 
         if (index < sentences.Length - 1)
         {
@@ -74,13 +64,5 @@ public class DialogManagerKayak : MonoBehaviour
             dialogPanel.SetActive(false);
             hasSeen = true;
         }
-    }
-
-    public void SkipSentences()
-    {
-        continueButton.SetActive(false);
-        skipButton.SetActive(false);
-        dialogPanel.SetActive(false);
-        isTextFullyDisplayed = true; // Mark as fully displayed
     }
 }

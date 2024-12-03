@@ -4090,7 +4090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2892478650181823511}
   - component: {fileID: 8157616904746538684}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4127,7 +4127,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &9162506037645338307
+--- !u!114 &257523683235767332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

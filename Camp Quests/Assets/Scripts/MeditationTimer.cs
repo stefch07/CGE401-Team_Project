@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MeditationTimer : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class MeditationTimer : MonoBehaviour
             {
                 totalTime = 0;
                 timerRunning = false;
+                SceneManager.LoadScene("DemoDay");
                 EndMeditationSession();
             }
             UpdateTimerDisplay();

@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Campsite Assets/SimpleLowPolyNature/Scenes/DemoDay.unity
     guid: 304a5748b784bc241be3c08d67013b21
+  - enabled: 1
+    path: Assets/Scenes/KayakMinigame.unity
+    guid: fa12f9a5bb4b44bd1b4aaed0c39593e4
+  - enabled: 1
+    path: Assets/Scenes/Meditation.unity
+    guid: f4cac6313330846d2b65a48cc44eb52e
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 4c3ec0bb87c564f5ba8604cdd53a37bb
   m_configObjects: {}

@@ -302,7 +302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675943834192583107, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_text
-      value: Camp Quests
+      value: YOU WIN!
       objectReference: {fileID: 0}
     - target: {fileID: 7675943834192583107, guid: 3c2fa679cfe804a8c9169db193199bd7, type: 3}
       propertyPath: m_fontSize

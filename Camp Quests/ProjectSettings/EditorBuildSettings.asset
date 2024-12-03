@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 52475f89ade754bfb9dae1f3a82a3f6f
+    path: Assets/Campsite Assets/SimpleLowPolyNature/Scenes/DemoDay.unity
+    guid: 304a5748b784bc241be3c08d67013b21
   m_configObjects: {}

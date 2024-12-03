@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class KayakTimer : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class KayakTimer : MonoBehaviour
             {
                 totalTime = 0;
                 timerRunning = false;
+                SceneManager.LoadScene("DemoDay");
             }
 
             // Update the timer text

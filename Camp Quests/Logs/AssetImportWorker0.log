@@ -168,3 +168,45 @@ Received Import Request.
   path: Assets/2D Sprites/Main 2D Sprites/ManInBoat.png
   artifactKey: Guid(168bfb91cddb34e4480a58a097d2e5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/2D Sprites/Main 2D Sprites/ManInBoat.png using Guid(168bfb91cddb34e4480a58a097d2e5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0819e0f683d7e9b57bd04cb7bead5f20') in 0.012546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 390.494858 seconds.
+  path: Assets/2D Sprites/BlackRock.png
+  artifactKey: Guid(f737eabf2bc2e42049614a83954f70de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/BlackRock.png using Guid(f737eabf2bc2e42049614a83954f70de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd277c58421cc5c9e783ee947be089cb5') in 0.051029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.906803 seconds.
+  path: Assets/2D Sprites/Coin.png
+  artifactKey: Guid(c0ddd4680324d4eb9a2e9f8b8f741e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Coin.png using Guid(c0ddd4680324d4eb9a2e9f8b8f741e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2bf13e66834b35e4f8a0e4a2904bd5') in 0.013648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.101066 seconds.
+  path: Assets/2D Sprites/emptyHeart.png
+  artifactKey: Guid(f57c39a02ea1e47e99ed034dbcf03028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/emptyHeart.png using Guid(f57c39a02ea1e47e99ed034dbcf03028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e858e1291db89f202422b2d125af4b04') in 0.012240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.119212 seconds.
+  path: Assets/2D Sprites/fullHeart.png
+  artifactKey: Guid(4fc20d987a5904e5fbf45776580d84fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/fullHeart.png using Guid(4fc20d987a5904e5fbf45776580d84fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d0f838c89140e4eb424e9cc02ab51f') in 0.010671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.498679 seconds.
+  path: Assets/2D Sprites/GreyRock.png
+  artifactKey: Guid(5908f81527b864f7295c27c0cc6f9358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/GreyRock.png using Guid(5908f81527b864f7295c27c0cc6f9358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b3be8ea9d810fc46ab01fa6ad8cf19') in 0.014845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.554469 seconds.
+  path: Assets/2D Sprites/Hourglass.png
+  artifactKey: Guid(b91053d8692204e65b012c575835fe82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Hourglass.png using Guid(b91053d8692204e65b012c575835fe82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f694bed95ddd66a894fb0667ed30eb') in 0.013248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.438101 seconds.
+  path: Assets/2D Sprites/Log.png
+  artifactKey: Guid(b2e56c4c68d444a28a94483f11654daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Log.png using Guid(b2e56c4c68d444a28a94483f11654daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b042f88697ff614d4b791ae0e2d6c13b') in 0.008136 seconds 

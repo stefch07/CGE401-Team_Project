@@ -34,10 +34,10 @@ public class KayakTimer : MonoBehaviour
             totalTime -= Time.deltaTime;
 
             // Stop the timer if it reaches zero
-            if (totalTime <= 0)
+            if (totalTime <= 0f)
             {
-                totalTime = 0;
                 timerRunning = false;
+                totalTime = 180f;
                 SceneManager.LoadScene("DemoDay");
             }
 

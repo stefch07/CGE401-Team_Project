@@ -22,107 +22,107 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52551
+52961
 Successfully changed project path to: /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests
 /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests
 Using Asset Import Pipeline V2.
-Player connection [8719983296] Host "[IP] 10.252.33.254 [Port] 0 [Flags] 2 [Guid] 1716951918 [EditorId] 1716951918 [Version] 1048832 [Id] OSXEditor(0,Tylers-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8781419200] Host "[IP] 10.252.33.254 [Port] 0 [Flags] 2 [Guid] 2485876303 [EditorId] 2485876303 [Version] 1048832 [Id] OSXEditor(0,Tylers-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8719983296] Host "[IP] 10.252.33.254 [Port] 0 [Flags] 2 [Guid] 1716951918 [EditorId] 1716951918 [Version] 1048832 [Id] OSXEditor(0,Tylers-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8781419200] Host "[IP] 10.252.33.254 [Port] 0 [Flags] 2 [Guid] 2485876303 [EditorId] 2485876303 [Version] 1048832 [Id] OSXEditor(0,Tylers-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 49.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.48f1 (b805b124c6b7)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Assets
 GfxDevice: creating device client; threaded=0
-2024-12-03 17:08:22.310 Unity[17011:445543] (null) preferred device: Apple M2 (high power)
-2024-12-03 17:08:22.310 Unity[17011:445543] Metal devices available: 1
-2024-12-03 17:08:22.310 Unity[17011:445543] 0: Apple M2 (high power)
-2024-12-03 17:08:22.311 Unity[17011:445543] Using device Apple M2 (high power)
+2024-12-03 17:18:31.822 Unity[17530:455835] (null) preferred device: Apple M2 (high power)
+2024-12-03 17:18:31.822 Unity[17530:455835] Metal devices available: 1
+2024-12-03 17:18:31.822 Unity[17530:455835] 0: Apple M2 (high power)
+2024-12-03 17:18:31.822 Unity[17530:455835] Using device Apple M2 (high power)
 Initializing Metal device caps: Apple M2
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56011
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56530
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.48f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001533 seconds.
+Registered in 0.001888 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 45.56 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.128 seconds
+- Completed reload, in  1.242 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1128ms)
-		BeginReloadAssembly (102ms)
+	ReloadAssembly (1242ms)
+		BeginReloadAssembly (118ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (930ms)
-			LoadAssemblies (99ms)
+		EndReloadAssembly (1024ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (133ms)
+			SetupTypeCache (143ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (509ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (547ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (46ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (281ms)
-				ProcessInitializeOnLoadMethodAttributes (97ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (309ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003658 seconds.
+Registered in 0.004840 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 41.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 45.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.816 seconds
+- Completed reload, in  1.931 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1817ms)
-		BeginReloadAssembly (204ms)
+	ReloadAssembly (1934ms)
+		BeginReloadAssembly (202ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (31ms)
+			DisableScriptedObjects (30ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (1551ms)
-			LoadAssemblies (181ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1666ms)
+			LoadAssemblies (191ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (234ms)
+			SetupTypeCache (250ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (886ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (946ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (41ms)
-				BeforeProcessingInitializeOnLoad (140ms)
-				ProcessInitializeOnLoadAttributes (642ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (46ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (676ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.015268 seconds.
+Validating Project structure ... 0.020761 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.031490 seconds.
+Upgrading shader files ...0.028464 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -132,20 +132,20 @@ Application.AssetDatabase.Refresh End
 RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
 RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.37 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.16 seconds
 Initializing Unity extensions:
-2024-12-03 17:08:27.198 Unity[17011:445543] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f82f17c8750 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2024-12-03 17:08:27.202 Unity[17011:445543] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f82f17c5a60 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2024-12-03 17:18:37.037 Unity[17530:455835] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7ff73cf220b0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2024-12-03 17:18:37.041 Unity[17530:455835] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7ff73cf22b00 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2102 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 189.1 MB.
 System memory in use after: 188.5 MB.
 
 Unloading 164 unused Assets to reduce memory usage. Loaded Objects now: 2587.
-Total: 4.213625 ms (FindLiveObjects: 0.367542 ms CreateObjectMapping: 0.056208 ms MarkObjects: 3.203333 ms  DeleteObjects: 0.585958 ms)
+Total: 10.159833 ms (FindLiveObjects: 0.564500 ms CreateObjectMapping: 0.082458 ms MarkObjects: 8.764250 ms  DeleteObjects: 0.747834 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,625 +159,18 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Backdrops/WisconsinLake.jpeg
-  artifactKey: Guid(8e84609f59a12432e89bc9c86102eda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backdrops/WisconsinLake.jpeg using Guid(8e84609f59a12432e89bc9c86102eda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01d5790c07e992c856c1da4189cae6e') in 0.654738 seconds 
+  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Swim.png
+  artifactKey: Guid(32f12210f3cb11f438d09cfd2556b57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Swim.png using Guid(32f12210f3cb11f438d09cfd2556b57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629ca706164ff1d4ac34a702bd66d073') in 0.467730 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000562 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Attack2.png
-  artifactKey: Guid(6658524ccef523b4d9ccb92c13c220ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Attack2.png using Guid(6658524ccef523b4d9ccb92c13c220ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929de84e3f06e5f3de6fceebd00e0670') in 0.116362 seconds 
+  Time since last request: 0.000624 seconds.
+  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Swim2.png
+  artifactKey: Guid(de755928cb5f5ce499848f3eab2b53a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Swim2.png using Guid(de755928cb5f5ce499848f3eab2b53a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a2906f2c87180a0ef50830b361f9bd') in 0.026930 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Hurt2.png
-  artifactKey: Guid(11dd76484fcb1cd49be54e41480e7539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Hurt2.png using Guid(11dd76484fcb1cd49be54e41480e7539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800f690b77b8b29fcce0791d7c6b1699') in 0.006555 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - American Forest/Atlas.spriteatlas
-  artifactKey: Guid(72ed2a5fe375d7e4bbecf74985d9ecab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Atlas.spriteatlas using Guid(72ed2a5fe375d7e4bbecf74985d9ecab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf2a06a027eae360e50bcb712656623') in 0.414005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Attack2.png
-  artifactKey: Guid(6fd74519f304de449b15cbcff14a8b4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Attack2.png using Guid(6fd74519f304de449b15cbcff14a8b4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e7c3a31c3a7d7a22a22d2706e6f2a8') in 0.006483 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Lowpoly Demo Post-processing Profile.asset
-  artifactKey: Guid(8474767a16347414bbd97f6670a97ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Lowpoly Demo Post-processing Profile.asset using Guid(8474767a16347414bbd97f6670a97ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49eaf5fde14af1b004e0934bfe694bd8') in 0.053746 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Backdrops/forest background.jpg
-  artifactKey: Guid(80a5cbe3f2bc41447b48cac273f2e35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backdrops/forest background.jpg using Guid(80a5cbe3f2bc41447b48cac273f2e35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0fe61cbf6452a93d4204ba4ba3bd77c') in 0.066740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Hurt3.png
-  artifactKey: Guid(69de2f3413fb8aa469dc4c3bfbcf5e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Hurt3.png using Guid(69de2f3413fb8aa469dc4c3bfbcf5e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20dfd0a7d65d12ac3ba3e90291b5072e') in 0.011036 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Death.png
-  artifactKey: Guid(275cc5fd871a00f4b9d0e812700b429e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Death.png using Guid(275cc5fd871a00f4b9d0e812700b429e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53fbbcd0dd7d9692ba7a50169d83b67') in 0.012738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Attack3.png
-  artifactKey: Guid(4cb25f5ac2ccc324699e8baa32fdf3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Attack3.png using Guid(4cb25f5ac2ccc324699e8baa32fdf3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '328b2a0f0e3f08e78da6b843c04f5a9f') in 0.006457 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Hurt3.png
-  artifactKey: Guid(174616f6962755b498677c4f3f07a57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Hurt3.png using Guid(174616f6962755b498677c4f3f07a57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5990617c5d45818d2845b07a0a09f495') in 0.037133 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Attack.png
-  artifactKey: Guid(4fc74cad82381624193a9e7e2c71afd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Attack.png using Guid(4fc74cad82381624193a9e7e2c71afd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c7fde04eefb9971f651ba838f17f69') in 0.005783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Jump.png
-  artifactKey: Guid(1f072779b17247b47a23848c78a760cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Jump.png using Guid(1f072779b17247b47a23848c78a760cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2ed942331621f122a5424048f68eac') in 0.006525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Attack.png
-  artifactKey: Guid(51149297b9da84f48aa8e2db658e2867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Attack.png using Guid(51149297b9da84f48aa8e2db658e2867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6d610f07944a3751be89fa130caecb2') in 0.005718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Hurt.png
-  artifactKey: Guid(5ac352a846570ee40986f8c697088408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Hurt.png using Guid(5ac352a846570ee40986f8c697088408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c214c736955a28c341ff6529dd2b9a') in 0.006019 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Backdrops/Dark Wood.jpeg
-  artifactKey: Guid(240d30205974b451aa68247e88d24f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backdrops/Dark Wood.jpeg using Guid(240d30205974b451aa68247e88d24f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8734600729a4ddbc39d07caec2da87a') in 0.020700 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Attack3.png
-  artifactKey: Guid(a5f5155e45b97f74b835790fa8221864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Attack3.png using Guid(a5f5155e45b97f74b835790fa8221864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32dd1c1e6e627374e53feb8b458d845') in 0.008316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Idle.png
-  artifactKey: Guid(c78e6bfb1f834734a9180acec046eb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Idle.png using Guid(c78e6bfb1f834734a9180acec046eb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb708c7c520a8666c2875f1e9a230628') in 0.005125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Backdrops/Light Wood.jpeg
-  artifactKey: Guid(badaf91a5d69f42c795d2f0341ae6484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Backdrops/Light Wood.jpeg using Guid(badaf91a5d69f42c795d2f0341ae6484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0498f54014960408c391faf221e8b240') in 0.020749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Idle2.png
-  artifactKey: Guid(da159d795f2f23b42833ab5e2c19ca47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Idle2.png using Guid(da159d795f2f23b42833ab5e2c19ca47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965dfce4ee331ea13d2b1a3018f16b85') in 0.006327 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Jump.png
-  artifactKey: Guid(5c08da2569df9494cb8b571e95658233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Jump.png using Guid(5c08da2569df9494cb8b571e95658233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c81874b4e3e5b8651597b5545ea3da4') in 0.006503 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Hurt.png
-  artifactKey: Guid(40a7aff5fd0bcdb49a39d409e47bea47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Hurt.png using Guid(40a7aff5fd0bcdb49a39d409e47bea47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f18fc86b3f6e7a42bb3d9b7dafa6808') in 0.005787 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Death.png
-  artifactKey: Guid(1a6625c44eaf4fc4a8441eb6231a33bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/3 SteamMan/Death.png using Guid(1a6625c44eaf4fc4a8441eb6231a33bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c61f1c4fac35d1c63c98e8fa5ff00a') in 0.006522 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Idle.png
-  artifactKey: Guid(045707c1a33470e409699837e4b21bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Idle.png using Guid(045707c1a33470e409699837e4b21bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00202820fe3d87ef3114f64f0daf39d') in 0.005029 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Idle2.png
-  artifactKey: Guid(f08a4d69aa1ee154cb64358de8b04f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Idle2.png using Guid(f08a4d69aa1ee154cb64358de8b04f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd9a4aa7c1b4f672275c8dbeb6b9af23') in 0.006362 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Hurt2.png
-  artifactKey: Guid(10e33ec83cb974f4a9a9775e6cdb83e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/1 Woodcutter/Hurt2.png using Guid(10e33ec83cb974f4a9a9775e6cdb83e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4003e1e493939af60ff2fb2a25c084d5') in 0.005879 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.783995 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Attack.png
-  artifactKey: Guid(232ec3e414096ff4ab264819d0e588e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Attack.png using Guid(232ec3e414096ff4ab264819d0e588e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2cce0bdcf984f547f3ac8504ea08c3d') in 0.030610 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Attack2.png
-  artifactKey: Guid(2dfdd4b88084d8049a433064be3320e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Attack2.png using Guid(2dfdd4b88084d8049a433064be3320e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d35e0d96ebc877d1424181e022ddf6e') in 0.006788 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Swim.png
-  artifactKey: Guid(fdf0054944321d144af1bbbc1dd417b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Swim.png using Guid(fdf0054944321d144af1bbbc1dd417b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5458510007f1fa9fcc4ab01f6958f4a9') in 0.007784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Idle.png
-  artifactKey: Guid(f7a93c6d6326c1344b58db84bc399fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Idle.png using Guid(f7a93c6d6326c1344b58db84bc399fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcddf2e48e8954be82ab31fb2f16eafe') in 0.008218 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Jump.png
-  artifactKey: Guid(d19a79861edecd64e9ecd86cba5c54fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Jump.png using Guid(d19a79861edecd64e9ecd86cba5c54fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93cf3eea1995f2afd1f634e1f302981d') in 0.007414 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Hurt2.png
-  artifactKey: Guid(fd3daeebfc7e00f409916b5f9bc39747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Hurt2.png using Guid(fd3daeebfc7e00f409916b5f9bc39747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84dff207b6a65fb655b5fbb87efc24a') in 0.006195 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Attack3.png
-  artifactKey: Guid(1c33b668c13359e4b967694ac0b50604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Attack3.png using Guid(1c33b668c13359e4b967694ac0b50604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ae579c921863d33fabb4bbcfaa0760') in 0.005061 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Swim2.png
-  artifactKey: Guid(236fdbcd7b6efca4a9c013317c392c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Swim2.png using Guid(236fdbcd7b6efca4a9c013317c392c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2673913657e5c4c26a43b1bcc7df9b82') in 0.004888 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Hurt3.png
-  artifactKey: Guid(5fb3e0a1ae451b74c9e0d55cd40fec58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Hurt3.png using Guid(5fb3e0a1ae451b74c9e0d55cd40fec58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a3aa3f9351c6917909da6bf4b88f7a') in 0.005721 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Idle2.png
-  artifactKey: Guid(69b8065e12a64554dbe70af0a6622129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Idle2.png using Guid(69b8065e12a64554dbe70af0a6622129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714887f2f2d36787c8e867073d582312') in 0.005043 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Hurt.png
-  artifactKey: Guid(6ef5c30ad84c2dc40b767ac8ba1312ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Hurt.png using Guid(6ef5c30ad84c2dc40b767ac8ba1312ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a932c8968db021dbbc3d810fe72fbdb8') in 0.009086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Death.png
-  artifactKey: Guid(551778d3a9dd5504b93e2f31f7844027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Swimming Sprites/2 GraveRobber/Death.png using Guid(551778d3a9dd5504b93e2f31f7844027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5818b40e06f4eeba86807e7833087da9') in 0.006922 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.308273 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_attack2.png
-  artifactKey: Guid(b121238b3d9dc44a5bb66b462675aee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_attack2.png using Guid(b121238b3d9dc44a5bb66b462675aee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82bf74f312b1720a356c0c17f9d938f0') in 0.009147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_climb.png
-  artifactKey: Guid(1ba92d46b8bfd45e18c2ceb61d8357bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_climb.png using Guid(1ba92d46b8bfd45e18c2ceb61d8357bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b4b59d842f980721f6748069fb298d7') in 0.016859 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_attack3.png
-  artifactKey: Guid(0427793e2b55b4159a53027636bb2cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_attack3.png using Guid(0427793e2b55b4159a53027636bb2cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06129216c6dddf067852fca27a674750') in 0.010072 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_run_attack.png
-  artifactKey: Guid(2efc6416dd10945ff92ce9b0675be999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_run_attack.png using Guid(2efc6416dd10945ff92ce9b0675be999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef894079d985fb7d036f8f7af8730f2a') in 0.010317 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_doublejump.png
-  artifactKey: Guid(0953fdbfbd4494d9ab9c3bdc8dce414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_doublejump.png using Guid(0953fdbfbd4494d9ab9c3bdc8dce414d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9031359306d9121b9aba0b64aa90088') in 0.006217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_death.png
-  artifactKey: Guid(8d71c8f26b57f4f8e97bff5a05065211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_death.png using Guid(8d71c8f26b57f4f8e97bff5a05065211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76415065c07510840d5cef820283edf1') in 0.005747 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_punch.png
-  artifactKey: Guid(a60ef969c01be4fa9b35fa0be677765f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_punch.png using Guid(a60ef969c01be4fa9b35fa0be677765f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55d7d9785650217b851e005da716609') in 0.005950 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_run.png
-  artifactKey: Guid(84b9ca024e14b4ee6a3125faec3bad6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_run.png using Guid(84b9ca024e14b4ee6a3125faec3bad6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1016a78293f6376adec28b6805d85d') in 0.007054 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_hurt.png
-  artifactKey: Guid(02d85898c9b064a7caedfe9da29cff9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_hurt.png using Guid(02d85898c9b064a7caedfe9da29cff9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d753e9ba79616a542c1eaa5b1f2493') in 0.006199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/CyberpunkNPCArt/2 Punk/Punk_jump.png
-  artifactKey: Guid(44ab4c8594afe4411961e64fcd002ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/2 Punk/Punk_jump.png using Guid(44ab4c8594afe4411961e64fcd002ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4207b56e2dda2780e6407a6adabb80') in 0.010048 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.351355 seconds.
-  path: Assets/Music&SoundEffects/audio_meditation.wav
-  artifactKey: Guid(49fb719bb650944429e526eea3e2fa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music&SoundEffects/audio_meditation.wav using Guid(49fb719bb650944429e526eea3e2fa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a691d78a7e0509f2737d294035f86ad5') in 0.781888 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Music&SoundEffects/HourglassCollect.mp3
-  artifactKey: Guid(268b3ac6c635d4fbe8be870000cc0ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music&SoundEffects/HourglassCollect.mp3 using Guid(268b3ac6c635d4fbe8be870000cc0ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b2408b594e13c6a9aa837621fd51fe') in 0.357368 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Prefabs/Heart.prefab
-  artifactKey: Guid(ec679f72c09f44656be8a491ad0b243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Heart.prefab using Guid(ec679f72c09f44656be8a491ad0b243c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42180c2315d8ff0bcdb6f340f875932f') in 0.112730 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/CyberpunkNPCArt/PSD/Punk.psd
-  artifactKey: Guid(162ba780636fb4c3382048bd4c1863a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/PSD/Punk.psd using Guid(162ba780636fb4c3382048bd4c1863a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a9998e6ae3bb4815fd878a0d1503d07') in 0.456993 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_climb.png
-  artifactKey: Guid(74063639afae94460871cb68543abf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_climb.png using Guid(74063639afae94460871cb68543abf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c1cab8d9f1f4494a4c72ae3813425b') in 0.007073 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Music&SoundEffects/Kayaking.mp3
-  artifactKey: Guid(89cb97f59f1114c8cb10dfaaa2a25dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music&SoundEffects/Kayaking.mp3 using Guid(89cb97f59f1114c8cb10dfaaa2a25dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d30f2fce45fbba358a39b6820a003ba') in 0.005881 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_attack2.png
-  artifactKey: Guid(11af51a64b0284dc8af2a1716030fccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_attack2.png using Guid(11af51a64b0284dc8af2a1716030fccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d004556729e64038c957a372b372d07') in 0.005127 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/CyberpunkNPCArt/PSD/Cyborg.psd
-  artifactKey: Guid(32832ebf3ec6f4ad69de2d179de17535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/PSD/Cyborg.psd using Guid(32832ebf3ec6f4ad69de2d179de17535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fdaf476808cc98314ba709b82379758') in 0.006867 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_hurt.png
-  artifactKey: Guid(6d655371dbcd14ad3a9a519731bf4eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_hurt.png using Guid(6d655371dbcd14ad3a9a519731bf4eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd090b5aacf182b8e92c5d06307cf85e5') in 0.005367 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Music&SoundEffects/CoinCollect.mp3
-  artifactKey: Guid(0177b188310af4163ba077fa51bcecb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music&SoundEffects/CoinCollect.mp3 using Guid(0177b188310af4163ba077fa51bcecb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45829af05b3f2ec74f3bd3d61a778db5') in 0.004974 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_run.png
-  artifactKey: Guid(ea7be4ae02c7c4ef3a7cb839b655d388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_run.png using Guid(ea7be4ae02c7c4ef3a7cb839b655d388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e03940aae692034820e3cf22df912dfc') in 0.004876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_doublejump.png
-  artifactKey: Guid(2ce6addb32cf249d5ae13215a98e5016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_doublejump.png using Guid(2ce6addb32cf249d5ae13215a98e5016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72322a9429178d7a8e5eb5652ab33d72') in 0.005186 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_run_attack.png
-  artifactKey: Guid(559f2ec366f2545c2bb2b31a259282e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_run_attack.png using Guid(559f2ec366f2545c2bb2b31a259282e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7895a3560cfb5c2a707ab44b1f19439d') in 0.005127 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Music&SoundEffects/HeartCollect.mp3
-  artifactKey: Guid(2df2bfd844a2741e2bf03a56ad68df0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music&SoundEffects/HeartCollect.mp3 using Guid(2df2bfd844a2741e2bf03a56ad68df0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5be8d6704ea95d94cd0ac84508c080') in 0.004670 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Prefabs/GreyRock.prefab
-  artifactKey: Guid(56dd0f695c1624947a3a933569a02f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GreyRock.prefab using Guid(56dd0f695c1624947a3a933569a02f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c246cc10bcd3f0310c4803388748f81') in 0.009364 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_attack3.png
-  artifactKey: Guid(c6d99b49541f94ec49f8e138c1df8f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_attack3.png using Guid(c6d99b49541f94ec49f8e138c1df8f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89cd269da7364ebc2a6ba10495372612') in 0.004848 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_attack1.png
-  artifactKey: Guid(b4ed6f2b402ed4955a05435fa7c2f6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_attack1.png using Guid(b4ed6f2b402ed4955a05435fa7c2f6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3993f8463e091277b8e05eb7e26af87f') in 0.005891 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Prefabs/Log.prefab
-  artifactKey: Guid(b07fee8b4505d49e299ce79099a1cb43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Log.prefab using Guid(b07fee8b4505d49e299ce79099a1cb43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd67c84404450feba4f47eb971d87372') in 0.005459 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Prefabs/Hourglass.prefab
-  artifactKey: Guid(f2dc632963eea4b11866eb80a06df1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Hourglass.prefab using Guid(f2dc632963eea4b11866eb80a06df1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9dc65652672b4b77b6a46b8575567a9') in 0.007893 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/CyberpunkNPCArt/PSD/Biker.psd
-  artifactKey: Guid(a7e2319b6dbd94be9960a4ef01912e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/PSD/Biker.psd using Guid(a7e2319b6dbd94be9960a4ef01912e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1527d836b8b7f0bb6c8c5f50fecc9988') in 0.007198 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Prefabs/BlackRock.prefab
-  artifactKey: Guid(857bd84d47157417ab2394799fd4e0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BlackRock.prefab using Guid(857bd84d47157417ab2394799fd4e0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ab38fb5a3f5e11f32952378e1a12ff') in 0.006168 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Music&SoundEffects/bells-2-31725.wav
-  artifactKey: Guid(64bb193465ca1455088c12a1266bd37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music&SoundEffects/bells-2-31725.wav using Guid(64bb193465ca1455088c12a1266bd37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee22897c4bc53e965cc14da0b6b84c98') in 0.004944 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_idle.png
-  artifactKey: Guid(8e612e2d130c646b49a9573d98612984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_idle.png using Guid(8e612e2d130c646b49a9573d98612984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915f62d2e9648db4107d9d2c12b8b388') in 0.006345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Prefabs/Coin.prefab
-  artifactKey: Guid(ac88cd6dd1bb84f399b4127330790f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Coin.prefab using Guid(ac88cd6dd1bb84f399b4127330790f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4aaba334ee27ef94eb81d64eb3b1a2') in 0.007257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_jump.png
-  artifactKey: Guid(732712359b8af4814875e1f015c1b9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_jump.png using Guid(732712359b8af4814875e1f015c1b9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2fa4fed134480ebafb1544554fa452') in 0.005232 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_punch.png
-  artifactKey: Guid(5af69e7d42e694f78b0bcbc4a8bc7bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_punch.png using Guid(5af69e7d42e694f78b0bcbc4a8bc7bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a85b5c718f08ec6284d912aa476df149') in 0.005549 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_death.png
-  artifactKey: Guid(945b9ba00996e4318993ce627a3e0b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CyberpunkNPCArt/3 Cyborg/Cyborg_death.png using Guid(945b9ba00996e4318993ce627a3e0b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1274160a04788a7f6fbc9e5bf07be921') in 0.005091 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 134.657045 seconds.
-  path: Assets/Scripts/HarmObject.cs
-  artifactKey: Guid(5676dc9b60b6a405aaee47a1d7f53664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/HarmObject.cs using Guid(5676dc9b60b6a405aaee47a1d7f53664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a25a9b6117c47d5faf34caa99c00ba35') in 0.100592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.212315 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Materials/demo_ground.mat
-  artifactKey: Guid(acc7d0ef41a8a45489a6180b22288c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Materials/demo_ground.mat using Guid(acc7d0ef41a8a45489a6180b22288c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ce696be4f49d2eb9ed6369ee90ed69') in 0.167022 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Materials/DemoPlaneMat.mat
-  artifactKey: Guid(d598d01c3db68c94692eb5c44c83de93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Materials/DemoPlaneMat.mat using Guid(d598d01c3db68c94692eb5c44c83de93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc332c8bd7911f02cb743c4870570f7') in 0.008812 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 102.389778 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Mesh.png
-  artifactKey: Guid(24f90d3fa2df5c84abbf1455cfda472e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Mesh.png using Guid(24f90d3fa2df5c84abbf1455cfda472e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e616869c4136282809852bc84a1ea4') in 0.045473 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000955 seconds.
-  path: Assets/Forest sprite pack/Sprites/mount big.png
-  artifactKey: Guid(86679f60130a2834aa252e67a3d1aab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Forest sprite pack/Sprites/mount big.png using Guid(86679f60130a2834aa252e67a3d1aab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab79030833e26a957cea1b579e1da67b') in 0.082456 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000651 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Mesh@4x.png
-  artifactKey: Guid(953b8abb3b6548c4294b547c2f473be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Mesh@4x.png using Guid(953b8abb3b6548c4294b547c2f473be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cfb205c7af221825c0694f800eaa8f5') in 0.010715 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/UI Prompts/Keyboard & Mouse/Double/mouse.png
-  artifactKey: Guid(caa4ed8cd1d4849fcafb7ec87430a0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI Prompts/Keyboard & Mouse/Double/mouse.png using Guid(caa4ed8cd1d4849fcafb7ec87430a0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dee3fdea13224dbe27530f444e249f8') in 0.008706 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Mesh@3x.png
-  artifactKey: Guid(2d95cf258837ba44896030e25b9f2dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Mesh@3x.png using Guid(2d95cf258837ba44896030e25b9f2dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad14826c605d81cb711cf2528740c19') in 0.006615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000429 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Mesh@2x.png
-  artifactKey: Guid(242f58a86f3ee8e418809e5fc269d531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Mesh@2x.png using Guid(242f58a86f3ee8e418809e5fc269d531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde2e0ec07efd268d3b70732293d5a8f') in 0.025432 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.463482 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - American Forest
-  artifactKey: Guid(a39cf8002df4206458df300f6ce63d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - American Forest using Guid(a39cf8002df4206458df300f6ce63d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc2dad6828decf009ea3a457f3f7372') in 0.002157 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.123387 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/branch01.fbx
-  artifactKey: Guid(6a0d780f56811d249867b8b0465e7385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/branch01.fbx using Guid(6a0d780f56811d249867b8b0465e7385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71124d163157197cd1eb305f3f2232d6') in 0.302080 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/flower02_yellow.fbx
-  artifactKey: Guid(a2c6eca40b9b6e24ba00b9094287e9e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/flower02_yellow.fbx using Guid(a2c6eca40b9b6e24ba00b9094287e9e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db41abc32de5650c7fcd0fa06886c307') in 0.014080 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/Flower3.fbx
-  artifactKey: Guid(0b327016a46383242b0c0f14ed5d68b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/Flower3.fbx using Guid(0b327016a46383242b0c0f14ed5d68b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990cd5ec663d490a337d3f4fabdde177') in 0.034943 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/flower02_pink.fbx
-  artifactKey: Guid(9526f0168f6ba2f4cbfeacd4eed88462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/flower02_pink.fbx using Guid(9526f0168f6ba2f4cbfeacd4eed88462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1c0ab6ff1289092752ae5a154958bd') in 0.009814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/grass01.fbx
-  artifactKey: Guid(3ea35969007dab74b8387ba5e4b68d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/grass01.fbx using Guid(3ea35969007dab74b8387ba5e4b68d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eacda0ffe7a20fba36244030e09e99d') in 0.008368 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/bush_berries_red.fbx
-  artifactKey: Guid(d6bbf19c848ddb14bb0f2af84b224f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/bush_berries_red.fbx using Guid(d6bbf19c848ddb14bb0f2af84b224f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0107c3dacce2a5807f53cd4630264244') in 0.009136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/Cloud1.fbx
-  artifactKey: Guid(ba90c7e89ce8fb847b770b7be3fc7975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/Cloud1.fbx using Guid(ba90c7e89ce8fb847b770b7be3fc7975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174787bc2ec5976a288d81de92b8f0a7') in 0.009211 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/FallenBranch.fbx
-  artifactKey: Guid(a05b1bd673e1bfd4986cd14348a0c7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/FallenBranch.fbx using Guid(a05b1bd673e1bfd4986cd14348a0c7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85188c7605da8d807efbdb63558d98f2') in 0.008287 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/bush_berries_empty.fbx
-  artifactKey: Guid(42267035880fa7846980803c50f5649b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/bush_berries_empty.fbx using Guid(42267035880fa7846980803c50f5649b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22143d15e58b9df9f9843fb3d455b97') in 0.009208 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/flower02_orange.fbx
-  artifactKey: Guid(a032ea3c9d385fb438e4e1b935f87514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/flower02_orange.fbx using Guid(a032ea3c9d385fb438e4e1b935f87514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9cf4ceb2c8363993d5c8e9ad48c6c9') in 0.008268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000440 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/Cloud2.fbx
-  artifactKey: Guid(a6334d263148b284bb2aeeef15b19ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/Cloud2.fbx using Guid(a6334d263148b284bb2aeeef15b19ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb135b416906123e252a90b4170af74e') in 0.015591 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/FireWood.fbx
-  artifactKey: Guid(76e0ad8bbe5fca64f90e1cb33a04e75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/FireWood.fbx using Guid(76e0ad8bbe5fca64f90e1cb33a04e75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e93740b1d1dadc2e0c6c75003c24d9f') in 0.007596 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/Flower1.fbx
-  artifactKey: Guid(5e29eb426a57a534b92c5c4f3eb82a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/Flower1.fbx using Guid(5e29eb426a57a534b92c5c4f3eb82a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094340d2e5bb77329c8a37a0729ffcc8') in 0.009182 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/bush_berries_blue.fbx
-  artifactKey: Guid(4a31c47b61408544a93e0845e58880d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/bush_berries_blue.fbx using Guid(4a31c47b61408544a93e0845e58880d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93630bea8c015e1e4ea6687c5236a9e1') in 0.007944 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000709 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/Flower2.fbx
-  artifactKey: Guid(0c77d10ec0c97b54da131d936ef92059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/Flower2.fbx using Guid(0c77d10ec0c97b54da131d936ef92059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e73dffd45cd7f719964a0860be0aa30') in 0.008958 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/fence.fbx
-  artifactKey: Guid(ae98287187aea8044b54d85fd41679b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/fence.fbx using Guid(ae98287187aea8044b54d85fd41679b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d428f03efc96e3463b7dbd3b0d27df') in 0.008282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/Grass1.fbx
-  artifactKey: Guid(5954e88e9d890844e863ec1621dc70a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/Grass1.fbx using Guid(5954e88e9d890844e863ec1621dc70a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb74c6ed4f90402f346355e64aa63b70') in 0.008400 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/dead_tree.fbx
-  artifactKey: Guid(ce26621968ac6f3469dda31341b275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/Low Poly Nature Pack Lite/Models/dead_tree.fbx using Guid(ce26621968ac6f3469dda31341b275c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e45fdd73802745f4a5db1ed90482aa6') in 0.008897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Campsite Assets/SimpleLowPolyNature/Models/FireParticle.fbx
-  artifactKey: Guid(dc361669c609eb24c8940f9c51167859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Campsite Assets/SimpleLowPolyNature/Models/FireParticle.fbx using Guid(dc361669c609eb24c8940f9c51167859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3cb10337eb6f115bed5717345a41dad') in 0.009657 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+  Time since last request: 122.638102 seconds.
+  path: Assets/Scripts/YouLose.cs
+  artifactKey: Guid(ad69750eddcb041d69f094a596cc72ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/YouLose.cs using Guid(ad69750eddcb041d69f094a596cc72ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1ff813855f57cd9a6e0a9624f7b088') in 0.152825 seconds 

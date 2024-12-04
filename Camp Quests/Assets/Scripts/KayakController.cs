@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KayakController : MonoBehaviour
 {
@@ -53,6 +54,10 @@ public class KayakController : MonoBehaviour
         
         if (transform.position.y > (yRange - val2)) {
             transform.position = new Vector3(transform.position.x, (yRange - val2), transform.position.z);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Q)) {
+            SceneManager.LoadScene("DemoDay");
         }
     }
     

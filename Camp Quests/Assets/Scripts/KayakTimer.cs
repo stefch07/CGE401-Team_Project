@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class KayakTimer : MonoBehaviour
 {
-    // Total time in seconds (3 minutes)
-    public static float totalTime = 180f;
+    // Total time in seconds (2 minutes)
+    public static float totalTime = 120f;
 
     // Reference to the Text component to display the timer
     public Text timerText;
@@ -37,7 +37,7 @@ public class KayakTimer : MonoBehaviour
             if (totalTime <= 0f)
             {
                 timerRunning = false;
-                totalTime = 180f;
+                totalTime = 120f;
                 SceneManager.LoadScene("DemoDay");
             }
 

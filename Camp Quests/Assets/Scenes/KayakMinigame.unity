@@ -1234,7 +1234,7 @@ MonoBehaviour:
   - Time to go kayaking!
   - Press the WASD or arrow keys to move up and down and left and right.
   - Go for the gold, but don't lose all of your health!
-  - You have three minutes to pick up any items you want. Your time begins...now.
+  - You have two minutes to pick up any items you want. Your time begins...now.
   typingSpeed: 0.04
   continueButton: {fileID: 1196527606}
   dialogPanel: {fileID: 2126046682}

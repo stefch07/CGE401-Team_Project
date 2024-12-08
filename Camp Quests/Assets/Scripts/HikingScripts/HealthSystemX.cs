@@ -19,6 +19,7 @@ public class HealthSystemX : MonoBehaviour
 
     void Start()
     {
+        // Find the GameManager object in the scene
         gameManager = FindObjectOfType<GameManager>();
     }
 

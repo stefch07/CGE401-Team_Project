@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -64,9 +63,11 @@ public class HealthSystem : MonoBehaviour
     {
         health--;
     }
-    
-    public void Heal() {
-        if (health < maxHealth) {
+
+    public void Heal()
+    {
+        if (health < maxHealth)
+        {
             ++health;
         }
     }

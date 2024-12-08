@@ -12,6 +12,8 @@ TagManager:
   - Heart
   - Hourglass
   - Ground
+  - Undefined
+  - Win
   layers:
   - Default
   - TransparentFX

@@ -7102,11 +7102,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
-  jumpForce: 3
+  jumpForce: 5
   groundLayer:
     serializedVersion: 2
-    m_Bits: 1
-  groundCheck: {fileID: 1705153896}
+    m_Bits: 0
+  groundCheck: {fileID: 0}
   groundCheckRadius: 0.2
 --- !u!114 &716622530
 MonoBehaviour:
@@ -7121,7 +7121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionMessage: You pet the animal. It seems happy!
-  interactionText: {fileID: 1094603429}
+  interactionText: {fileID: 0}
 --- !u!114 &716622531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7134,7 +7134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c2431d65a4e40438ca4d3f40fd6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSystem: {fileID: 1800227244}
+  healthSystem: {fileID: 0}
 --- !u!114 &716622532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7147,7 +7147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8832463f10214e94480c1b7d554d6fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1952839367}
+  gameManager: {fileID: 0}
 --- !u!1 &762621771
 GameObject:
   m_ObjectHideFlags: 0
@@ -22585,7 +22585,6 @@ MonoBehaviour:
   winUI: {fileID: 1535244374}
   redUI: {fileID: 1682645464}
   greenUI: {fileID: 1299899014}
-  uiDelayTime: 2
 --- !u!1 &2007307159
 GameObject:
   m_ObjectHideFlags: 0

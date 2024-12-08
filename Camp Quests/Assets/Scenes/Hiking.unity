@@ -7082,10 +7082,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716622524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 169.5, y: 1, z: -7}
+  m_LocalPosition: {x: -9.5, y: -0.9, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children:
   - {fileID: 862328159}
+  - {fileID: 1705153896}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7102,12 +7103,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
-  jumpForce: 5
+  jumpForce: 3
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  groundCheck: {fileID: 0}
+    m_Bits: 1
+  groundCheck: {fileID: 1705153896}
   groundCheckRadius: 0.2
+  gameManager: {fileID: 1952839367}
 --- !u!114 &716622530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7121,7 +7123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionMessage: You pet the animal. It seems happy!
-  interactionText: {fileID: 0}
+  interactionText: {fileID: 1094603429}
 --- !u!114 &716622531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7134,7 +7136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c2431d65a4e40438ca4d3f40fd6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSystem: {fileID: 0}
+  healthSystem: {fileID: 1800227244}
 --- !u!114 &716622532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7147,7 +7149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8832463f10214e94480c1b7d554d6fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1952839367}
 --- !u!1 &762621771
 GameObject:
   m_ObjectHideFlags: 0
@@ -16884,12 +16886,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705153895}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.73, y: -2.83, z: -30.985435}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.91, y: -1.38, z: -11.992718}
+  m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 716622528}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1752390353
 GameObject:
@@ -17055,7 +17057,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800227243
 GameObject:
@@ -22585,6 +22587,7 @@ MonoBehaviour:
   winUI: {fileID: 1535244374}
   redUI: {fileID: 1682645464}
   greenUI: {fileID: 1299899014}
+  player: {fileID: 0}
 --- !u!1 &2007307159
 GameObject:
   m_ObjectHideFlags: 0

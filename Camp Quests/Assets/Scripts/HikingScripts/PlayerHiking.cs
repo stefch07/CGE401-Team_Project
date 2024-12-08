@@ -13,6 +13,9 @@ public class PlayerHiking : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
 
+    private bool isGameOver = false;
+    public GameManager gameManager;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,6 +28,12 @@ public class PlayerHiking : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        if (isGameOver)
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
@@ -47,5 +56,15 @@ public class PlayerHiking : MonoBehaviour
         if (rb == null) return;
 
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+    }
+
+    public void StopPlayerMovement()
+    {
+        isGameOver = true;
+    }
+
+    public void ResumePlayerMovement()
+    {
+        isGameOver = false;
     }
 }

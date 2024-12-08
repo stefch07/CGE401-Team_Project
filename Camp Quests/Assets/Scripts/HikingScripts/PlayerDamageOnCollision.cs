@@ -4,29 +4,18 @@ using UnityEngine;
 
 public class PlayerDamageOnCollision : MonoBehaviour
 {
-    public int playerHealth = 100;
-    public int damageAmount = 10;
+    public HealthSystemX healthSystem;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Log"))
         {
-            TakeDamage(damageAmount);
-        }
-    }
+            if (healthSystem != null)
+            {
+                healthSystem.TakeDamage();
+                Destroy(collision.gameObject);
+            }
 
-    void TakeDamage(int damage)
-    {
-        playerHealth -= damage;
-        if (playerHealth <= 0)
-        {
-            Die();
         }
-    }
-
-    void Die()
-    {
-        Debug.Log("Player has died.");
-        Destroy(gameObject);
     }
 }

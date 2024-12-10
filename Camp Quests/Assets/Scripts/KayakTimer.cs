@@ -16,6 +16,8 @@ public class KayakTimer : MonoBehaviour
     
     public HealthSystem healthSystem;
     
+    public static bool hasSeen = false;
+    
     void Start() {
         healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
     }
@@ -39,6 +41,7 @@ public class KayakTimer : MonoBehaviour
                 timerRunning = false;
                 totalTime = 120f;
                 SceneManager.LoadScene("DemoDay");
+                hasSeen = true;
             }
 
             // Update the timer text

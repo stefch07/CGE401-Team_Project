@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public GameObject winUI;
     public GameObject redUI;
     public GameObject greenUI;
+    public GameObject hubButton;
 
     public PlayerHiking player;
 
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
         winUI.SetActive(false);
         redUI.SetActive(false);
         greenUI.SetActive(false);
+        hubButton.SetActive(false);
 
         if (player == null)
         {
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         winUI.SetActive(true);
         greenUI.SetActive(true);
+        hubButton.SetActive(true);
         player.StopPlayerMovement();
     }
 

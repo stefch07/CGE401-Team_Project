@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Campsite Assets/SimpleLowPolyNature/Scenes/DemoDay.unity
+    path: Assets/Scenes/HubWorld.unity
     guid: 304a5748b784bc241be3c08d67013b21
   - enabled: 1
     path: Assets/Scenes/KayakMinigame.unity

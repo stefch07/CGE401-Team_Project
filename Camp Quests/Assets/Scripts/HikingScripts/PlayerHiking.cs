@@ -10,7 +10,9 @@ public class PlayerHiking : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
 
+    public AudioSource musicSource;
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
     private bool isGrounded;
 
     private bool isGameOver = false;
@@ -23,6 +25,23 @@ public class PlayerHiking : MonoBehaviour
         {
             Debug.LogError("Rigidbody2D component is missing! Please add one to the Player GameObject.");
         }
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            Debug.LogError("SpriteRenderer component is missing! Please add one to the Player GameObject.");
+        }
+
+        if (musicSource == null)
+        {
+            Debug.LogError("AudioSource is not assigned! Please attach an AudioSource component to the Player GameObject and assign it in the Inspector.");
+            return;
+        }
+
+        musicSource.loop = true;
+        musicSource.playOnAwake = true;
+        musicSource.volume = 0.5f;
+        musicSource.Play();
     }
 
     void Update()
@@ -49,6 +68,15 @@ public class PlayerHiking : MonoBehaviour
 
         float moveX = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveX * walkSpeed, rb.velocity.y);
+
+        if (moveX > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (moveX < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 
     void Jump()

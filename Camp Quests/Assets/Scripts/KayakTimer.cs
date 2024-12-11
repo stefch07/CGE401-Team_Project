@@ -18,6 +18,8 @@ public class KayakTimer : MonoBehaviour
     
     public static bool hasSeen = false;
     
+    public RelaxationMeter relaxationMeter;
+    
     void Start() {
         healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
     }
@@ -38,10 +40,17 @@ public class KayakTimer : MonoBehaviour
             // Stop the timer if it reaches zero
             if (totalTime <= 0f)
             {
+                relaxationMeter.relaxationBar.value += 34;
+                relaxationMeter.relaxationBar.value = Mathf.Clamp(relaxationMeter.relaxationBar.value, 0, RelaxationMeter.maxRelax);
                 timerRunning = false;
                 totalTime = 120f;
-                SceneManager.LoadScene("DemoDay");
                 hasSeen = true;
+                if (relaxationMeter.relaxationBar.value >= 100) {
+                    SceneManager.LoadScene("WinScreen");
+                }
+                else {
+                    SceneManager.LoadScene("DemoDay");
+                }
             }
 
             // Update the timer text

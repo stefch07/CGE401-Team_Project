@@ -22714,7 +22714,7 @@ MonoBehaviour:
   winUI: {fileID: 1535244374}
   redUI: {fileID: 1682645464}
   greenUI: {fileID: 1299899014}
-  player: {fileID: 0}
+  player: {fileID: 716622529}
 --- !u!1 &2007307159
 GameObject:
   m_ObjectHideFlags: 0

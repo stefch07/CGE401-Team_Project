@@ -63,10 +63,10 @@ public class SpawnManager : MonoBehaviour
         // pick a random index
         int randomInt = 0;
         if (KayakTimer.totalTime > 60f) {
-            randomInt = Random.Range(1, 11);
+            randomInt = Random.Range(1, 12);
         }
         else {
-            randomInt = Random.Range(1, 13);
+            randomInt = Random.Range(1, 14);
         }
         int prefabIndex = 0;
         
@@ -88,8 +88,11 @@ public class SpawnManager : MonoBehaviour
         else if (randomInt <= 10) {
             prefabIndex = 5;
         }
-        else {
+        else if (randomInt <= 12) {
             prefabIndex = 6;
+        }
+        else {
+            prefabIndex = 7;
         }
         
         // generate a random position

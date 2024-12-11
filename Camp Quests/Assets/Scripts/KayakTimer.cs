@@ -42,7 +42,6 @@ public class KayakTimer : MonoBehaviour
             if (totalTime <= 0f)
             {
                 relaxationMeter.relaxationBar.value += 34;
-                //relaxationMeter.relaxationBar.relaxationBar.value = Mathf.Clamp(relaxationMeter.relaxationBar.value, 0, RelaxationMeter.maxRelax);
                 timerRunning = false;
                 totalTime = 120f;
                 hasSeen = true;

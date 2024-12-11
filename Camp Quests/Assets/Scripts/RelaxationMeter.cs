@@ -8,6 +8,8 @@ public class RelaxationMeter : MonoBehaviour
 
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
+        
         // Initialize the relaxation bar
         relaxationBar.value = 0;
         relaxationBar.maxValue = maxRelax;

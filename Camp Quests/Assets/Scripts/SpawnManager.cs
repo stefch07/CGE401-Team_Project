@@ -61,13 +61,19 @@ public class SpawnManager : MonoBehaviour
     
     void SpawnRandomPrefab() {
         // pick a random index
-        int randomInt = Random.Range(1, 11);
+        int randomInt = 0;
+        if (KayakTimer.totalTime > 60f) {
+            randomInt = Random.Range(1, 11);
+        }
+        else {
+            randomInt = Random.Range(1, 13);
+        }
         int prefabIndex = 0;
         
         if (randomInt <= 2) {
             prefabIndex = 0;
         }
-        else if (randomInt <= 5) {
+        else if (randomInt <= 4) {
             prefabIndex = 1;
         }
         else if (randomInt <= 6) {
@@ -79,8 +85,11 @@ public class SpawnManager : MonoBehaviour
         else if (randomInt <= 9) {
             prefabIndex = 4;
         }
-        else {
+        else if (randomInt <= 10) {
             prefabIndex = 5;
+        }
+        else {
+            prefabIndex = 6;
         }
         
         // generate a random position

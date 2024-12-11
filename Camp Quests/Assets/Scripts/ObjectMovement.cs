@@ -11,7 +11,12 @@ public class ObjectMovement : MonoBehaviour
     public float upperBound = 4.0f;
     
     void Start() {
-        speed = Random.Range(lowerBound, upperBound);
+        if (gameObject.CompareTag("Happy")) {
+            speed = Random.Range(6.0f, 8.0f);
+        }
+        else {
+            speed = Random.Range(lowerBound, upperBound);
+        }
         //if (!DialogManagerKayak.hasSeen) {
         //    Destroy(gameObject);
         //}

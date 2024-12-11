@@ -16,6 +16,7 @@ TagManager:
   - Win
   - Rock
   - Obstacle
+  - Happy
   layers:
   - Default
   - TransparentFX

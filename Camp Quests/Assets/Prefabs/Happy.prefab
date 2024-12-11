@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3898851360351892495}
   m_Layer: 0
   m_Name: Happy
-  m_TagString: Untagged
+  m_TagString: Happy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

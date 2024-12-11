@@ -22,6 +22,7 @@ public class KayakTimer : MonoBehaviour
     
     void Start() {
         healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
+        relaxationMeter = GameObject.FindObjectOfType<RelaxationMeter>();
     }
 
     // Update is called once per frame
@@ -41,7 +42,7 @@ public class KayakTimer : MonoBehaviour
             if (totalTime <= 0f)
             {
                 relaxationMeter.relaxationBar.value += 34;
-                relaxationMeter.relaxationBar.value = Mathf.Clamp(relaxationMeter.relaxationBar.value, 0, RelaxationMeter.maxRelax);
+                //relaxationMeter.relaxationBar.relaxationBar.value = Mathf.Clamp(relaxationMeter.relaxationBar.value, 0, RelaxationMeter.maxRelax);
                 timerRunning = false;
                 totalTime = 120f;
                 hasSeen = true;

@@ -12,9 +12,4 @@ public class RelaxationMeter : MonoBehaviour
         relaxationBar.value = 0;
         relaxationBar.maxValue = maxRelax;
     }
-
-    void Update()
-    {
-        relaxationBar.value = 100;
-    }
 }

@@ -64,13 +64,13 @@ public class SpawnManager : MonoBehaviour
         int randomInt = Random.Range(1, 11);
         int prefabIndex = 0;
         
-        if (randomInt <= 3) {
+        if (randomInt <= 2) {
             prefabIndex = 0;
         }
         else if (randomInt <= 5) {
             prefabIndex = 1;
         }
-        else if (randomInt <= 7) {
+        else if (randomInt <= 6) {
             prefabIndex = 2;
         }
         else if (randomInt <= 8) {

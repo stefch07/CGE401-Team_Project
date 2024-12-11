@@ -1200,7 +1200,7 @@ MonoBehaviour:
   verticalInput: 0
   horizontalInput: 0
   speed: 10
-  xRange: 5
+  xRange: 8
   yRange: 2.8
   val1: 1.1
   val2: 0.9

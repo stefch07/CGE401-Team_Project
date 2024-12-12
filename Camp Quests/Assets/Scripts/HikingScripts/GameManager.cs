@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,7 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject greenUI;
     public GameObject hubButton;
 
-    public PlayerHiking player;
+    public PlayerHiking playerHiking;
 
     void Start()
     {
@@ -18,9 +20,9 @@ public class GameManager : MonoBehaviour
         greenUI.SetActive(false);
         hubButton.SetActive(false);
 
-        if (player == null)
+        if (playerHiking == null)
         {
-            player = FindObjectOfType<PlayerHiking>();
+            playerHiking = FindObjectOfType<PlayerHiking>();
         }
     }
 
@@ -29,13 +31,13 @@ public class GameManager : MonoBehaviour
         winUI.SetActive(true);
         greenUI.SetActive(true);
         hubButton.SetActive(true);
-        player.StopPlayerMovement();
+        playerHiking.StopPlayerMovement();
     }
 
     public void OnPlayerLose()
     {
         gameOverUI.SetActive(true);
         redUI.SetActive(true);
-        player.StopPlayerMovement();
+        playerHiking.StopPlayerMovement();
     }
 }

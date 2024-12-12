@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerHiking : MonoBehaviour
 {
@@ -18,15 +19,34 @@ public class PlayerHiking : MonoBehaviour
     private bool isGameOver = false;
     public GameManager gameManager;
 
+    public TMP_Text dialogueText;
+    private bool isDialogueComplete = false;
+    private DialogueManagerHiking dialogueManager;
+
+    
+
+    [System.Serializable]
+    public class DialogueObject
+    {
+        public List<string> dialogueLines;
+
+        public DialogueObject(List<string> lines)
+        {
+            dialogueLines = lines;
+        }
+    }
+
     void Start()
     {
+        dialogueManager = FindObjectOfType<DialogueManagerHiking>();
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         if (rb == null)
         {
             Debug.LogError("Rigidbody2D component is missing! Please add one to the Player GameObject.");
         }
 
-        spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
         {
             Debug.LogError("SpriteRenderer component is missing! Please add one to the Player GameObject.");
@@ -42,6 +62,8 @@ public class PlayerHiking : MonoBehaviour
         musicSource.playOnAwake = true;
         musicSource.volume = 0.5f;
         musicSource.Play();
+
+        StartDialogue();
     }
 
     void Update()
@@ -51,6 +73,15 @@ public class PlayerHiking : MonoBehaviour
         if (isGameOver)
         {
             rb.velocity = Vector2.zero;
+            return;
+        }
+
+        if (!isDialogueComplete)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                dialogueManager.DisplayNextLine();
+            }
             return;
         }
 
@@ -86,13 +117,37 @@ public class PlayerHiking : MonoBehaviour
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
+    void StartDialogue()
+    {
+        DialogueManagerHiking.DialogueObject introDialogue = new DialogueManagerHiking.DialogueObject(
+            new List<string>
+            {
+                "Welcome to the hiking adventure!",
+                "First you need to know how to move around!",
+                "Move Left and Right with AD or Left/Right Arrow Keys.",
+                "Jump over logs with W or Space Bar to avoid losing hearts",
+                "Press E to interact with animals to gain Satisfaction!",
+                "Enjoy your hiking trip!"
+            }
+        );
+
+        dialogueManager.ShowDialogue(introDialogue);
+    }
+
     public void StopPlayerMovement()
     {
         isGameOver = true;
+        isDialogueComplete = false;
     }
 
     public void ResumePlayerMovement()
     {
         isGameOver = false;
+        isDialogueComplete = true;
+    }
+
+    public void OnDialogueComplete()
+    {
+        ResumePlayerMovement();
     }
 }

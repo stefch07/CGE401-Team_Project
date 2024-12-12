@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97c748cc5d914eebae5c6d031414cd4, type: 3}
+  m_Name: Finn
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '[A large, heavily built man with a weathered jacket sits at the campfire, facing
+    the river] [Press Spacebar to Advance Dialogue]'
+  - "Evenin\u2019. Fire\u2019s lookin\u2019 mighty warm, huh? Decided I ought to
+    have a seat, and, well, I\u2019ve been wanderin\u2019 too long to pass up a good
+    rest. Name\u2019s Finn."
+  - '[Finn lets out a soft sigh, feeling rather cozy, and looking out into the darkness
+    as if searching for something far away]'
+  - "You ever heard of the Vanishing Isle? It\u2019s an old sailor\u2019s tale, y\u2019see.
+    Supposedly, out on misty nights, there\u2019s an island that appears from nowhere."
+  - "Beautiful, they say\u2014trees like emeralds, sands like gold dust, and a feeling
+    that you\u2019ve found somethin\u2019 that doesn\u2019t belong to this world."
+  - '[He chuckles softly, shaking his head]'
+  - "But it ain\u2019t all beauty. The story goes that those who set foot on the
+    island\u2026 they don\u2019t come back the same. Or sometimes, they don\u2019t
+    come back at all."
+  - "Folks say the island isn\u2019t a place you can stay; it\u2019s a test, of sorts."
+  - "It shows you your heart\u2019s deepest desires, and if you\u2019re not careful,
+    you\u2019ll lose yourself tryin\u2019 to chase after them."
+  - '[Finn leans back, his face half-lit by the flames]'
+  - There was this sailor, name of Old Marlowe. He swore he found the isle one foggy
+    night after having gone there.
+  - Said he anchored his ship offshore and rowed out in a dinghy.
+  - "When he stepped onto the beach, though, he couldn\u2019t bring himself to leave.
+    He saw the life he\u2019d always wanted\u2014friends, a family, riches."
+  - It felt so real, he forgot about his ship, his crew, and everything else.
+  - Marlowe went across the island, enjoying all of those little things his heart
+    "really wanted". But, unfortunately for him...
+  - "When the island disappeared with the sunrise, Marlowe was still there\u2026
+    and disappeared with it, or so the legend says."
+  - '[Finn stands, brushing off his jacket and tipping an imaginary hat with a sheepish
+    grin]'
+  - "Well, reckon I\u2019ve taken up enough of your time. Best be gettin\u2019 on
+    before the mist rolls in tonight, hey? Always good to spin a yarn by a fire."
+  - "You take care now, and if you find that Vanishing Isle\u2026 maybe let me know
+    what it\u2019s really like. I\u2019d like to know if Marlowe is still there\u2026"
+  - "[As Finn walks away, from his back pocket, a small book drops out onto the ground\u2026]"
+  - "[... with the title \u201CStories You Can Tell People if You\u2019ve Never Been
+    Out to Sea\u201D. A bookmark sits in a chapter called \u201CThe Vanishing Isle\u201D]"
+  - "[As you read the chapter, you realize there was an inconsistency with the way
+    Finn told the story\u2026]"
+  - "[You read the final lines of the chapter\u2026 Which says that Marlowe never
+    made it back to tell the story of the isle]"
+  - '[So how could Marlowe have told this story if he got back, like Finn said he
+    did, yet disappeared when the island did too?]'
+  - "[Strange. You\u2019ll have to ask Finn the next time you see him\u2026]"
+  responses: []

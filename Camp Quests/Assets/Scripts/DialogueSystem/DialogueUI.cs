@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
@@ -8,6 +9,8 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text textLabel;
     
     public bool IsOpen { get; private set; }
+
+    public event Action OnDialogueEnd; // Event to notify when dialogue ends
 
     private ResponseHandler responseHandler;
     private TypewriterEffect typewriterEffect;
@@ -79,5 +82,7 @@ public class DialogueUI : MonoBehaviour
         IsOpen = false;
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
+        
+        OnDialogueEnd?.Invoke();
     }
 }

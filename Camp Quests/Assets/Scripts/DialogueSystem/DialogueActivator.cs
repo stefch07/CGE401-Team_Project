@@ -4,6 +4,8 @@ using UnityEngine;
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
+    private bool dialogueComplete = false;
+    private PlayerMovement currentPlayer;
 
     public void UpdateDialogueObject(DialogueObject dialogueObject)
     {
@@ -31,6 +33,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
     public void Interact(PlayerMovement player)
     {
+        currentPlayer = player;
+        
         foreach (DialogueResponseEvents responseEvents in GetComponents<DialogueResponseEvents>())
         {
             if (responseEvents.DialogueObject == dialogueObject)
@@ -39,7 +43,26 @@ public class DialogueActivator : MonoBehaviour, IInteractable
                 break;
             }
         }
-        
+
+        player.DialogueUI.OnDialogueEnd += HandleDialogueEnd;
         player.DialogueUI.ShowDialogue(dialogueObject);
+    }
+
+    private void HandleDialogueEnd()
+    {
+        if (!dialogueComplete)
+        {
+            dialogueComplete = true;
+
+            if (currentPlayer != null)
+            {
+                currentPlayer.DialogueUI.OnDialogueEnd -= HandleDialogueEnd;
+            }
+
+            if (FindObjectOfType<CampfireManager>() is CampfireManager campfireManager)
+            {
+                campfireManager.OnStoryComplete();
+            }
+        }
     }
 }

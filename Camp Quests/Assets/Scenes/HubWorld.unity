@@ -1690,7 +1690,7 @@ GameObject:
   - component: {fileID: 198627832}
   m_Layer: 0
   m_Name: Hiking
-  m_TagString: Untagged
+  m_TagString: PlatformH
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1703,7 +1703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198627830}
   m_LocalRotation: {x: -0, y: 0.19903953, z: -0, w: 0.97999144}
-  m_LocalPosition: {x: -48.24, y: -364.29, z: -30.4}
+  m_LocalPosition: {x: -48.09, y: -364.29, z: -29.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1709833860}
@@ -1859,7 +1859,7 @@ GameObject:
   - component: {fileID: 201177121}
   m_Layer: 0
   m_Name: 'Kayaking '
-  m_TagString: Untagged
+  m_TagString: PlatformK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4201,7 +4201,7 @@ GameObject:
   - component: {fileID: 505792504}
   m_Layer: 0
   m_Name: Meditation
-  m_TagString: Untagged
+  m_TagString: PlatformM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6053,7 +6053,7 @@ GameObject:
   - component: {fileID: 757257990}
   m_Layer: 0
   m_Name: CampStories
-  m_TagString: Untagged
+  m_TagString: PlatformCS
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6065,13 +6065,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757257988}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -43.85, y: -364.29, z: -30.81}
+  m_LocalRotation: {x: -0, y: 0.15801007, z: -0, w: 0.9874375}
+  m_LocalPosition: {x: -43.56, y: -364.29, z: -30.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1709833860}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 18.183, z: 0}
 --- !u!65 &757257990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9325,6 +9325,7 @@ GameObject:
   - component: {fileID: 1198630624}
   - component: {fileID: 1198630626}
   - component: {fileID: 1198630627}
+  - component: {fileID: 1198630628}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -9453,6 +9454,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6172212, y: 1.8997121, z: 0.33263624}
   m_Center: {x: -0.44114283, y: -0.47718272, z: -0.026599383}
+--- !u!114 &1198630628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198630621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baf9dc6feb09094c8a945c7a7949eeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformM: {fileID: 0}
+  platformK: {fileID: 0}
+  platformH: {fileID: 0}
+  platformCS: {fileID: 0}
 --- !u!1001 &1204983459
 PrefabInstance:
   m_ObjectHideFlags: 0

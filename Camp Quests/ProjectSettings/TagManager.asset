@@ -17,6 +17,11 @@ TagManager:
   - Rock
   - Obstacle
   - Happy
+  - Animals
+  - PlatformK
+  - PlatformM
+  - PlatformH
+  - PlatformCS
   layers:
   - Default
   - TransparentFX

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScreen.unity
     guid: 4c3ec0bb87c564f5ba8604cdd53a37bb
+  - enabled: 1
+    path: Assets/Scenes/CampfireStories.unity
+    guid: 89426dc58e5494ede8499574dea429f6
   m_configObjects: {}

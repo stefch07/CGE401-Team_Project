@@ -18,7 +18,7 @@ public class DialogManager : MonoBehaviour
 
     public bool isTextFullyDisplayed = false;
 
-    void OnEnable()
+    public void OnEnable()
     {
         index = 0;
         continueButton.SetActive(false);

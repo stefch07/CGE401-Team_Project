@@ -1701,6 +1701,7 @@ MonoBehaviour:
   - {fileID: 1338387870}
   - {fileID: 1413183774}
   - {fileID: 406780351}
+  campfireState: {fileID: 11400000, guid: d8a3564157c7e4e6ca0326d9c7d8b0c4, type: 2}
 --- !u!4 &186727058
 Transform:
   m_ObjectHideFlags: 0

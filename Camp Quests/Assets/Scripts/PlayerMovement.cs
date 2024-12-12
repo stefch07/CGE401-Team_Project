@@ -56,6 +56,13 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("WinScreen");
         }
+        
+        // TEST: Transition to the CampfireStories
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Debug.Log("Returning to CampfireStories");
+            SceneManager.LoadScene("CampfireStories");
+        }
     }
 
     void FixedUpdate()

@@ -1,1400 +1,1576 @@
-Unity Editor version:    2020.3.48f1 (b805b124c6b7)
-Branch:                  2020.3/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 15.1.1 (Build 24B91)
-Darwin version:          24.1.0
-Architecture:            x86_64
-Running under Rosetta:   YES
-Available memory:        16384 MB
 Using pre-set license
-Pro License: NO
+Built from '2020.3/staging' branch; Version is '2020.3.48f1 (b805b124c6b7) revision 12060081'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 7528 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity 2020.3.48f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/johnnguyen/Desktop/UnityProjects/CGE401-Team_Project/Camp Quests
+C:/UnityProjects/CGE401-Team_Project/Camp Quests
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49495
-Successfully changed project path to: /Users/johnnguyen/Desktop/UnityProjects/CGE401-Team_Project/Camp Quests
-/Users/johnnguyen/Desktop/UnityProjects/CGE401-Team_Project/Camp Quests
+58561
+Successfully changed project path to: C:/UnityProjects/CGE401-Team_Project/Camp Quests
+C:/UnityProjects/CGE401-Team_Project/Camp Quests
 Using Asset Import Pipeline V2.
-Player connection [8747332096] Host "[IP] 192.168.0.97 [Port] 0 [Flags] 2 [Guid] 3462128718 [EditorId] 3462128718 [Version] 1048832 [Id] OSXEditor(0,Johns-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [39272] Host "[IP] 10.252.7.71 [Port] 3221443168 [Flags] 2 [Guid] 3468102874 [EditorId] 3468102874 [Version] 1048832 [Id] WindowsEditor(7,BatComputer) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8747332096] Host "[IP] 192.168.0.97 [Port] 0 [Flags] 2 [Guid] 3462128718 [EditorId] 3462128718 [Version] 1048832 [Id] OSXEditor(0,Johns-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [39272] Host "[IP] 10.252.7.71 [Port] 3221443168 [Flags] 2 [Guid] 3468102874 [EditorId] 3468102874 [Version] 1048832 [Id] WindowsEditor(7,BatComputer) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 45.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 82.12 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.48f1 (b805b124c6b7)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/johnnguyen/Desktop/UnityProjects/CGE401-Team_Project/Camp Quests/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.48f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/CGE401-Team_Project/Camp Quests/Assets
 GfxDevice: creating device client; threaded=0
-2024-12-12 11:19:09.211 Unity[2275:30553] (null) preferred device: Apple M1 Pro (high power)
-2024-12-12 11:19:09.211 Unity[2275:30553] Metal devices available: 1
-2024-12-12 11:19:09.211 Unity[2275:30553] 0: Apple M1 Pro (high power)
-2024-12-12 11:19:09.211 Unity[2275:30553] Using device Apple M1 Pro (high power)
-Initializing Metal device caps: Apple M1 Pro
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   
+    VRAM:     3964 MB
+    Driver:   32.0.15.5612
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56275
+Mono path[0] = 'C:/Program Files/Unity 2020.3.48f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2020.3.48f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity 2020.3.48f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.48f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000412 seconds.
-Native extension for OSXStandalone target not found
+Register platform support module: C:/Program Files/Unity 2020.3.48f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity 2020.3.48f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004369 seconds.
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 47.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 89.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.165 seconds
+- Completed reload, in  0.987 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1165ms)
-		BeginReloadAssembly (75ms)
+	ReloadAssembly (987ms)
+		BeginReloadAssembly (130ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (988ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (729ms)
+			LoadAssemblies (126ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (150ms)
+			SetupTypeCache (227ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (517ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (303ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (47ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (319ms)
-				ProcessInitializeOnLoadMethodAttributes (106ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (27ms)
+				ProcessInitializeOnLoadAttributes (132ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001024 seconds.
+Registered in 0.008546 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
+Symbol file data-0000016F212C6010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FC57F70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21CB6040 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FFAEA40 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F212C6010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F212D9420 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F212D9420 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21562220 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21562220 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F212F0630 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE7E8430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE818440 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FCDCE00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE818440 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FC9BFE0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FC9BFE0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2266F430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FC9BFE0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F206D8010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21562220 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA5DD20 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FE7A6C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FCDCE00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FF87E60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2071BA30 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21A9D020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FE7A6C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FC57F70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FFB9E70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FC54060 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FF9C070 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21CB6040 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FE67230 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 51.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 74.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.104 seconds
+- Completed reload, in  1.611 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2105ms)
-		BeginReloadAssembly (214ms)
+	ReloadAssembly (1613ms)
+		BeginReloadAssembly (253ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (36ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1812ms)
-			LoadAssemblies (173ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1259ms)
+			LoadAssemblies (182ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
+			SetupTypeCache (367ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (1041ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (502ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (51ms)
-				BeforeProcessingInitializeOnLoad (156ms)
-				ProcessInitializeOnLoadAttributes (761ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (287ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2111 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 170.0 MB.
+System memory in use after: 170.1 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2558.
+Total: 4.173200 ms (FindLiveObjects: 0.196700 ms CreateObjectMapping: 0.085000 ms MarkObjects: 3.855100 ms  DeleteObjects: 0.035100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/TownspeoplePixelArt/PSD/7.psd
+  artifactKey: Guid(894d852643a094dee9bf33337e54f25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/7.psd using Guid(894d852643a094dee9bf33337e54f25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba71a5e7a4fbd4bbff65dc7eb98077ab') in 0.212299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/8.psd
+  artifactKey: Guid(94fabcf46eeb74b158fbd8cf56a4757f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/8.psd using Guid(94fabcf46eeb74b158fbd8cf56a4757f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1563241509bc02cf9e7630dba9a324') in 0.020251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/UI Prompts/Keyboard & Mouse/Double/keyboard_semicolon.png
+  artifactKey: Guid(d3d0378ecd57b465391c1c9d314a9471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Prompts/Keyboard & Mouse/Double/keyboard_semicolon.png using Guid(d3d0378ecd57b465391c1c9d314a9471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43e209229ab57833744bfde203e8783') in 0.042430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/4.psd
+  artifactKey: Guid(c9c897564f8ee46dab93cfe410e05cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/4.psd using Guid(c9c897564f8ee46dab93cfe410e05cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2ab72f210ccbe331a65698bcf46657') in 0.014266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/3.png
+  artifactKey: Guid(f97aa98ebfc3bd14ebe92e90fa4c41d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/3.png using Guid(f97aa98ebfc3bd14ebe92e90fa4c41d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fef56980c195f74471e09a8bab6a26aa') in 0.019062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Forest sprite pack/Sprites/background grass.png
+  artifactKey: Guid(0bf7fee3c314bad4e9db67eef7fa81ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest sprite pack/Sprites/background grass.png using Guid(0bf7fee3c314bad4e9db67eef7fa81ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2dcd3c45fae9cd726675bcf9b48509') in 0.072693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/6.png
+  artifactKey: Guid(adc37fd273a55dc4bb1163c226283bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/6.png using Guid(adc37fd273a55dc4bb1163c226283bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66497e74f603734928f13d56169e9eb') in 0.018544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/5.psd
+  artifactKey: Guid(51554022abe024650b17ee8f710d2c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/5.psd using Guid(51554022abe024650b17ee8f710d2c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e0f4af53339f9e0800121b0b87f946') in 0.020023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/5.png
+  artifactKey: Guid(cae1f7dd2ed406142b77230f950db9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/5.png using Guid(cae1f7dd2ed406142b77230f950db9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a119f92175f980b8df89a8b32027fd90') in 0.021817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/UI Prompts/Keyboard & Mouse/Default/keyboard_semicolon.png
+  artifactKey: Guid(72885fe4845b74d4db5747a7c00f2af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Prompts/Keyboard & Mouse/Default/keyboard_semicolon.png using Guid(72885fe4845b74d4db5747a7c00f2af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886a9ab74753b6286166f26269f940bd') in 0.017764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000577 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/6.psd
+  artifactKey: Guid(7a0c4cb384bba42e49d0de6ee66a5930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/6.psd using Guid(7a0c4cb384bba42e49d0de6ee66a5930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a80fb60778ad0f0e4dd1a3aa923990c') in 0.019025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/UI Prompts/Keyboard & Mouse/Default/keyboard_semicolon_outline.png
+  artifactKey: Guid(c2df3023693d7456da8e58dae948ec34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Prompts/Keyboard & Mouse/Default/keyboard_semicolon_outline.png using Guid(c2df3023693d7456da8e58dae948ec34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7297c2fec55aa6d6fa7547cea07c222e') in 0.014304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/8.png
+  artifactKey: Guid(232464867d6b1cf4792d188989c92800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/8.png using Guid(232464867d6b1cf4792d188989c92800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '271672f203a78518639051307cfb6b92') in 0.016842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/9.psd
+  artifactKey: Guid(cd17d8654c08844d68c6ef5ca3d8e39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/9.psd using Guid(cd17d8654c08844d68c6ef5ca3d8e39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb48bed69813f2fdccacba96507022b2') in 0.016660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/10.psd
+  artifactKey: Guid(822a40a274e034983b0a3caf3e780dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/10.psd using Guid(822a40a274e034983b0a3caf3e780dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8342335bb7e0bbbd8aad05c78e352b') in 0.018699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/11.psd
+  artifactKey: Guid(e0ca2aa2cf42944dcbf972afec43feb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/11.psd using Guid(e0ca2aa2cf42944dcbf972afec43feb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df866eac575eea5a93f4305283991f65') in 0.016774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Forest sprite pack/Sprites/back trees.png
+  artifactKey: Guid(6ed4442f891d9a547b293444027b4057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Forest sprite pack/Sprites/back trees.png using Guid(6ed4442f891d9a547b293444027b4057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40deeea0e37c58cf0c3375947883ad6f') in 0.178240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/UI Prompts/Keyboard & Mouse/Double/keyboard_semicolon_outline.png
+  artifactKey: Guid(6cb1dbd3cf54446e785c9fd48b3316dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Prompts/Keyboard & Mouse/Double/keyboard_semicolon_outline.png using Guid(6cb1dbd3cf54446e785c9fd48b3316dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9885c5ca8209b7c89c470c5ff6e9136c') in 0.020332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/3.psd
+  artifactKey: Guid(147c2b1bdf2984cd2b0e5f723002824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/3.psd using Guid(147c2b1bdf2984cd2b0e5f723002824b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4494bcc21aa4f1febea4520e5d30b8d4') in 0.018840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/4.png
+  artifactKey: Guid(e5522af0f22d6a04e89222ae9781131e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/4.png using Guid(e5522af0f22d6a04e89222ae9781131e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6927d9669d27afcdbc8fd1f9d582758') in 0.015718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/TownspeoplePixelArt/PSD/12.psd
+  artifactKey: Guid(69e91e39a9df7429e9eacfd1b40b698a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TownspeoplePixelArt/PSD/12.psd using Guid(69e91e39a9df7429e9eacfd1b40b698a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd74d937c5295c7b2d7dc7530f8bee578') in 0.015905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/7.png
+  artifactKey: Guid(5ab2b1760457aec49842a01cf9c9733c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/7.png using Guid(5ab2b1760457aec49842a01cf9c9733c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43fc16cf73338227046a8c7321151b1') in 0.016186 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010993 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000016F25293020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25C50D00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2179E9C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F248C1230 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21C21010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22226370 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21C21010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F201DBDF0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21C21010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21C21010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FE7A6C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F252B2430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22706C10 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21C21010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F201DBDF0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F201DBDF0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F248C1230 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F201DBDF0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21F5B020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F201DBDF0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24D65030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22706C10 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24D65030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21BA7020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F215BED30 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26ABCC80 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25C52320 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F220AE440 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26967EA0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24D79240 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2179E9C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2020B910 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.488 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1489ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1168ms)
+			LoadAssemblies (261ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (365ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (460ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (327ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.0 MB.
+System memory in use after: 171.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2614.
+Total: 3.963800 ms (FindLiveObjects: 0.186400 ms CreateObjectMapping: 0.073000 ms MarkObjects: 3.673000 ms  DeleteObjects: 0.029900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006784 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000016F25293020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F218F6080 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F215BC530 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26C33220 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2696BDA0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F220C7C90 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B4D080 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE81CE00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2696BDA0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25293020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22A4F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F215BC530 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B4D080 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26C33220 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26ABCC80 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24D65030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F215BC530 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24D65030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FBD56C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FEA9C40 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2152B010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F218F3440 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2221ADD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F204D8070 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24D79240 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F215BC530 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2696BDA0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.486 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1487ms)
+		BeginReloadAssembly (235ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1163ms)
+			LoadAssemblies (265ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (378ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (449ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (322ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.0 MB.
+System memory in use after: 171.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2617.
+Total: 3.705400 ms (FindLiveObjects: 0.206700 ms CreateObjectMapping: 0.072300 ms MarkObjects: 3.399800 ms  DeleteObjects: 0.025700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009178 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000016F25293020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25B5B190 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F269771B0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23403C60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F220C7C90 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FFBAF90 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F220A3030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23403C60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20455010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE8E5030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE826C30 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FFBAF90 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2266FE20 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F269771B0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA35B00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D563010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D5BC010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE826C30 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D5BC010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21562220 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F201E2400 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE959EE0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25B5B190 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F269771B0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F204D85B0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23403C60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.157 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2157ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1860ms)
+			LoadAssemblies (198ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (740ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (687ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (136ms)
+				ProcessInitializeOnLoadAttributes (495ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (21ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.008733 seconds.
-Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.016027 seconds.
-Application.AssetDatabase Initial Script Refresh Start
-RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
-RefreshProfiler: Total: 0.000ms
-Application.AssetDatabase Initial Script Refresh End
-Application.AssetDatabase.Refresh Start
-Application.AssetDatabase.Refresh End
-RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
-RefreshProfiler: Total: 0.000ms
-Launching external process: /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Initializing Unity extensions:
-2024-12-12 11:19:13.373 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29ccd490 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2024-12-12 11:19:13.377 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29cfa780 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-========================================================================
-Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2110 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.6 MB.
-System memory in use after: 188.0 MB.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.1 MB.
+System memory in use after: 171.2 MB.
 
-Unloading 171 unused Assets to reduce memory usage. Loaded Objects now: 2596.
-Total: 2.539625 ms (FindLiveObjects: 0.100125 ms CreateObjectMapping: 0.042708 ms MarkObjects: 1.964542 ms  DeleteObjects: 0.431583 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2620.
+Total: 4.787300 ms (FindLiveObjects: 0.260800 ms CreateObjectMapping: 0.111300 ms MarkObjects: 4.367900 ms  DeleteObjects: 0.045600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  path: Assets/Scripts/DialogueSystem/CampfireState.asset
-  artifactKey: Guid(d8a3564157c7e4e6ca0326d9c7d8b0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DialogueSystem/CampfireState.asset using Guid(d8a3564157c7e4e6ca0326d9c7d8b0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af7612f842a29581f90a596d4aaaf4d') in 0.097922 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/Scripts/DialogueSystem/CampfireState.cs
-  artifactKey: Guid(7c076d294cc6248bbbea4f3959f1070e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DialogueSystem/CampfireState.cs using Guid(7c076d294cc6248bbbea4f3959f1070e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd559d03b220871ab3a4a37d893928df8') in 0.121551 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 135.597867 seconds.
-  path: Assets/Scripts/DialogueSystem/DialogueActivator.cs
-  artifactKey: Guid(595158c65dfc145b7baa753a131ecc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DialogueSystem/DialogueActivator.cs using Guid(595158c65dfc145b7baa753a131ecc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b8541b2975802a90551fbfbc3a4079') in 0.008472 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001157 seconds.
+Registered in 0.006561 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
+Symbol file data-0000016F201E4700 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F220ACA60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016D3576D1B0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C849020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D570840 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C849020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26C76030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C849020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20455010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21B99020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F21F986F0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C849020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22FF1E40 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2221A030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2311D030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE80CCB0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE80CCB0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F244DA020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016D3575AB60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F244E1D70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F220AB090 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F220D0A40 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F204D8070 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C849020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:21:39.687 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde3f96afe0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  2.254 seconds
+- Completed reload, in  2.502 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2256ms)
-		BeginReloadAssembly (237ms)
+	ReloadAssembly (2517ms)
+		BeginReloadAssembly (957ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (45ms)
+			DisableScriptedObjects (93ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (78ms)
-		EndReloadAssembly (1933ms)
-			LoadAssemblies (196ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (303ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (1145ms)
+			ReleaseScriptingObjects (2ms)
+			CreateAndSetChildDomain (523ms)
+		EndReloadAssembly (1436ms)
+			LoadAssemblies (305ms)
+			RebuildTransferFunctionScriptingTraits (2ms)
+			SetupTypeCache (445ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (461ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (2ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (235ms)
-				ProcessInitializeOnLoadAttributes (833ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (324ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 192.3 MB.
-System memory in use after: 192.4 MB.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.1 MB.
+System memory in use after: 171.2 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2601.
-Total: 2.118250 ms (FindLiveObjects: 0.086000 ms CreateObjectMapping: 0.039125 ms MarkObjects: 1.962042 ms  DeleteObjects: 0.030250 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2623.
+Total: 6.167900 ms (FindLiveObjects: 0.266400 ms CreateObjectMapping: 0.128300 ms MarkObjects: 5.229100 ms  DeleteObjects: 0.542000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001164 seconds.
+Registered in 0.010486 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
+Symbol file data-0000016F2470F420 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D613280 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C720010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D570840 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23403C60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20455010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F229B9020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D568EF0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D570840 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C720010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FDC0020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE80CCB0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24E3CE50 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24DD5020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24417630 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FE72C70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D7ED030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D612B20 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C720010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23202730 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:33:01.603 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde298ac2a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  2.228 seconds
+- Completed reload, in  2.280 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2229ms)
-		BeginReloadAssembly (204ms)
+	ReloadAssembly (2301ms)
+		BeginReloadAssembly (816ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (45ms)
+			DisableScriptedObjects (99ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1940ms)
-			LoadAssemblies (188ms)
+			CreateAndSetChildDomain (421ms)
+		EndReloadAssembly (1359ms)
+			LoadAssemblies (273ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (1159ms)
+			SetupTypeCache (461ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (503ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (240ms)
-				ProcessInitializeOnLoadAttributes (838ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 192.3 MB.
-System memory in use after: 192.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2604.
-Total: 2.181000 ms (FindLiveObjects: 0.081250 ms CreateObjectMapping: 0.041500 ms MarkObjects: 2.032000 ms  DeleteObjects: 0.025667 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 701.800357 seconds.
-  path: Assets/DialogueObjects/Hiking 1.asset
-  artifactKey: Guid(9383d31c04894486695606c03675c68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Hiking 1.asset using Guid(9383d31c04894486695606c03675c68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbfefa64af32f2746f1bdab8cd93f15') in 0.024923 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.703721 seconds.
-  path: Assets/DialogueObjects/Hiking.asset
-  artifactKey: Guid(bd97c9c21ad1d5542bd48dd6c970ec20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Hiking.asset using Guid(bd97c9c21ad1d5542bd48dd6c970ec20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdb0c817eb40a91be61f23f20e4338e') in 0.002115 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.616734 seconds.
-  path: Assets/DialogueObjects/HikingYes.asset
-  artifactKey: Guid(d0851a7368a764a51ae042b0cb9a0750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/HikingYes.asset using Guid(d0851a7368a764a51ae042b0cb9a0750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e4f038a0fa4703734f1a3347de98ac') in 0.002688 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.718845 seconds.
-  path: Assets/DialogueObjects/HikingNo.asset
-  artifactKey: Guid(bf881dbb04e49407b8b9976cc25a3417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/HikingNo.asset using Guid(bf881dbb04e49407b8b9976cc25a3417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a77e5bf86c1fc2e4b8f08d0d50665be') in 0.002679 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003305 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:36:36.888 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde299afea0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.271 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2272ms)
-		BeginReloadAssembly (211ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (42ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1977ms)
-			LoadAssemblies (211ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (308ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (1170ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (248ms)
-				ProcessInitializeOnLoadAttributes (840ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 192.4 MB.
-System memory in use after: 192.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2607.
-Total: 2.172666 ms (FindLiveObjects: 0.089917 ms CreateObjectMapping: 0.041875 ms MarkObjects: 2.010167 ms  DeleteObjects: 0.029708 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 217.230747 seconds.
-  path: Assets/Scenes/HubWorld.unity
-  artifactKey: Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/HubWorld.unity using Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5650c41dfe468546481f287a1799fa3a') in 0.014857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.820951 seconds.
-  path: Assets/TownspeoplePixelArt/PSD/1.psd
-  artifactKey: Guid(6bbb80bbcf8734c91bf02bfd5371efdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TownspeoplePixelArt/PSD/1.psd using Guid(6bbb80bbcf8734c91bf02bfd5371efdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976a1bb3cd2cca42756a3ad6434dcbc4') in 0.302894 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/1.png
-  artifactKey: Guid(ac378185dd851944da85e166d91d071c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/1.png using Guid(ac378185dd851944da85e166d91d071c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d65246fcf9af8ca3014013a3ca7a31c') in 0.081522 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/2.png
-  artifactKey: Guid(52f066047085f3e48be763f51c7e1cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Fishing Sprites/3 Objects/Catch/2.png using Guid(52f066047085f3e48be763f51c7e1cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '494152a8e8fb683137fb4da03dc84e46') in 0.005858 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/TownspeoplePixelArt/PSD/2.psd
-  artifactKey: Guid(ad40035c2e0a045d8bde36a41e51cb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TownspeoplePixelArt/PSD/2.psd using Guid(ad40035c2e0a045d8bde36a41e51cb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00083c9a9fecf36f1514be8eec0b6701') in 0.007086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 67.602626 seconds.
-  path: Assets/DialogueObjects/CampfireStories.asset
-  artifactKey: Guid(cdc755d1587912e4c8bb4f5696058715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/CampfireStories.asset using Guid(cdc755d1587912e4c8bb4f5696058715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361a8447efbacea5e7dad924acc8a1c2') in 0.003688 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001140 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:39:16.224 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde2980d780 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.125 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2127ms)
-		BeginReloadAssembly (210ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (38ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1837ms)
-			LoadAssemblies (211ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (298ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1076ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (219ms)
-				ProcessInitializeOnLoadAttributes (782ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.7 MB.
-System memory in use after: 200.8 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2619.
-Total: 2.059875 ms (FindLiveObjects: 0.073250 ms CreateObjectMapping: 0.039750 ms MarkObjects: 1.925583 ms  DeleteObjects: 0.020667 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 25.994031 seconds.
-  path: Assets/DialogueObjects/CampfireStoriesYes.asset
-  artifactKey: Guid(3fac9db271408465da10b563fb958ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/CampfireStoriesYes.asset using Guid(3fac9db271408465da10b563fb958ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47db339e76d0e97016dcd55efa6fb27b') in 0.018068 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.878098 seconds.
-  path: Assets/DialogueObjects/CampfireStoriesNo.asset
-  artifactKey: Guid(f5206848efa664376b6b8f8d689baa54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/CampfireStoriesNo.asset using Guid(f5206848efa664376b6b8f8d689baa54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d6e87790f52dec5ac2dd94190769503') in 0.002869 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.671415 seconds.
-  path: Assets/DialogueObjects/CampfireStoriesNo.asset
-  artifactKey: Guid(f5206848efa664376b6b8f8d689baa54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/CampfireStoriesNo.asset using Guid(f5206848efa664376b6b8f8d689baa54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2edbaa847574f41c5b57dc1e7e86d010') in 0.002271 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.465378 seconds.
-  path: Assets/DialogueObjects/CampfireStories.asset
-  artifactKey: Guid(cdc755d1587912e4c8bb4f5696058715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/CampfireStories.asset using Guid(cdc755d1587912e4c8bb4f5696058715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c5980c7c97fa1f9acbd4b44ed9fb05') in 0.004256 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001181 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:41:36.353 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29fb1a20 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.200 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2200ms)
-		BeginReloadAssembly (217ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (42ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1903ms)
-			LoadAssemblies (222ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (290ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (1114ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (219ms)
-				ProcessInitializeOnLoadAttributes (820ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.7 MB.
-System memory in use after: 200.8 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2622.
-Total: 2.194333 ms (FindLiveObjects: 0.079375 ms CreateObjectMapping: 0.049417 ms MarkObjects: 2.032875 ms  DeleteObjects: 0.031875 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001034 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:42:55.666 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29fb11d0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.134 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2135ms)
-		BeginReloadAssembly (206ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (38ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1845ms)
-			LoadAssemblies (209ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (283ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (1085ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (223ms)
-				ProcessInitializeOnLoadAttributes (785ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.7 MB.
-System memory in use after: 200.8 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2625.
-Total: 2.018125 ms (FindLiveObjects: 0.076541 ms CreateObjectMapping: 0.039459 ms MarkObjects: 1.881625 ms  DeleteObjects: 0.019917 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001102 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:46:28.418 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde2b03b720 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.224 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2225ms)
-		BeginReloadAssembly (205ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (46ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1934ms)
-			LoadAssemblies (193ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1157ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (239ms)
-				ProcessInitializeOnLoadAttributes (840ms)
-				ProcessInitializeOnLoadMethodAttributes (58ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (358ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.7 MB.
-System memory in use after: 200.8 MB.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.1 MB.
+System memory in use after: 171.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2628.
-Total: 2.109750 ms (FindLiveObjects: 0.079708 ms CreateObjectMapping: 0.039459 ms MarkObjects: 1.965166 ms  DeleteObjects: 0.024750 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2626.
+Total: 10.395900 ms (FindLiveObjects: 0.520800 ms CreateObjectMapping: 0.120600 ms MarkObjects: 9.627300 ms  DeleteObjects: 0.124900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003945 seconds.
+Registered in 0.012286 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
+Symbol file data-0000016F25293020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D6144F0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8EF9CFE0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D570840 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D5FE020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20455010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE7E8430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F208E8E90 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D570840 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8EF9CFE0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26A9CC70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE93B020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22DDA010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D563010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24A6CC30 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D6139E0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8FDA3050 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26796AC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B93010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:47:40.238 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde299ef650 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  2.255 seconds
+- Completed reload, in  1.564 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2256ms)
-		BeginReloadAssembly (225ms)
+	ReloadAssembly (1565ms)
+		BeginReloadAssembly (229ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (45ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1945ms)
-			LoadAssemblies (228ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1242ms)
+			LoadAssemblies (278ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (299ms)
+			SetupTypeCache (389ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1151ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (470ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (231ms)
-				ProcessInitializeOnLoadAttributes (838ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.7 MB.
-System memory in use after: 200.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2631.
-Total: 2.160708 ms (FindLiveObjects: 0.101084 ms CreateObjectMapping: 0.042334 ms MarkObjects: 1.994000 ms  DeleteObjects: 0.022333 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 504.609176 seconds.
-  path: Assets/DialogueObjects/CampfireStoriesYes.asset
-  artifactKey: Guid(3fac9db271408465da10b563fb958ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/CampfireStoriesYes.asset using Guid(3fac9db271408465da10b563fb958ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffbd25bbff5826c7cdf5919ae5724223') in 0.025088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/DialogueObjects/HikingNo.asset
-  artifactKey: Guid(bf881dbb04e49407b8b9976cc25a3417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/HikingNo.asset using Guid(bf881dbb04e49407b8b9976cc25a3417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3dc8332b1850457650f9220a4ef620') in 0.001735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/DialogueObjects/Hiking.asset
-  artifactKey: Guid(bd97c9c21ad1d5542bd48dd6c970ec20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Hiking.asset using Guid(bd97c9c21ad1d5542bd48dd6c970ec20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2ba5af2ac3d9a463d0d9c1325e4ec2e') in 0.001785 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/DialogueObjects/Meditation.asset
-  artifactKey: Guid(3c27ef0db247f864ca2797f29e575ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Meditation.asset using Guid(3c27ef0db247f864ca2797f29e575ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0d5745a3adb4eaf12daf955ff7eac9') in 0.001983 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/DialogueObjects/HikingYes.asset
-  artifactKey: Guid(d0851a7368a764a51ae042b0cb9a0750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/HikingYes.asset using Guid(d0851a7368a764a51ae042b0cb9a0750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8644dba1473979516e5e19538357bd7') in 0.001356 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/DialogueObjects/Kayaking.asset
-  artifactKey: Guid(beaa3ecb9379d1946b867bc337015a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Kayaking.asset using Guid(beaa3ecb9379d1946b867bc337015a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e1ce432bb75ee96d83c71522667e2e') in 0.001403 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001183 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:48:11.445 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde2997f420 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.209 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2210ms)
-		BeginReloadAssembly (218ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (41ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1909ms)
-			LoadAssemblies (219ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (292ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1142ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (249ms)
-				ProcessInitializeOnLoadAttributes (817ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.7 MB.
-System memory in use after: 200.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2634.
-Total: 2.275792 ms (FindLiveObjects: 0.081333 ms CreateObjectMapping: 0.042333 ms MarkObjects: 2.124542 ms  DeleteObjects: 0.026791 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 7.593998 seconds.
-  path: Assets/DialogueObjects/CampfireStories.asset
-  artifactKey: Guid(cdc755d1587912e4c8bb4f5696058715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/CampfireStories.asset using Guid(cdc755d1587912e4c8bb4f5696058715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8256dc427c59dd19de71e8a4d18eeb95') in 0.019104 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001213 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:48:30.940 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29a3d080 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.190 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2191ms)
-		BeginReloadAssembly (209ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (40ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1899ms)
-			LoadAssemblies (215ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (293ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1117ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (227ms)
-				ProcessInitializeOnLoadAttributes (812ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.7 MB.
-System memory in use after: 200.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2637.
-Total: 2.025209 ms (FindLiveObjects: 0.078250 ms CreateObjectMapping: 0.040583 ms MarkObjects: 1.884125 ms  DeleteObjects: 0.021459 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001123 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:50:08.976 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29a2e610 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.160 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2161ms)
-		BeginReloadAssembly (235ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (49ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1840ms)
-			LoadAssemblies (222ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (296ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (1080ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (222ms)
-				ProcessInitializeOnLoadAttributes (779ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.9 MB.
-System memory in use after: 201.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2640.
-Total: 2.049750 ms (FindLiveObjects: 0.082291 ms CreateObjectMapping: 0.039792 ms MarkObjects: 1.909083 ms  DeleteObjects: 0.017917 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001191 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:54:40.269 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29aae230 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.320 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2325ms)
-		BeginReloadAssembly (246ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (51ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (77ms)
-		EndReloadAssembly (1988ms)
-			LoadAssemblies (201ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (312ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (1179ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (247ms)
-				ProcessInitializeOnLoadAttributes (852ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.9 MB.
-System memory in use after: 201.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2643.
-Total: 2.117250 ms (FindLiveObjects: 0.100208 ms CreateObjectMapping: 0.042875 ms MarkObjects: 1.946834 ms  DeleteObjects: 0.026625 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001124 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:56:37.053 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29990bc0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.214 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2215ms)
-		BeginReloadAssembly (215ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (44ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1918ms)
-			LoadAssemblies (253ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (287ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (1122ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (228ms)
-				ProcessInitializeOnLoadAttributes (812ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.9 MB.
-System memory in use after: 201.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2646.
-Total: 2.204375 ms (FindLiveObjects: 0.094625 ms CreateObjectMapping: 0.042583 ms MarkObjects: 2.039500 ms  DeleteObjects: 0.026833 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 505.558060 seconds.
-  path: Assets/DialogueObjects/Kayaking.asset
-  artifactKey: Guid(beaa3ecb9379d1946b867bc337015a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Kayaking.asset using Guid(beaa3ecb9379d1946b867bc337015a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '480a39935bec84960a4ed2a335972922') in 0.022315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.143587 seconds.
-  path: Assets/DialogueObjects/KayakingYes.asset
-  artifactKey: Guid(ac9711e5c710a4759a21441f574a71e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/KayakingYes.asset using Guid(ac9711e5c710a4759a21441f574a71e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457f6cdd70d535bd8556387c0eb8dcda') in 0.003115 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.086986 seconds.
-  path: Assets/DialogueObjects/KayakingNo.asset
-  artifactKey: Guid(b987c19055b214653af88005f42fa2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/KayakingNo.asset using Guid(b987c19055b214653af88005f42fa2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f800a2927cc799bc4954c3904874e90e') in 0.003317 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004904 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:57:43.475 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde1fbfddb0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.263 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2265ms)
-		BeginReloadAssembly (245ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (45ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (76ms)
-		EndReloadAssembly (1937ms)
-			LoadAssemblies (225ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (304ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (1139ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (234ms)
-				ProcessInitializeOnLoadAttributes (828ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.9 MB.
-System memory in use after: 201.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2649.
-Total: 2.075458 ms (FindLiveObjects: 0.088958 ms CreateObjectMapping: 0.040875 ms MarkObjects: 1.914333 ms  DeleteObjects: 0.030500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003849 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 11:58:13.027 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde1f924240 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  2.208 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2209ms)
-		BeginReloadAssembly (215ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (44ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1912ms)
-			LoadAssemblies (218ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (294ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (1140ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (223ms)
-				ProcessInitializeOnLoadAttributes (837ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (324ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.8 MB.
-System memory in use after: 200.9 MB.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.1 MB.
+System memory in use after: 171.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2652.
-Total: 2.158875 ms (FindLiveObjects: 0.115791 ms CreateObjectMapping: 0.047042 ms MarkObjects: 1.968500 ms  DeleteObjects: 0.026625 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2629.
+Total: 4.522400 ms (FindLiveObjects: 0.243500 ms CreateObjectMapping: 0.135900 ms MarkObjects: 3.741700 ms  DeleteObjects: 0.400100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 114.661576 seconds.
-  path: Assets/DialogueObjects/MeditationYes.asset
-  artifactKey: Guid(5e2b02e2942274f538c55b3bd58f7183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/MeditationYes.asset using Guid(5e2b02e2942274f538c55b3bd58f7183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45de9e6ade5f1dabb2d053d0c033a7c0') in 0.020886 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.775832 seconds.
-  path: Assets/DialogueObjects/Meditationno.asset
-  artifactKey: Guid(763e56abe2d734ddd871fc0fc2a060ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Meditationno.asset using Guid(763e56abe2d734ddd871fc0fc2a060ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d6a3e57eacc48e84ea3149b67fd60c') in 0.003169 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.141383 seconds.
-  path: Assets/DialogueObjects/MeditationNo.asset
-  artifactKey: Guid(763e56abe2d734ddd871fc0fc2a060ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/MeditationNo.asset using Guid(763e56abe2d734ddd871fc0fc2a060ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411b1950c1014323e62d6212a4211f2c') in 0.002821 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.629682 seconds.
-  path: Assets/DialogueObjects/Meditation.asset
-  artifactKey: Guid(3c27ef0db247f864ca2797f29e575ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Meditation.asset using Guid(3c27ef0db247f864ca2797f29e575ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaf995d462f4e2b4cab5030b54096e72') in 0.003102 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001263 seconds.
+Registered in 0.009232 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
+Symbol file data-0000016F25293020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D615000 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22829A40 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F911CD020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D570840 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F902ECB70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F215327C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F911CD020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20455010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE7E8430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2050EE50 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F902ECB70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D570840 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22829A40 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26A9CC70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F900C7F60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91177640 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE80CCB0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8F4EC020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F244DDA50 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D6139E0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22829A40 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F269698E0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFD31CAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F911CD020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 12:00:08.732 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde29fdcfd0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  2.266 seconds
+- Completed reload, in  1.441 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2268ms)
-		BeginReloadAssembly (252ms)
+	ReloadAssembly (1441ms)
+		BeginReloadAssembly (201ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (42ms)
+			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (77ms)
-		EndReloadAssembly (1932ms)
-			LoadAssemblies (229ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1142ms)
+			LoadAssemblies (185ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (299ms)
+			SetupTypeCache (387ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (1150ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (433ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (2ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (238ms)
-				ProcessInitializeOnLoadAttributes (835ms)
-				ProcessInitializeOnLoadMethodAttributes (58ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (303ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.8 MB.
-System memory in use after: 200.9 MB.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.1 MB.
+System memory in use after: 171.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2655.
-Total: 2.201666 ms (FindLiveObjects: 0.100459 ms CreateObjectMapping: 0.044084 ms MarkObjects: 2.032708 ms  DeleteObjects: 0.023458 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2632.
+Total: 5.908900 ms (FindLiveObjects: 0.201700 ms CreateObjectMapping: 0.068500 ms MarkObjects: 5.215200 ms  DeleteObjects: 0.422200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 48.206999 seconds.
-  path: Assets/DialogueObjects/Meditation.asset
-  artifactKey: Guid(3c27ef0db247f864ca2797f29e575ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/Meditation.asset using Guid(3c27ef0db247f864ca2797f29e575ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8696bcf666daac2761eea660d689c86f') in 0.020248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 41.872167 seconds.
-  path: Assets/Scenes/HubWorld.unity
-  artifactKey: Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/HubWorld.unity using Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5da887f4d56e6ec1cc54c60d49f75c') in 0.005402 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001188 seconds.
+Registered in 0.007838 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
+Symbol file data-0000016F25293020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F913DF070 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91F52A00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8EAD7240 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91EE6010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D570840 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F902ECB70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2175F010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F215327C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91EE6010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20455010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE93B020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91F52A00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F902ECB70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23403C60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8EAD7240 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26A9CC70 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F220DCE30 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91F52A00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26CDA010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8D602030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F90A2F0F0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20799010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F913E1CB0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8EAD7240 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26795E80 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFEA23CD0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91F52A00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91EE6010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 12:01:02.698 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde3f9afc80 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  2.278 seconds
+- Completed reload, in  2.056 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2279ms)
-		BeginReloadAssembly (220ms)
+	ReloadAssembly (2057ms)
+		BeginReloadAssembly (329ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (39ms)
+			DisableScriptedObjects (15ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1974ms)
-			LoadAssemblies (222ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (1562ms)
+			LoadAssemblies (349ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (306ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (1174ms)
+			SetupTypeCache (463ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (594ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (244ms)
-				ProcessInitializeOnLoadAttributes (851ms)
-				ProcessInitializeOnLoadMethodAttributes (58ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (423ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (19ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.8 MB.
-System memory in use after: 200.9 MB.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.1 MB.
+System memory in use after: 171.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2658.
-Total: 2.242250 ms (FindLiveObjects: 0.125875 ms CreateObjectMapping: 0.044625 ms MarkObjects: 2.044792 ms  DeleteObjects: 0.026083 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2635.
+Total: 9.046200 ms (FindLiveObjects: 0.340900 ms CreateObjectMapping: 0.174000 ms MarkObjects: 8.243900 ms  DeleteObjects: 0.284100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001053 seconds.
+Registered in 0.009771 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
+Symbol file data-0000016F90710020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F913DFF30 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23039430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22589800 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8ECC4620 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20137040 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE919030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2473F040 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24798510 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8ECC4620 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FE30010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE0C13B0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26747F00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F262EF360 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FE18030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26434280 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20A482C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25C8AAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FB64020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25FAF000 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91F96010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8FAFCC00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25FFC010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91816990 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F244DE260 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2671C280 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8DEBAC60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F913DFF30 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26376510 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26963DE0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F229EFD10 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23039430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8ECC4620 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2024-12-12 12:03:02.899 Unity[2275:30553] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fde1f9d3ee0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  2.182 seconds
+- Completed reload, in  1.532 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2183ms)
-		BeginReloadAssembly (196ms)
+	ReloadAssembly (1532ms)
+		BeginReloadAssembly (220ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (44ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1901ms)
-			LoadAssemblies (187ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1188ms)
+			LoadAssemblies (194ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (285ms)
+			SetupTypeCache (390ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (1143ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (455ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (2ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (247ms)
-				ProcessInitializeOnLoadAttributes (814ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (317ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.8 MB.
-System memory in use after: 200.9 MB.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.1 MB.
+System memory in use after: 171.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2661.
-Total: 2.084875 ms (FindLiveObjects: 0.083333 ms CreateObjectMapping: 0.039625 ms MarkObjects: 1.940542 ms  DeleteObjects: 0.020625 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2638.
+Total: 4.486700 ms (FindLiveObjects: 0.180800 ms CreateObjectMapping: 0.073700 ms MarkObjects: 4.131800 ms  DeleteObjects: 0.099400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007817 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000016F90710020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F913DF070 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23039430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F90F141B0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F251DD010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20137040 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE919030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2473F040 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F24798510 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F251DD010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FE30010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016EFE0C13B0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2678C010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F262EF360 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22B71020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26434280 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F20A482C0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25C8AAC0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F1FB64020 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F25FAF000 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F91F96010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8FAFCC00 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2678C010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F22933030 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F244DE260 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F2671C280 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8DEBAC60 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F913E0DF0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F26376510 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F8C88F9A0 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F229EFD10 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F23039430 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000016F251DD010 doesn't match image C:\UnityProjects\CGE401-Team_Project\Camp Quests\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.576 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1582ms)
+		BeginReloadAssembly (213ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1261ms)
+			LoadAssemblies (200ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (414ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (484ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (344ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.1 MB.
+System memory in use after: 171.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2641.
+Total: 6.401900 ms (FindLiveObjects: 0.414100 ms CreateObjectMapping: 0.205100 ms MarkObjects: 5.370000 ms  DeleteObjects: 0.409700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -7659,7 +7659,7 @@ MonoBehaviour:
   groundCheckRadius: 0.2
   musicSource: {fileID: 1259875491}
   gameManager: {fileID: 1952839367}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 683648220}
 --- !u!114 &716622530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7674,7 +7674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionMessage: You pet the animal. It seems happy!
   interactionText: {fileID: 1094603429}
-  satisfactionSlider: {fileID: 0}
+  satisfactionSlider: {fileID: 1069469538}
 --- !u!114 &716622531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7687,7 +7687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c2431d65a4e40438ca4d3f40fd6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSystem: {fileID: 0}
+  healthSystem: {fileID: 1800227244}
 --- !u!114 &716622532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7700,7 +7700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8832463f10214e94480c1b7d554d6fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1952839367}
 --- !u!1 &750326586
 GameObject:
   m_ObjectHideFlags: 0
@@ -17425,51 +17425,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299899014}
   m_CullTransparentMesh: 1
---- !u!1 &1306142707
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1306142709}
-  - component: {fileID: 1306142708}
-  m_Layer: 0
-  m_Name: DialogeManagerHiking
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1306142708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306142707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7bf77971c1f129449ffd0defced7137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 683648220}
-  imageObject: {fileID: 2031492035}
---- !u!4 &1306142709
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306142707}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.140001, y: -1.3125712, z: -91.399994}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320878505
 GameObject:
   m_ObjectHideFlags: 0
@@ -18081,6 +18036,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
+--- !u!1 &1556573943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556573945}
+  - component: {fileID: 1556573944}
+  m_Layer: 0
+  m_Name: DialogueManagerHiking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1556573944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556573943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bf77971c1f129449ffd0defced7137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 683648220}
+  imageObject: {fileID: 2031492035}
+--- !u!4 &1556573945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556573943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.140001, y: -1.3125712, z: -91.399994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654844942
 GameObject:
   m_ObjectHideFlags: 0
@@ -18540,11 +18540,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892c1a60828f5104ab8500bcdef31c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 0
-  hearts: []
-  fullHeart: {fileID: 0}
-  emptyHeart: {fileID: 0}
+  health: 3
+  maxHealth: 3
+  hearts:
+  - {fileID: 118228534}
+  - {fileID: 682536171}
+  - {fileID: 2120114074}
+  fullHeart: {fileID: 21300000, guid: 4fc20d987a5904e5fbf45776580d84fe, type: 3}
+  emptyHeart: {fileID: 21300000, guid: f57c39a02ea1e47e99ed034dbcf03028, type: 3}
   gameOver: 0
 --- !u!4 &1800227245
 Transform:
@@ -24037,7 +24040,7 @@ MonoBehaviour:
   redUI: {fileID: 1682645464}
   greenUI: {fileID: 1299899014}
   hubButton: {fileID: 1205657834}
-  playerHiking: {fileID: 0}
+  playerHiking: {fileID: 716622529}
 --- !u!1 &2007307159
 GameObject:
   m_ObjectHideFlags: 0

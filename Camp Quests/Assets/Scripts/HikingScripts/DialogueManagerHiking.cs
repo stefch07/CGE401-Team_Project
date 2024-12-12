@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueManagerHiking : MonoBehaviour
 {
@@ -23,6 +24,18 @@ public class DialogueManagerHiking : MonoBehaviour
     void Start()
     {
         dialogueQueue = new Queue<string>();
+        if (imageObject != null)
+        {
+            imageObject.SetActive(true);
+        }
+    }
+
+    void Update()
+    {
+        if (isDialogueComplete && imageObject != null)
+        {
+            imageObject.SetActive(false);
+        }
     }
 
     public void ShowDialogue(DialogueObject dialogueObject)
@@ -44,8 +57,6 @@ public class DialogueManagerHiking : MonoBehaviour
         {
             isDialogueComplete = true;
             dialogueText.text = "";
-
-            gameObject.SetActive(false);
 
             if (imageObject != null)
             {

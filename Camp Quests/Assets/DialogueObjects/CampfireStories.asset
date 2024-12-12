@@ -16,4 +16,8 @@ MonoBehaviour:
   - 'Are you ready for Camp Stories?
 
     (This is will end the day)'
-  responses: []
+  responses:
+  - responseText: Yes!
+    dialogueObject: {fileID: 11400000, guid: 3fac9db271408465da10b563fb958ff2, type: 2}
+  - responseText: No!
+    dialogueObject: {fileID: 11400000, guid: f5206848efa664376b6b8f8d689baa54, type: 2}

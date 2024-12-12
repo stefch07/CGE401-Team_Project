@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Are you ready to go Kayaking?
-  responses: []
+  responses:
+  - responseText: Yes!
+    dialogueObject: {fileID: 11400000, guid: ac9711e5c710a4759a21441f574a71e0, type: 2}
+  - responseText: No!
+    dialogueObject: {fileID: 11400000, guid: b987c19055b214653af88005f42fa2a6, type: 2}

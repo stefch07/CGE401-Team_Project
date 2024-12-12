@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Meditation
   m_EditorClassIdentifier: 
   dialogue:
-  - Are you ready to for Meditation?
-  responses: []
+  - Are you ready to do some Meditation?
+  responses:
+  - responseText: Yes!
+    dialogueObject: {fileID: 11400000, guid: 5e2b02e2942274f538c55b3bd58f7183, type: 2}
+  - responseText: No!
+    dialogueObject: {fileID: 11400000, guid: 763e56abe2d734ddd871fc0fc2a060ef, type: 2}

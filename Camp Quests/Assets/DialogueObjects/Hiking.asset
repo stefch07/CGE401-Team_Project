@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Are you ready to go Hiking?
-  responses: []
+  responses:
+  - responseText: Yes!
+    dialogueObject: {fileID: 11400000, guid: d0851a7368a764a51ae042b0cb9a0750, type: 2}
+  - responseText: No!
+    dialogueObject: {fileID: 11400000, guid: bf881dbb04e49407b8b9976cc25a3417, type: 2}

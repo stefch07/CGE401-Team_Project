@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
@@ -64,5 +65,10 @@ public class DialogueActivator : MonoBehaviour, IInteractable
                 campfireManager.OnStoryComplete();
             }
         }
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

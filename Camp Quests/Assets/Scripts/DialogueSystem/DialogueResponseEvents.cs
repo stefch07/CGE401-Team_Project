@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System;
 
 public class DialogueResponseEvents : MonoBehaviour
@@ -10,6 +11,22 @@ public class DialogueResponseEvents : MonoBehaviour
     
     public ResponseEvent[] Events => events;
 
+    public void TriggerResponseEvent(int responseIndex)
+    {
+        if (responseIndex < 0 || responseIndex >= events.Length)
+        {
+            return;
+        }
+        
+        ResponseEvent responseEvent = events[responseIndex];
+        if (responseEvent == null)
+        {
+            return;
+        }
+        
+        responseEvent.Trigger();
+    }
+    
     public void OnValidate()
     {
         if (dialogueObject == null) return;

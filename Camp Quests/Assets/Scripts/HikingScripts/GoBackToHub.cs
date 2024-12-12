@@ -6,6 +6,6 @@ public class GoBackToHub : MonoBehaviour
 {
     public void LoadHubWorld()
     {
-        SceneManager.LoadScene("HubWorld");
+        SceneManager.LoadScene("CampfireStories");
     }
 }

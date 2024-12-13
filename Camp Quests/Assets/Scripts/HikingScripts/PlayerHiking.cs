@@ -14,6 +14,7 @@ public class PlayerHiking : MonoBehaviour
     public AudioSource musicSource;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
     private bool isGrounded;
 
     private bool isGameOver = false;
@@ -23,7 +24,8 @@ public class PlayerHiking : MonoBehaviour
     private bool isDialogueComplete = false;
     private DialogueManagerHiking dialogueManager;
 
-    
+    private bool canJump = true; // Prevents jump spamming
+    public float jumpCooldown = 0.5f; // Cooldown time in seconds
 
     [System.Serializable]
     public class DialogueObject
@@ -41,6 +43,7 @@ public class PlayerHiking : MonoBehaviour
         dialogueManager = FindObjectOfType<DialogueManagerHiking>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
 
         if (rb == null)
         {
@@ -50,6 +53,11 @@ public class PlayerHiking : MonoBehaviour
         if (spriteRenderer == null)
         {
             Debug.LogError("SpriteRenderer component is missing! Please add one to the Player GameObject.");
+        }
+
+        if (animator == null)
+        {
+            Debug.LogError("Animator component is missing! Please add one to the Player GameObject.");
         }
 
         if (musicSource == null)
@@ -73,6 +81,7 @@ public class PlayerHiking : MonoBehaviour
         if (isGameOver)
         {
             rb.velocity = Vector2.zero;
+            animator.SetFloat("Speed", 0);
             return;
         }
 
@@ -85,7 +94,7 @@ public class PlayerHiking : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && canJump)
         {
             Jump();
         }
@@ -108,6 +117,10 @@ public class PlayerHiking : MonoBehaviour
         {
             spriteRenderer.flipX = true;
         }
+
+        animator.SetFloat("Speed", Mathf.Abs(moveX));
+        animator.SetBool("IsGrounded", isGrounded);
+        animator.SetFloat("VerticalSpeed", rb.velocity.y);
     }
 
     void Jump()
@@ -115,6 +128,31 @@ public class PlayerHiking : MonoBehaviour
         if (rb == null) return;
 
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        animator.SetTrigger("Jump");
+        canJump = false;
+        StartCoroutine(JumpCooldown());
+    }
+
+    IEnumerator JumpCooldown()
+    {
+        yield return new WaitForSeconds(jumpCooldown);
+        canJump = true;
+    }
+
+    public void TakeDamage()
+    {
+        if (isGameOver) return;
+
+        animator.SetTrigger("Hurt");
+    }
+
+    public void Die()
+    {
+        isGameOver = true;
+        animator.SetBool("IsDead", true);
+        rb.velocity = Vector2.zero; 
+        this.enabled = false; 
+        gameManager.GameOver();
     }
 
     void StartDialogue()
@@ -122,10 +160,11 @@ public class PlayerHiking : MonoBehaviour
         DialogueManagerHiking.DialogueObject introDialogue = new DialogueManagerHiking.DialogueObject(
             new List<string>
             {
-                "Welcome to the hiking adventure!",
+                "Welcome to the hiking adventure!" +
+                "(Click Space Bar to Keep Reading)",
                 "First you need to know how to move around!",
                 "Move Left and Right with AD or Left/Right Arrow Keys.",
-                "Jump over logs with W or Space Bar to avoid losing hearts",
+                "Jump over logs with Space Bar to avoid losing hearts",
                 "Press E to interact with animals to gain Satisfaction!",
                 "Enjoy your hiking trip!"
             }

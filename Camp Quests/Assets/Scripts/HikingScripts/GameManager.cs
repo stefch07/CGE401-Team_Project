@@ -40,4 +40,18 @@ public class GameManager : MonoBehaviour
         redUI.SetActive(true);
         playerHiking.StopPlayerMovement();
     }
+
+    public void GameOver()
+    {
+        gameOverUI.SetActive(true);
+        redUI.SetActive(true);
+        hubButton.SetActive(true);
+
+        if (playerHiking != null)
+        {
+            playerHiking.StopPlayerMovement();
+        }
+
+        Debug.Log("Game Over! Player has died.");
+    }
 }

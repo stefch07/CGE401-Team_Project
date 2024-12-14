@@ -22,107 +22,107 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53551
+54046
 Successfully changed project path to: /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests
 /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests
 Using Asset Import Pipeline V2.
-Player connection [8709477056] Host "[IP] 192.168.1.169 [Port] 0 [Flags] 2 [Guid] 2830961781 [EditorId] 2830961781 [Version] 1048832 [Id] OSXEditor(0,Tylers-Air) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8783250112] Host "[IP] 192.168.1.169 [Port] 0 [Flags] 2 [Guid] 3720661938 [EditorId] 3720661938 [Version] 1048832 [Id] OSXEditor(0,Tylers-Air) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8709477056] Host "[IP] 192.168.1.169 [Port] 0 [Flags] 2 [Guid] 2830961781 [EditorId] 2830961781 [Version] 1048832 [Id] OSXEditor(0,Tylers-Air) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8783250112] Host "[IP] 192.168.1.169 [Port] 0 [Flags] 2 [Guid] 3720661938 [EditorId] 3720661938 [Version] 1048832 [Id] OSXEditor(0,Tylers-Air) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 51.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 53.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.48f1 (b805b124c6b7)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Assets
 GfxDevice: creating device client; threaded=0
-2024-12-13 20:40:00.418 Unity[5937:2152369] (null) preferred device: Apple M2 (high power)
-2024-12-13 20:40:00.418 Unity[5937:2152369] Metal devices available: 1
-2024-12-13 20:40:00.418 Unity[5937:2152369] 0: Apple M2 (high power)
-2024-12-13 20:40:00.418 Unity[5937:2152369] Using device Apple M2 (high power)
+2024-12-13 20:45:55.909 Unity[7033:2163724] (null) preferred device: Apple M2 (high power)
+2024-12-13 20:45:55.909 Unity[7033:2163724] Metal devices available: 1
+2024-12-13 20:45:55.909 Unity[7033:2163724] 0: Apple M2 (high power)
+2024-12-13 20:45:55.909 Unity[7033:2163724] Using device Apple M2 (high power)
 Initializing Metal device caps: Apple M2
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56937
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56033
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.48f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.002188 seconds.
+Registered in 0.003021 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 45.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 45.40 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.336 seconds
+- Completed reload, in  1.629 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1336ms)
-		BeginReloadAssembly (158ms)
+	ReloadAssembly (1629ms)
+		BeginReloadAssembly (195ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (1070ms)
-			LoadAssemblies (155ms)
+			CreateAndSetChildDomain (7ms)
+		EndReloadAssembly (1299ms)
+			LoadAssemblies (189ms)
 			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (137ms)
+			SetupTypeCache (148ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (604ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (744ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
+				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (45ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (351ms)
-				ProcessInitializeOnLoadMethodAttributes (124ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (452ms)
+				ProcessInitializeOnLoadMethodAttributes (107ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003525 seconds.
+Registered in 0.003249 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.667 seconds
+- Completed reload, in  3.268 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1669ms)
-		BeginReloadAssembly (274ms)
+	ReloadAssembly (3270ms)
+		BeginReloadAssembly (444ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (34ms)
+			DisableScriptedObjects (33ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (71ms)
-		EndReloadAssembly (1318ms)
-			LoadAssemblies (214ms)
+			CreateAndSetChildDomain (93ms)
+		EndReloadAssembly (2745ms)
+			LoadAssemblies (469ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (214ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (661ms)
+			SetupTypeCache (384ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (1552ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (50ms)
 				BeforeProcessingInitializeOnLoad (203ms)
-				ProcessInitializeOnLoadAttributes (387ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (1208ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.041258 seconds.
+Validating Project structure ... 0.028207 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.053193 seconds.
+Upgrading shader files ...0.085714 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -132,66 +132,20 @@ Application.AssetDatabase.Refresh End
 RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
 RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.48f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.23 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.95 seconds
 Initializing Unity extensions:
-[C# Project] Writing /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Camp Quests.sln because it has changed
-[C# Project] First difference on line 4
-
-[C# Project] Current /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Camp Quests.sln:
-[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{60C3D5AD-64F9-2859-8B67-4EF32EEBEAEE}"
-[C# Project]   005: EndProject
-[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{E17ABF5B-382B-A098-0FD3-DA95A96CE606}"
-[C# Project]   007: EndProject
-[C# Project]   008: Global
-
-[C# Project] New /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Camp Quests.sln:
-[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{FB230129-2A3E-0055-D7F2-8C0DC105F961}"
-[C# Project]   005: EndProject
-[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.PixelPerfect.Tests", "Unity.2D.PixelPerfect.Tests.csproj", "{E270AA59-6735-719D-24A9-94EF0C6B9D18}"
-[C# Project]   007: EndProject
-[C# Project]   008: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{E8BB0175-1299-F555-2DA0-590FA0011048}"
-[C# Project] Writing /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Assembly-CSharp.csproj because it has changed
-[C# Project] First difference on line 4
-
-[C# Project] Current /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Assembly-CSharp.csproj:
-[C# Project]   004:     <LangVersion>8.0</LangVersion>
-[C# Project]   005:   </PropertyGroup>
-[C# Project]   006:   <PropertyGroup>
-[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-
-[C# Project] New /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Assembly-CSharp.csproj:
-[C# Project]   004:     <LangVersion>latest</LangVersion>
-[C# Project]   005:   </PropertyGroup>
-[C# Project]   006:   <PropertyGroup>
-[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-[C# Project] Writing /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Assembly-CSharp-Editor.csproj because it has changed
-[C# Project] First difference on line 4
-
-[C# Project] Current /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Assembly-CSharp-Editor.csproj:
-[C# Project]   004:     <LangVersion>8.0</LangVersion>
-[C# Project]   005:   </PropertyGroup>
-[C# Project]   006:   <PropertyGroup>
-[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-
-[C# Project] New /Users/tylerptaszkowski/Desktop/UnityProjects/CGE303TylerPtaszkowski/CGE401-TeamProject/CGE401-Team_Project/Camp Quests/Assembly-CSharp-Editor.csproj:
-[C# Project]   004:     <LangVersion>latest</LangVersion>
-[C# Project]   005:   </PropertyGroup>
-[C# Project]   006:   <PropertyGroup>
-[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+2024-12-13 20:46:04.773 Unity[7033:2163724] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fdba7ef9320 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2024-12-13 20:46:04.777 Unity[7033:2163724] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fdba7bb92c0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2113 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.5 MB.
-System memory in use after: 187.8 MB.
+System memory in use before: 189.8 MB.
+System memory in use after: 189.3 MB.
 
-Unloading 67 unused Assets to reduce memory usage. Loaded Objects now: 2592.
-Total: 5.335750 ms (FindLiveObjects: 0.373000 ms CreateObjectMapping: 0.044291 ms MarkObjects: 4.382958 ms  DeleteObjects: 0.534667 ms)
+Unloading 174 unused Assets to reduce memory usage. Loaded Objects now: 2599.
+Total: 4.183584 ms (FindLiveObjects: 0.202291 ms CreateObjectMapping: 0.055958 ms MarkObjects: 3.369042 ms  DeleteObjects: 0.553834 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -205,387 +159,64 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Animation/Player.controller
-  artifactKey: Guid(7f428838728bc01449f9ee05f3f41461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Player.controller using Guid(7f428838728bc01449f9ee05f3f41461) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
- #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #8 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #9 _dispatch_client_callout
- #10 _dispatch_async_and_wait_invoke
- #11 _dispatch_client_callout
- #12 _dispatch_main_queue_drain
- #13 _dispatch_main_queue_callback_4CF
- #14 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #15 __CFRunLoopRun
- #16 CFRunLoopRunSpecific
- #17 RunCurrentEventLoopInMode
- #18 ReceiveNextEventCommon
- #19 _BlockUntilNextEventMatchingListInModeWithFilter
- #20 _DPSNextEvent
- #21 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #22 -[NSApplication run]
- #23 NSApplicationMain
- #24 EditorMain(int, char const**)
- #25 main
- #26 ???
-
-Requesting import of Guid(7f428838728bc01449f9ee05f3f41461) Importer(-1,00000000000000000000000000000000), Assets/Animation/Player.controller from editor
-Resuming Guid(7f428838728bc01449f9ee05f3f41461) Importer(-1,00000000000000000000000000000000) -> b6f39eace96975fe14f20c55f0f1da5d 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
-Diagnostics callstack to track who triggered the sub-import:
- #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #8 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #9 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #10 _dispatch_client_callout
- #11 _dispatch_async_and_wait_invoke
- #12 _dispatch_client_callout
- #13 _dispatch_main_queue_drain
- #14 _dispatch_main_queue_callback_4CF
- #15 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #16 __CFRunLoopRun
- #17 CFRunLoopRunSpecific
- #18 RunCurrentEventLoopInMode
- #19 ReceiveNextEventCommon
- #20 _BlockUntilNextEventMatchingListInModeWithFilter
- #21 _DPSNextEvent
- #22 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #23 -[NSApplication run]
- #24 NSApplicationMain
- #25 EditorMain(int, char const**)
- #26 main
- #27 ???
-
-Requesting import of Guid(7f428838728bc01449f9ee05f3f41461) Importer(-1,00000000000000000000000000000000), Assets/Animation/Player.controller from editor
-Resuming Guid(7f428838728bc01449f9ee05f3f41461) Importer(-1,00000000000000000000000000000000) -> b6f39eace96975fe14f20c55f0f1da5d 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
- -> (artifact id: 'a402785b91a27feec81fe9c3146c5568') in 0.638002 seconds 
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_death.png
+  artifactKey: Guid(f04e30510e539be4d84e6e61ced0d958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_death.png using Guid(f04e30510e539be4d84e6e61ced0d958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617c24918e63eed716e185bcb5b30c1b') in 0.400234 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 5.930781 seconds.
-  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter.png
-  artifactKey: Guid(feadd8ceaa1ee6041956f3086e02017f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter.png using Guid(feadd8ceaa1ee6041956f3086e02017f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.855364 seconds  code(4) message(Build asset version error: assets/2d sprites/main 2d sprites/1 woodcutter/woodcutter.png.meta in SourceAssetDB has modification time of '2024-12-03T23:02:43Z' while content on disk has modification time of '2024-12-14T02:40:16Z')
-  ERROR: Build asset version error: assets/2d sprites/main 2d sprites/1 woodcutter/woodcutter.png.meta in SourceAssetDB has modification time of '2024-12-03T23:02:43Z' while content on disk has modification time of '2024-12-14T02:40:16Z'
-========================================================================
-Received Import Request.
-  Time since last request: 16.329525 seconds.
-  path: Assets/2D Pixel Art Platformer Biome - American Forest/Demo.unity
-  artifactKey: Guid(f9b1d789aeb2db941be6e4a862d52c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Art Platformer Biome - American Forest/Demo.unity using Guid(f9b1d789aeb2db941be6e4a862d52c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e63cf5555d01c3160fe2821c0e154b') in 0.005307 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.469544 seconds.
-  path: Assets/DialogueObjects/HikingTutorial.asset
-  artifactKey: Guid(c980978125005434095e925e4e07923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/HikingTutorial.asset using Guid(c980978125005434095e925e4e07923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
- #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #8 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #9 _dispatch_client_callout
- #10 _dispatch_async_and_wait_invoke
- #11 _dispatch_client_callout
- #12 _dispatch_main_queue_drain
- #13 _dispatch_main_queue_callback_4CF
- #14 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #15 __CFRunLoopRun
- #16 CFRunLoopRunSpecific
- #17 RunCurrentEventLoopInMode
- #18 ReceiveNextEventCommon
- #19 _BlockUntilNextEventMatchingListInModeWithFilter
- #20 _DPSNextEvent
- #21 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #22 -[NSApplication run]
- #23 NSApplicationMain
- #24 EditorMain(int, char const**)
- #25 main
- #26 ???
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003587 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2024-12-13 20:47:00.881 Unity[7033:2163724] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fdba7918a10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.547 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2549ms)
+		BeginReloadAssembly (587ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (49ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (212ms)
+		EndReloadAssembly (1880ms)
+			LoadAssemblies (476ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (283ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (1005ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (224ms)
+				ProcessInitializeOnLoadAttributes (713ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2087 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.5 MB.
+System memory in use after: 189.6 MB.
 
-Requesting import of Guid(c980978125005434095e925e4e07923b) Importer(-1,00000000000000000000000000000000), Assets/DialogueObjects/HikingTutorial.asset from editor
-Resuming Guid(c980978125005434095e925e4e07923b) Importer(-1,00000000000000000000000000000000) -> a413b7212f9fc38b4024ccb7f230e6bd 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
-Diagnostics callstack to track who triggered the sub-import:
- #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #8 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #9 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #10 _dispatch_client_callout
- #11 _dispatch_async_and_wait_invoke
- #12 _dispatch_client_callout
- #13 _dispatch_main_queue_drain
- #14 _dispatch_main_queue_callback_4CF
- #15 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #16 __CFRunLoopRun
- #17 CFRunLoopRunSpecific
- #18 RunCurrentEventLoopInMode
- #19 ReceiveNextEventCommon
- #20 _BlockUntilNextEventMatchingListInModeWithFilter
- #21 _DPSNextEvent
- #22 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #23 -[NSApplication run]
- #24 NSApplicationMain
- #25 EditorMain(int, char const**)
- #26 main
- #27 ???
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2620.
+Total: 4.462625 ms (FindLiveObjects: 0.349334 ms CreateObjectMapping: 0.075542 ms MarkObjects: 4.000625 ms  DeleteObjects: 0.036375 ms)
 
-Requesting import of Guid(c980978125005434095e925e4e07923b) Importer(-1,00000000000000000000000000000000), Assets/DialogueObjects/HikingTutorial.asset from editor
-Resuming Guid(c980978125005434095e925e4e07923b) Importer(-1,00000000000000000000000000000000) -> a413b7212f9fc38b4024ccb7f230e6bd 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
- -> (artifact id: 'ee21264a6b1d9b4b62e268b259b57b00') in 0.167395 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.998161 seconds.
-  path: Assets/DialogueObjects/HikingTutorial.asset
-  artifactKey: Guid(c980978125005434095e925e4e07923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueObjects/HikingTutorial.asset using Guid(c980978125005434095e925e4e07923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
- #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #8 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #9 _dispatch_client_callout
- #10 _dispatch_async_and_wait_invoke
- #11 _dispatch_client_callout
- #12 _dispatch_main_queue_drain
- #13 _dispatch_main_queue_callback_4CF
- #14 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #15 __CFRunLoopRun
- #16 CFRunLoopRunSpecific
- #17 RunCurrentEventLoopInMode
- #18 ReceiveNextEventCommon
- #19 _BlockUntilNextEventMatchingListInModeWithFilter
- #20 _DPSNextEvent
- #21 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #22 -[NSApplication run]
- #23 NSApplicationMain
- #24 EditorMain(int, char const**)
- #25 main
- #26 ???
-
-Requesting import of Guid(c980978125005434095e925e4e07923b) Importer(-1,00000000000000000000000000000000), Assets/DialogueObjects/HikingTutorial.asset from editor
-Resuming Guid(c980978125005434095e925e4e07923b) Importer(-1,00000000000000000000000000000000) -> a413b7212f9fc38b4024ccb7f230e6bd 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
-Diagnostics callstack to track who triggered the sub-import:
- #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #8 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #9 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #10 _dispatch_client_callout
- #11 _dispatch_async_and_wait_invoke
- #12 _dispatch_client_callout
- #13 _dispatch_main_queue_drain
- #14 _dispatch_main_queue_callback_4CF
- #15 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #16 __CFRunLoopRun
- #17 CFRunLoopRunSpecific
- #18 RunCurrentEventLoopInMode
- #19 ReceiveNextEventCommon
- #20 _BlockUntilNextEventMatchingListInModeWithFilter
- #21 _DPSNextEvent
- #22 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #23 -[NSApplication run]
- #24 NSApplicationMain
- #25 EditorMain(int, char const**)
- #26 main
- #27 ???
-
-Requesting import of Guid(c980978125005434095e925e4e07923b) Importer(-1,00000000000000000000000000000000), Assets/DialogueObjects/HikingTutorial.asset from editor
-Resuming Guid(c980978125005434095e925e4e07923b) Importer(-1,00000000000000000000000000000000) -> a413b7212f9fc38b4024ccb7f230e6bd 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
- -> (artifact id: 'ee21264a6b1d9b4b62e268b259b57b00') in 0.017131 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.112345 seconds.
-  path: Assets/Scenes/HubWorld.unity
-  artifactKey: Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/HubWorld.unity using Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
- #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #8 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #9 _dispatch_client_callout
- #10 _dispatch_async_and_wait_invoke
- #11 _dispatch_client_callout
- #12 _dispatch_main_queue_drain
- #13 _dispatch_main_queue_callback_4CF
- #14 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #15 __CFRunLoopRun
- #16 CFRunLoopRunSpecific
- #17 RunCurrentEventLoopInMode
- #18 ReceiveNextEventCommon
- #19 _BlockUntilNextEventMatchingListInModeWithFilter
- #20 _DPSNextEvent
- #21 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #22 -[NSApplication run]
- #23 NSApplicationMain
- #24 EditorMain(int, char const**)
- #25 main
- #26 ???
-
-Requesting import of Guid(304a5748b784bc241be3c08d67013b21) Importer(-1,00000000000000000000000000000000), Assets/Scenes/HubWorld.unity from editor
-Resuming Guid(304a5748b784bc241be3c08d67013b21) Importer(-1,00000000000000000000000000000000) -> 4b6846b0fde838b5e23952c02c2f3686 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
-Diagnostics callstack to track who triggered the sub-import:
- #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #8 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #9 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #10 _dispatch_client_callout
- #11 _dispatch_async_and_wait_invoke
- #12 _dispatch_client_callout
- #13 _dispatch_main_queue_drain
- #14 _dispatch_main_queue_callback_4CF
- #15 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #16 __CFRunLoopRun
- #17 CFRunLoopRunSpecific
- #18 RunCurrentEventLoopInMode
- #19 ReceiveNextEventCommon
- #20 _BlockUntilNextEventMatchingListInModeWithFilter
- #21 _DPSNextEvent
- #22 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #23 -[NSApplication run]
- #24 NSApplicationMain
- #25 EditorMain(int, char const**)
- #26 main
- #27 ???
-
-Requesting import of Guid(304a5748b784bc241be3c08d67013b21) Importer(-1,00000000000000000000000000000000), Assets/Scenes/HubWorld.unity from editor
-Resuming Guid(304a5748b784bc241be3c08d67013b21) Importer(-1,00000000000000000000000000000000) -> 4b6846b0fde838b5e23952c02c2f3686 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
- -> (artifact id: 'f1a0acc5bd8b404e8c980e894024fa5f') in 0.009851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.060229 seconds.
-  path: Assets/Scenes/HubWorld.unity
-  artifactKey: Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/HubWorld.unity using Guid(304a5748b784bc241be3c08d67013b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
- #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #8 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #9 _dispatch_client_callout
- #10 _dispatch_async_and_wait_invoke
- #11 _dispatch_client_callout
- #12 _dispatch_main_queue_drain
- #13 _dispatch_main_queue_callback_4CF
- #14 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #15 __CFRunLoopRun
- #16 CFRunLoopRunSpecific
- #17 RunCurrentEventLoopInMode
- #18 ReceiveNextEventCommon
- #19 _BlockUntilNextEventMatchingListInModeWithFilter
- #20 _DPSNextEvent
- #21 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #22 -[NSApplication run]
- #23 NSApplicationMain
- #24 EditorMain(int, char const**)
- #25 main
- #26 ???
-
-Requesting import of Guid(304a5748b784bc241be3c08d67013b21) Importer(-1,00000000000000000000000000000000), Assets/Scenes/HubWorld.unity from editor
-Resuming Guid(304a5748b784bc241be3c08d67013b21) Importer(-1,00000000000000000000000000000000) -> 4b6846b0fde838b5e23952c02c2f3686 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
-Diagnostics callstack to track who triggered the sub-import:
- #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #7 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
- #8 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
- #9 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
- #10 _dispatch_client_callout
- #11 _dispatch_async_and_wait_invoke
- #12 _dispatch_client_callout
- #13 _dispatch_main_queue_drain
- #14 _dispatch_main_queue_callback_4CF
- #15 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
- #16 __CFRunLoopRun
- #17 CFRunLoopRunSpecific
- #18 RunCurrentEventLoopInMode
- #19 ReceiveNextEventCommon
- #20 _BlockUntilNextEventMatchingListInModeWithFilter
- #21 _DPSNextEvent
- #22 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
- #23 -[NSApplication run]
- #24 NSApplicationMain
- #25 EditorMain(int, char const**)
- #26 main
- #27 ???
-
-Requesting import of Guid(304a5748b784bc241be3c08d67013b21) Importer(-1,00000000000000000000000000000000), Assets/Scenes/HubWorld.unity from editor
-Resuming Guid(304a5748b784bc241be3c08d67013b21) Importer(-1,00000000000000000000000000000000) -> 4b6846b0fde838b5e23952c02c2f3686 
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeDependencies != nullptr'
-Assertion failed on expression: 'unsafeMetaInfo != nullptr'
-Assertion failed on expression: 'safeMetaInfo != nullptr'
-Assertion failed on expression: 'state.state == kUpToDate'
-Assertion failed on expression: 'state.artifactID == result'
- -> (artifact id: 'f1a0acc5bd8b404e8c980e894024fa5f') in 0.007257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.045468 seconds.
-  path: Assets/Scenes/KayakMinigame.unity
-  artifactKey: Guid(fa12f9a5bb4b44bd1b4aaed0c39593e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/KayakMinigame.unity using Guid(fa12f9a5bb4b44bd1b4aaed0c39593e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d726d97395ae7804a64c7d1d781fb83') in 0.002688 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.786534 seconds.
-  path: Assets/Scenes/SceneSwitcherWithButton.cs
-  artifactKey: Guid(277968aca23654246bc3cc024f527b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SceneSwitcherWithButton.cs using Guid(277968aca23654246bc3cc024f527b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1110930254ed9f46153fbc4bb3d9d20c') in 1.102544 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.986575 seconds.
-  path: Assets/Scenes/SceneSwitcherWithButton.cs
-  artifactKey: Guid(277968aca23654246bc3cc024f527b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SceneSwitcherWithButton.cs using Guid(277968aca23654246bc3cc024f527b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004716 seconds  code(4) message(Build asset version error: assets/scenes/sceneswitcherwithbutton.cs in SourceAssetDB has modification time of '2024-12-12T19:57:58Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
-  ERROR: Build asset version error: assets/scenes/sceneswitcherwithbutton.cs in SourceAssetDB has modification time of '2024-12-12T19:57:58Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

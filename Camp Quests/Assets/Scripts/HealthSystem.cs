@@ -53,6 +53,7 @@ public class HealthSystem : MonoBehaviour
             //Press R to restart if game is over
             if (Input.GetKeyDown(KeyCode.R))
             {
+                Debug.Log("Resetting...");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }

@@ -15,9 +15,10 @@ public class HarmObject : MonoBehaviour
         // Check if the triggering object has the tag "Player"
         if (other.CompareTag("Player"))
         {
+            Destroy(gameObject);
             healthSystem.TakeDamage();
             // Destroy this object
-            Destroy(gameObject);
+            
         }
     }
 }

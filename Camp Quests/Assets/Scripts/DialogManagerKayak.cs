@@ -10,14 +10,12 @@ public class DialogManagerKayak : MonoBehaviour
     public float typingSpeed;
 
     public GameObject continueButton;
-    public GameObject skipButton;
     public GameObject dialogPanel;
 
     void OnEnable()
     {
         index = 0;
         continueButton.SetActive(false);
-        skipButton.SetActive(false);
 
         if (sentences.Length > 0)
         {
@@ -40,15 +38,11 @@ public class DialogManagerKayak : MonoBehaviour
         }
 
         continueButton.SetActive(true);
-        if (KayakTimer.hasSeen) {
-            skipButton.SetActive(true);
-        }
     }
 
     public void NextSentence()
     {
         continueButton.SetActive(false);
-        skipButton.SetActive(false);
 
         if (index < sentences.Length - 1)
         {
@@ -61,12 +55,5 @@ public class DialogManagerKayak : MonoBehaviour
             textbox.text = "";
             dialogPanel.SetActive(false);
         }
-    }
-    
-    public void SkipSentences()
-    {
-        continueButton.SetActive(false);
-        skipButton.SetActive(false);
-        dialogPanel.SetActive(false);
     }
 }

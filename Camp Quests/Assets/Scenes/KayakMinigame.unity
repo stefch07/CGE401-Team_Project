@@ -524,8 +524,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textbox: {fileID: 1828202984}
   sentences:
-  - Test
-  - Another test
+  - It's time to go kayaking!
+  - Use the WASD or arrow keys to move up and down and left and right.
+  - Go for the gold, but avoid rocks and logs! If you lose all of your health, it's
+    game over!
+  - You have two minutes to collect what you'd like. Your time begins...now!
   typingSpeed: 0.04
   continueButton: {fileID: 2092056391}
   dialogPanel: {fileID: 1695677966}

@@ -434,3 +434,139 @@ Received Import Request.
   path: Assets/Scripts/HealthSystem.cs
   artifactKey: Guid(75ae6502ab30a48af99548da08df77e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/HealthSystem.cs using Guid(75ae6502ab30a48af99548da08df77e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e4df6e14f1e055dac32b2876190bdd') in 0.002051 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003949 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2024-12-14 21:56:04.207 Unity[18641:580634] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fc42819c2b0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.224 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2227ms)
+		BeginReloadAssembly (428ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (57ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (174ms)
+		EndReloadAssembly (1720ms)
+			LoadAssemblies (296ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (987ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (228ms)
+				ProcessInitializeOnLoadAttributes (693ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2088 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 202.6 MB.
+System memory in use after: 202.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2664.
+Total: 3.229917 ms (FindLiveObjects: 0.313834 ms CreateObjectMapping: 0.060334 ms MarkObjects: 2.824541 ms  DeleteObjects: 0.030666 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 435.463237 seconds.
+  path: Assets/Scripts/KayakController.cs
+  artifactKey: Guid(a4da728fa508f489fa590d7bfc726e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/KayakController.cs using Guid(a4da728fa508f489fa590d7bfc726e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bebb29701cfa34a83a428777aeaf870') in 0.014739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.694810 seconds.
+  path: Assets/Scripts/ObjectMovement.cs
+  artifactKey: Guid(55cef19d41fbc4a638db81eca64fb678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ObjectMovement.cs using Guid(55cef19d41fbc4a638db81eca64fb678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6b5da78ce5b59fca9578b7110e51ac') in 0.001204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.028978 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_climb.png
+  artifactKey: Guid(32af9f3815d806b49860ec4083b32c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_climb.png using Guid(32af9f3815d806b49860ec4083b32c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f03e059db6c5f1871168e759fa06fa') in 0.150809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.411611 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_attack1.png
+  artifactKey: Guid(42ccf676fac6cfb46b0d77e9057e140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_attack1.png using Guid(42ccf676fac6cfb46b0d77e9057e140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b9e53d2d985d383debb02f7f6cac5a') in 0.010367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.700785 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_idle.png
+  artifactKey: Guid(5669bf7ccb8dfa54183d2aed732b3a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_idle.png using Guid(5669bf7ccb8dfa54183d2aed732b3a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '406af4e9c7355e9a47da161047bc0372') in 0.023009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.681615 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_hurt.png
+  artifactKey: Guid(18b6e95162749944fb5918b0ee7aa348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_hurt.png using Guid(18b6e95162749944fb5918b0ee7aa348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9541635109f06c96cb4cbb5b6b21b237') in 0.042174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.525941 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_jump.png
+  artifactKey: Guid(952caa0a778f9cf41a3d666623ef6f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_jump.png using Guid(952caa0a778f9cf41a3d666623ef6f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabb43c10fcc6f842550eee7716737f9') in 0.038214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.812547 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_walk.png
+  artifactKey: Guid(5f68ee1a341cb5d48af90bb159cc21d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_walk.png using Guid(5f68ee1a341cb5d48af90bb159cc21d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b499cd1972de72d3efdac6ecc9668ed') in 0.025921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.478471 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_run.png
+  artifactKey: Guid(e0bbe642de7210e42add8b139a3f52b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_run.png using Guid(e0bbe642de7210e42add8b139a3f52b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2322c76f1eb880841526a77bf22b5a27') in 0.006852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 152.728093 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_attack2.png
+  artifactKey: Guid(9338dcacee74af742a7df966449d95d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_attack2.png using Guid(9338dcacee74af742a7df966449d95d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa7011cb4cda0cc347ae7481253fd12') in 0.019763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.728211 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_attack3.png
+  artifactKey: Guid(5f5a2e620a64db4419d56984c54b82f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_attack3.png using Guid(5f5a2e620a64db4419d56984c54b82f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4468fa10457a56a491a115047e76ad') in 0.013426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.885909 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_craft.png
+  artifactKey: Guid(e7bb63baa71154b4e8ea35f54b2f66ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_craft.png using Guid(e7bb63baa71154b4e8ea35f54b2f66ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e351379d95332ed9b0f33e6d620541') in 0.009506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.916066 seconds.
+  path: Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_death.png
+  artifactKey: Guid(f04e30510e539be4d84e6e61ced0d958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Sprites/Main 2D Sprites/1 Woodcutter/Woodcutter_death.png using Guid(f04e30510e539be4d84e6e61ced0d958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a08fc220e9dde5e159f66dcdccfeead') in 0.029347 seconds 

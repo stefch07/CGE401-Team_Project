@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1852829714974731347}
   - component: {fileID: -4599729145636952537}
   - component: {fileID: -7705053121200407514}
+  - component: {fileID: -4087592268914600246}
   m_Layer: 0
   m_Name: Log
   m_TagString: Obstacle
@@ -157,3 +158,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4087592268914600246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952246782805535360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d196a001cb6b42718c3c28f5478f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

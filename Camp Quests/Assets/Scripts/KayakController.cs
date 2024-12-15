@@ -57,7 +57,7 @@ public class KayakController : MonoBehaviour
         }
         
         if (Input.GetKeyDown(KeyCode.Q)) {
-            SceneManager.LoadScene("DemoDay");
+            SceneManager.LoadScene("HubWorld");
         }
     }
     

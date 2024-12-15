@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2047691472523879943}
   - component: {fileID: 3898851360351892495}
   - component: {fileID: 4856657570370330111}
+  - component: {fileID: -7840228812790078938}
   m_Layer: 0
   m_Name: Happy
   m_TagString: Happy
@@ -156,3 +157,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5125
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7840228812790078938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283349167912105736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d196a001cb6b42718c3c28f5478f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -17,9 +17,6 @@ public class ObjectMovement : MonoBehaviour
         else {
             speed = Random.Range(lowerBound, upperBound);
         }
-        //if (!DialogManagerKayak.hasSeen) {
-        //    Destroy(gameObject);
-        //}
     }
     
     // Update is called once per frame
@@ -28,10 +25,6 @@ public class ObjectMovement : MonoBehaviour
         transform.Translate(Vector3.right * Time.deltaTime * speed);
         
         elapsedTime += Time.deltaTime;
-        
-        if (!DialogManagerKayak.hasSeen) {
-            Destroy(gameObject);
-        }
         
         if (elapsedTime >= 20f)
         {

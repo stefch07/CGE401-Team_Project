@@ -29,6 +29,10 @@ public class ObjectMovement : MonoBehaviour
         
         elapsedTime += Time.deltaTime;
         
+        if (!DialogManagerKayak.hasSeen) {
+            Destroy(gameObject);
+        }
+        
         if (elapsedTime >= 20f)
         {
             elapsedTime = 0f;

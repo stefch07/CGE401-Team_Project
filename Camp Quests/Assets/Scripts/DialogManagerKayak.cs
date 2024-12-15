@@ -11,6 +11,8 @@ public class DialogManagerKayak : MonoBehaviour
 
     public GameObject continueButton;
     public GameObject dialogPanel;
+    
+    public static bool hasSeen = false;
 
     void OnEnable()
     {
@@ -19,7 +21,12 @@ public class DialogManagerKayak : MonoBehaviour
 
         if (sentences.Length > 0)
         {
-            StartCoroutine(Type());
+            if (!hasSeen) {
+                StartCoroutine(Type());
+            }
+            else {
+                dialogPanel.SetActive(false);
+            }
         }
         else
         {
@@ -54,6 +61,7 @@ public class DialogManagerKayak : MonoBehaviour
         {
             textbox.text = "";
             dialogPanel.SetActive(false);
+            hasSeen = true;
         }
     }
 }

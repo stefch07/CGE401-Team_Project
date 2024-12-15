@@ -28,7 +28,7 @@ public class KayakTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!healthSystem.gameOver)
+        if (!healthSystem.gameOver && DialogManagerKayak.hasSeen)
         {
             timerRunning = true;
         }

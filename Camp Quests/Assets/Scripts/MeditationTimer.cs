@@ -10,6 +10,9 @@ public class MeditationTimer : MonoBehaviour
     private int mindWanderCount = 0;
 
     public TextMeshProUGUI scoreText;
+    
+    private float spaceBarCooldown = 1f; // Cooldown time in seconds
+    private float lastSpaceBarPressTime = 0f; // Time of the last Space bar press
 
     void Start()
     {
@@ -28,15 +31,16 @@ public class MeditationTimer : MonoBehaviour
             {
                 totalTime = 0;
                 timerRunning = false;
-                SceneManager.LoadScene("DemoDay");
+                SceneManager.LoadScene("HubWorld");
                 EndMeditationSession();
             }
             UpdateTimerDisplay();
         }
 
-        // Handle the Space key press (simulating mind wandering)
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Handle the Space key press with cooldown
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time >= lastSpaceBarPressTime + spaceBarCooldown)
         {
+            lastSpaceBarPressTime = Time.time; // Update the time of the last press
             mindWanderCount++;
             UpdateScoreText();
         }

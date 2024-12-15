@@ -9081,7 +9081,7 @@ MonoBehaviour:
   sentences:
   - Time to focus your attention on your breath.
   - If your mind wanders, or you notice you are thinking about something else...
-  - Press the space bar and quitely bring your focus back on your breath.
+  - Press the spacebar and quietly bring your attention back to your breath.
   typingSpeed: 0.04
   continueButton: {fileID: 447756637}
   skipButton: {fileID: 1461255232}

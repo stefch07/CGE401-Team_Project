@@ -66,6 +66,9 @@ public class CampfireManager : MonoBehaviour
             // Optional: Can comment this out, but transition to the HubWorld if all stories are done
             SceneManager.LoadScene("HubWorld");
         }
+        if (campfireState.currentNightIndex == 3) {
+            SceneManager.LoadScene("WinScreen");
+        }
     }
 
     private void UpdateNPCs()

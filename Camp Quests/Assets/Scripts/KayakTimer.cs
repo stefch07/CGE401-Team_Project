@@ -45,12 +45,7 @@ public class KayakTimer : MonoBehaviour
                 timerRunning = false;
                 totalTime = 120f;
                 hasSeen = true;
-                if (relaxationMeter.relaxationBar.value >= 100) {
-                    SceneManager.LoadScene("WinScreen");
-                }
-                else {
-                    SceneManager.LoadScene("DemoDay");
-                }
+                SceneManager.LoadScene("HubWorld");
             }
 
             // Update the timer text

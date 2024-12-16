@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4423029, g: 0.49133873, b: 0.5712185, a: 1}
+  m_IndirectSpecularColor: {r: 0.44230202, g: 0.49133772, b: 0.5712169, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7583,7 +7583,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.61082506, y: -0.47625387}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7594,7 +7594,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6224432, y: 2.0474923}
+  m_Size: {x: 1.6, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &716622526
 Rigidbody2D:
@@ -7706,6 +7706,7 @@ MonoBehaviour:
   musicSource: {fileID: 1259875491}
   gameManager: {fileID: 1952839367}
   dialogueText: {fileID: 683648220}
+  jumpCooldown: 0.5
 --- !u!114 &716622530
 MonoBehaviour:
   m_ObjectHideFlags: 0

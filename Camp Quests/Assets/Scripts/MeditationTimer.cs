@@ -6,7 +6,7 @@ public class MeditationTimer : MonoBehaviour
 {
     public float totalTime = 90f;
     public TextMeshProUGUI timerText;
-    private bool timerRunning = false;
+    public static bool timerRunning = false;
     private int mindWanderCount = 0;
 
     public TextMeshProUGUI scoreText;
@@ -38,7 +38,7 @@ public class MeditationTimer : MonoBehaviour
         }
 
         // Handle the Space key press with cooldown
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time >= lastSpaceBarPressTime + spaceBarCooldown)
+        if (Input.GetKeyDown(KeyCode.Space) && timerRunning && Time.time >= lastSpaceBarPressTime + spaceBarCooldown)
         {
             lastSpaceBarPressTime = Time.time; // Update the time of the last press
             mindWanderCount++;

@@ -25,20 +25,4 @@ public class PlayMusic : MonoBehaviour
             
         }
     }
-
-    void Update()
-    {
-        // Play the sound effect when the Space key is pressed
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (soundEffectSource != null)
-            {
-                soundEffectSource.Play();
-            }
-            else
-            {
-                
-            }
-        }
-    }
 }

@@ -6,20 +6,15 @@ public class ConcentrationMeter : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI timerText;
 
-    private AudioSource soundEffectSource;
+    public AudioSource soundEffectSource;
     private float totalTime = 90f;
     private int spaceScore = 0;
     private bool timerRunning = false; // Initially false
+    
+    private float spaceBarCooldown = 1f; // Cooldown time in seconds
+    private float lastSpaceBarPressTime = 0f; // Time of the last Space bar press
 
-    void Start()
-    {
-        // Get the second AudioSource component for sound effects
-        AudioSource[] audioSources = GetComponents<AudioSource>();
-        if (audioSources.Length > 1)
-        {
-            soundEffectSource = audioSources[1]; // Use the second AudioSource
-        }
-
+    void Start() {
         UpdateScoreText();
         UpdateTimerDisplay();
     }
@@ -42,16 +37,12 @@ public class ConcentrationMeter : MonoBehaviour
         }
 
         // Handle the Space key press
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && MeditationTimer.timerRunning && Time.time >= lastSpaceBarPressTime + spaceBarCooldown)
         {
             spaceScore++;
-
-            // Play sound effect if AudioSource is available
-            if (soundEffectSource != null && !soundEffectSource.isPlaying)
-            {
-                soundEffectSource.Play();
-            }
-
+            
+            lastSpaceBarPressTime = Time.time; // Update the time of the last press
+            soundEffectSource.Play();
             UpdateScoreText();
         }
     }

@@ -37,6 +37,10 @@ public class CampfireManager : MonoBehaviour
             }
         }
         
+        if (campfireState.currentNightIndex == 3) {
+            SceneManager.LoadScene("WinScreen");
+        }
+        
         Debug.Log($"CampfireManager Start - Current Night Index: {campfireState.currentNightIndex}");
         UpdateNPCs();
     }
